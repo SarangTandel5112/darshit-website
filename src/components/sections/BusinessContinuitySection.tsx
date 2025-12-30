@@ -1,8 +1,9 @@
+import React from 'react'
 import { businessContinuity } from '../../data/pavanity-data'
 import { FiTruck, FiFileText, FiCheckCircle } from 'react-icons/fi'
 
 // Icon mapping
-const iconMap: { [key: string]: JSX.Element } = {
+const iconMap: { [key: string]: React.ReactElement } = {
   supply: <FiTruck className="w-full h-full" />,
   commercial: <FiFileText className="w-full h-full" />,
   trade: <FiCheckCircle className="w-full h-full" />

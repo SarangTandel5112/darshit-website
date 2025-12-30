@@ -21,7 +21,6 @@ import {
 
 // Icons (you can replace with actual icons later)
 import { FaCheckCircle, FaShieldAlt, FaGlobeAmericas, FaFileAlt, FaBox, FaTruck } from 'react-icons/fa'
-import { BsCheckCircleFill } from 'react-icons/bs'
 
 import Aos from 'aos'
 
