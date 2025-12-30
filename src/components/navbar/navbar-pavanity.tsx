@@ -39,23 +39,20 @@ export default function NavbarPavanity() {
                     <div className={`main-menu absolute z-50 w-full lg:w-auto top-full left-0 lg:static bg-white dark:bg-title lg:bg-transparent lg:dark:bg-transparent px-5 sm:px-[30px] py-[10px] sm:py-5 lg:px-0 lg:py-0 ${toggle ? 'active' : ''}`}>
                         <ul className="text-base lg:text-lg leading-none text-title dark:text-white lg:flex lg:gap-[20px] xl:gap-[30px]">
 
-                            {/* Product Divisions Dropdown */}
-                            <li className={`relative ${['/product-divisions'].includes(current) || current.startsWith('/product-divisions/') ? 'active' : ''}`}>
-                                <Link to="#">Product Divisions<span></span></Link>
-                                <ul className="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[280px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
+                            {/* Products Dropdown */}
+                            <li className={`relative ${['/products'].includes(current) || current.startsWith('/products/') ? 'active' : ''}`}>
+                                <Link to="/products">Products<span></span></Link>
+                                <ul className="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[250px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
                                     {divisions.map((division) => (
-                                        <li key={division.id} className={`${current === `/product-divisions/${division.slug}` ? 'active' : ''}`}>
-                                            <Link to={`/product-divisions/${division.slug}`} className="menu-item">
-                                                <div className="flex flex-col">
-                                                    <span className="font-medium">{division.name}</span>
-                                                    <span className="text-xs text-gray-500 dark:text-gray-400 mt-1">{division.tagline}</span>
-                                                </div>
+                                        <li key={division.id} className={`${current === `/products/${division.slug}` ? 'active' : ''}`}>
+                                            <Link to={`/products/${division.slug}`} className="menu-item">
+                                                {division.name}
                                             </Link>
                                         </li>
                                     ))}
-                                    <li className="border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
-                                        <Link to="/product-divisions" className="menu-item text-primary font-medium">
-                                            View All Products →
+                                    <li className="border-t border-bdr-clr dark:border-bdr-clr-drk mt-2 pt-2">
+                                        <Link to="/products" className="menu-item text-primary font-medium">
+                                            View All Products
                                         </Link>
                                     </li>
                                 </ul>
@@ -66,19 +63,14 @@ export default function NavbarPavanity() {
                                 <Link to="/quality-compliance">Quality & Compliance</Link>
                             </li>
 
-                            {/* Private Label & OEM */}
-                            <li className={`${current === '/private-label' ? 'active' : ''}`}>
-                                <Link to="/private-label">Private Label & OEM</Link>
+                            {/* Private Label & Custom Sourcing */}
+                            <li className={`${current === '/private-label-custom-sourcing' ? 'active' : ''}`}>
+                                <Link to="/private-label-custom-sourcing">Private Label & Custom Sourcing</Link>
                             </li>
 
-                            {/* Global Markets */}
-                            <li className={`${current === '/global-markets' ? 'active' : ''}`}>
-                                <Link to="/global-markets">Global Markets</Link>
-                            </li>
-
-                            {/* About */}
-                            <li className={`${current === '/about' ? 'active' : ''}`}>
-                                <Link to="/about">About</Link>
+                            {/* About Us */}
+                            <li className={`${current === '/about-us' ? 'active' : ''}`}>
+                                <Link to="/about-us">About Us</Link>
                             </li>
 
                             {/* Contact */}
@@ -89,7 +81,7 @@ export default function NavbarPavanity() {
                             {/* Mobile RFQ Button */}
                             <li className="lg:hidden mt-4">
                                 <Link to="/contact" className="inline-block bg-primary text-white px-6 py-3 rounded-[5px] hover:bg-opacity-90 duration-300 w-full text-center">
-                                    Request RFQ
+                                    Send Enquiry
                                 </Link>
                             </li>
                         </ul>

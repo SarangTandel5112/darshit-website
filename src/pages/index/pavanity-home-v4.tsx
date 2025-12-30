@@ -87,7 +87,7 @@ export default function PavanityHomeV4() {
 
                     {/* CTA Button - View Products Only */}
                     <div>
-                        <Link to="/product-divisions" className="group md:text-lg font-medium leading-none text-title dark:text-white flex items-center gap-3 mt-3">
+                        <Link to="/products" className="group md:text-lg font-medium leading-none text-title dark:text-white flex items-center gap-3 mt-3">
                             <span className="text-underline leading-none">View Products</span>
                             <svg className="fill-current text-title dark:text-white w-5 md:w-7" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M30.2303 6.58892C30.5232 6.29603 30.5232 5.82116 30.2303 5.52826L25.4574 0.755293C25.1645 0.462399 24.6896 0.462399 24.3967 0.755293C24.1038 1.04819 24.1038 1.52306 24.3967 1.81595L28.6393 6.05859L24.3967 10.3012C24.1038 10.5941 24.1038 11.069 24.3967 11.3619C24.6896 11.6548 25.1645 11.6548 25.4574 11.3619L30.2303 6.58892ZM0 6.80859L29.7 6.80859V5.30859L0 5.30859L0 6.80859Z"/>
@@ -195,7 +195,7 @@ export default function PavanityHomeV4() {
                                 Export supply across core food and ingredient categories.
                             </p>
                         </div>
-                        <Link to="/product-divisions" className="group flex items-center gap-[10px] font-medium md:text-lg leading-none text-title dark:text-white hover:text-primary dark:hover:text-primary duration-300">
+                        <Link to="/products" className="group flex items-center gap-[10px] font-medium md:text-lg leading-none text-title dark:text-white hover:text-primary dark:hover:text-primary duration-300">
                             <span className="text-underline-primary leading-none">View All Products</span>
                             <svg className="w-5 md:w-[30px] fill-current" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M30.5311 6.43072C30.824 6.13783 30.824 5.66295 30.5311 5.37006L25.7581 0.59709C25.4653 0.304196 24.9904 0.304196 24.6975 0.59709C24.4046 0.889983 24.4046 1.36486 24.6975 1.65775L28.9401 5.90039L24.6975 10.143C24.4046 10.4359 24.4046 10.9108 24.6975 11.2037C24.9904 11.4966 25.4653 11.4966 25.7581 11.2037L30.5311 6.43072ZM0.300781 6.65039L30.0008 6.65039V5.15039L0.300781 5.15039L0.300781 6.65039Z"/>
@@ -208,7 +208,7 @@ export default function PavanityHomeV4() {
                         {divisions.map((division: Division, index: number)=>{
                             return(
                                 <Link
-                                    to={`/product-divisions/${division.slug}`}
+                                    to={`/products/${division.slug}`}
                                     className="group block"
                                     key={index}
                                 >

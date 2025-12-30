@@ -4,7 +4,7 @@ import { FiGlobe, FiTag, FiMap, FiShield } from 'react-icons/fi'
 // Icon mapping
 const iconMap: { [key: string]: JSX.Element } = {
   'export': <FiGlobe className="w-full h-full" />,
-  'private-label': <FiTag className="w-full h-full" />,
+  'custom-development': <FiTag className="w-full h-full" />,
   'markets': <FiMap className="w-full h-full" />,
   'compliance': <FiShield className="w-full h-full" />
 }
