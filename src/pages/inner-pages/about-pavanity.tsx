@@ -65,13 +65,13 @@ export default function AboutPavanity() {
                                 About Pavanity Global
                             </h2>
                             <p className="mt-3 text-base sm:text-lg">
-                                Pavanity Global is an export-focused trading company supplying food and agricultural ingredients to international B2B and HoReCa markets.
+                                Pavanity Global is an agricultural sourcing and export coordination company supplying food and agricultural ingredients to international B2B and HoReCa markets.
                             </p>
                             <p className="mt-3 text-base sm:text-lg">
                                 We specialize in structured sourcing and export supply aligned with buyer specifications, quality standards, and destination market regulations. Our product portfolio includes agricultural commodities, dehydrated products, natural food ingredients, and value-added food supplies tailored for bulk and private label requirements.
                             </p>
                             <p className="mt-3 text-base sm:text-lg">
-                                Our operations are designed to support consistency, compliance, and long-term supply continuity for international buyers. Pavanity Global focuses on transparent trade practices, export documentation support, and dependable sourcing relationships across global markets.
+                                Our operations are designed to support consistency, compliance, and long-term supply continuity for international buyers. Pavanity Global focuses on transparent trade practices and export documentation support.
                             </p>
                         </div>
                     </div>
@@ -100,17 +100,7 @@ export default function AboutPavanity() {
                 {/* Features Grid */}
                 <div className="max-w-sm sm:max-w-[1720px] mx-auto grid sm:grid-cols-2 md:grid-cols-3 xl:flex lg:justify-between gap-7 flex-wrap lg:flex-nowrap" data-aos="fade-up" data-aos-delay="300">
 
-                    {/* Feature 1: Export Experience */}
-                    <div className="p-6 pb-0 rounded-[10px] relative">
-                        <div className="w-[1px] h-[120px] absolute right-0 top-[30%] hidden 2xl:block border-l border-dashed border-primary"></div>
-                        <FaGlobeAmericas className="size-12 text-primary" />
-                        <h5 className="font-semibold text-xl md:text-2xl mt-3 md:mt-7">Export Experience</h5>
-                        <p className="mt-2 sm:mt-3">
-                            Active participation across multiple international regions through established export channels and trade networks.
-                        </p>
-                    </div>
-
-                    {/* Feature 2: Quality & Compliance */}
+                    {/* Feature 1: Quality & Compliance */}
                     <div className="p-6 pb-0 rounded-[10px] relative">
                         <div className="w-[1px] h-[120px] absolute right-0 top-[30%] hidden 2xl:block border-l border-dashed border-primary"></div>
                         <FaShieldAlt className="size-12 text-primary" />
