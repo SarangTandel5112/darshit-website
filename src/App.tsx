@@ -11,6 +11,11 @@ import IndexFour from './pages/index/index-four'
 import IndexFive from './pages/index/index-five'
 import IndexSix from './pages/index/index-six'
 import About from './pages/inner-pages/about'
+import AboutPavanity from './pages/inner-pages/about-pavanity'
+import ProductsMain from './pages/products/products-main'
+import ProductDetail from './pages/products/product-detail'
+import QualityCompliance from './pages/inner-pages/quality-compliance'
+import PrivateLabelCustomSourcing from './pages/inner-pages/private-label-custom-sourcing'
 import Pricing from './pages/inner-pages/pricing'
 import Team from './pages/inner-pages/team'
 import OurClients from './pages/inner-pages/our-clients'
@@ -52,6 +57,7 @@ import BlogDetailsV2 from './pages/blog/blog-details-v2'
 import BlogDetailsV3 from './pages/blog/blog-details-v3'
 import BlogTag from './pages/blog/blog-tag'
 import Contact from './pages/inner-pages/contact'
+import ContactPavanity from './pages/inner-pages/contact-pavanity'
 import ProductCategory from './pages/shop/product-category'
 
 function App() {
@@ -68,7 +74,12 @@ function App() {
           <Route path="/index-v4" element={<IndexFour/>} />
           <Route path="/index-v5" element={<IndexFive/>} />
           <Route path="/index-v6" element={<IndexSix/>} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/about-us" element={<AboutPavanity/>} />
+          <Route path="/about-template" element={<About/>} />
+          <Route path="/products" element={<ProductsMain/>} />
+          <Route path="/products/:slug" element={<ProductDetail/>} />
+          <Route path="/quality-compliance" element={<QualityCompliance/>} />
+          <Route path="/private-label-custom-sourcing" element={<PrivateLabelCustomSourcing/>} />
           <Route path="/pricing" element={<Pricing/>} />
           <Route path="/team" element={<Team/>} />
           <Route path="/our-clients" element={<OurClients/>} />
@@ -114,7 +125,8 @@ function App() {
           <Route path="/blog-details-v2/:id" element={<BlogDetailsV2/>} />
           <Route path="/blog-details-v3" element={<BlogDetailsV3/>} />
           <Route path="/blog-tag" element={<BlogTag/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/contact" element={<ContactPavanity/>} />
+          <Route path="/contact-template" element={<Contact/>} />
           <Route path="/product-category" element={<ProductCategory/>} />
      </Routes>
     </>

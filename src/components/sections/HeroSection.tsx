@@ -28,7 +28,7 @@ export default function HeroSection() {
               <Link to="/contact" className="btn btn-primary" data-text={heroContent.primaryCTA}>
                 <span>{heroContent.primaryCTA}</span>
               </Link>
-              <Link to="/product-divisions" className="btn btn-outline" data-text={heroContent.secondaryCTA}>
+              <Link to="/products" className="btn btn-outline" data-text={heroContent.secondaryCTA}>
                 <span>{heroContent.secondaryCTA}</span>
               </Link>
             </div>

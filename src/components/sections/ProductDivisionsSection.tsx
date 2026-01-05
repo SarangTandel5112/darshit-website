@@ -10,19 +10,19 @@ export default function ProductDivisionsSection() {
           {/* Section Header */}
           <div className="text-center mb-8 md:mb-12" data-aos="fade-up">
             <h3 className="leading-none text-2xl md:text-3xl text-title dark:text-white font-semibold">
-              Our Product Divisions
+              Our Product Categories
             </h3>
             <p className="mt-3 text-title dark:text-white-light">
-              Export supply across core food and ingredient categories.
+              Export supply across core food and agricultural ingredient categories.
             </p>
           </div>
 
-          {/* 6 Division Cards Grid */}
+          {/* 6 Product Category Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8" data-aos="fade-up" data-aos-delay="100">
             {divisions.map((division) => (
               <Link
                 key={division.id}
-                to={`/product-divisions/${division.slug}`}
+                to={`/products/${division.slug}`}
                 className="group block"
               >
                 {/* Image */}

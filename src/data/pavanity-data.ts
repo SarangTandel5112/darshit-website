@@ -1,8 +1,8 @@
-// Pavanity Global - B2B Food & Ingredient Supplier Data
-// All content approved by client
+// Pavanity Global - Export-Focused Food & Agricultural Products Supplier
+// Content updated as per SEO implementation document
 
 // ============================================
-// PRODUCT DIVISIONS (6 Divisions)
+// PRODUCT CATEGORIES (6 Categories)
 // ============================================
 
 export interface Division {
@@ -17,51 +17,51 @@ export interface Division {
 export const divisions: Division[] = [
     {
         id: 1,
-        name: "Pavanity SpiceLine™",
-        slug: "spiceline",
-        tagline: "Spices, Masalas & Seasonings",
-        description: "Premium spices, masala blends, and seasonings for food manufacturing and HoReCa applications.",
-        image: "/assets/img/divisions/spiceline.jpg" // Placeholder path
+        name: "Dehydrated Products",
+        slug: "dehydrated-products",
+        tagline: "Exporter & Supplier",
+        description: "Bulk-supplied, export-grade dehydrated vegetables and ingredients for international B2B buyers, food manufacturers, and HoReCa distribution.",
+        image: "/assets/img/divisions/dehydrated-products.jpg"
     },
     {
         id: 2,
-        name: "Pavanity NatureFoods™",
-        slug: "naturefoods",
-        tagline: "Superfoods, Seeds & Plant Ingredients",
-        description: "Plant-based superfoods, organic seeds, and nutritional ingredients for health food applications.",
-        image: "/assets/img/divisions/naturefoods.jpg" // Placeholder path
+        name: "Millets & Grains",
+        slug: "millets-grains",
+        tagline: "Exporter & Supplier",
+        description: "Bulk-supplied, export-grade millets and grains for international B2B buyers, food manufacturers, and HoReCa distribution.",
+        image: "/assets/img/divisions/millets-grains.jpg"
     },
     {
         id: 3,
-        name: "Pavanity AgroFoods™",
-        slug: "agrofoods",
-        tagline: "Dehydrated Vegetables & Ingredients",
-        description: "Dehydrated vegetables, flakes, and powders for food manufacturing and processing.",
-        image: "/assets/img/divisions/agrofoods.jpg" // Placeholder path
+        name: "Seeds & Dietary Fibers",
+        slug: "seeds-dietary-fibers",
+        tagline: "Exporter & Supplier",
+        description: "Bulk-supplied, export-grade seeds and dietary fibers for international B2B buyers, food manufacturers, and HoReCa distribution.",
+        image: "/assets/img/divisions/seeds-fibers.jpg"
     },
     {
         id: 4,
-        name: "Pavanity NutSpread™",
-        slug: "nutspread",
-        tagline: "Nut-Based Spreads",
-        description: "Premium nut butters and spreads for private label and food service applications.",
-        image: "/assets/img/divisions/nutspread.jpg" // Placeholder path
+        name: "Jaggery & Natural Sweeteners",
+        slug: "jaggery-natural-sweeteners",
+        tagline: "Exporter & Supplier",
+        description: "Bulk-supplied, export-grade jaggery and natural sweeteners for international B2B buyers, food manufacturers, and HoReCa distribution.",
+        image: "/assets/img/divisions/jaggery-sweeteners.jpg"
     },
     {
         id: 5,
-        name: "Pavanity SweetCane™",
-        slug: "sweetcane",
-        tagline: "Natural Sweeteners",
-        description: "Natural sweeteners and sugar alternatives for health-conscious food manufacturing.",
-        image: "/assets/img/divisions/sweetcane.jpg" // Placeholder path
+        name: "Nutritional & Value-Added Ingredients",
+        slug: "nutritional-value-added-ingredients",
+        tagline: "Exporter & Supplier",
+        description: "Bulk-supplied, export-grade nutritional and value-added ingredients for international B2B buyers, food manufacturers, and HoReCa distribution.",
+        image: "/assets/img/divisions/nutritional-ingredients.jpg"
     },
     {
         id: 6,
-        name: "Pavanity SnackFit™",
-        slug: "snackfit",
-        tagline: "Roasted & Functional Snacks",
-        description: "Roasted snacks and functional ingredients for retail and food service channels.",
-        image: "/assets/img/divisions/snackfit.jpg" // Placeholder path
+        name: "Healthy Snacks",
+        slug: "healthy-snacks",
+        tagline: "Exporter & Supplier",
+        description: "Bulk-supplied, export-grade healthy snacks for international B2B buyers, food manufacturers, and HoReCa distribution.",
+        image: "/assets/img/divisions/healthy-snacks.jpg"
     }
 ];
 
@@ -117,9 +117,9 @@ export const commercialScope: CommercialScope[] = [
     },
     {
         id: 2,
-        title: "Private Label",
-        description: "Export supply under buyer branding and specifications, subject to applicable market and regulatory requirements.",
-        icon: "private-label" // Icon identifier
+        title: "Custom Development",
+        description: "Export supply under buyer specifications and custom formulations, subject to applicable market and regulatory requirements.",
+        icon: "custom-development" // Icon identifier
     },
     {
         id: 3,
@@ -202,12 +202,12 @@ export const businessEnquiries = {
 
 export const navLinks = [
     {
-        name: "Product Divisions",
-        path: "/product-divisions",
+        name: "Products",
+        path: "/products",
         hasDropdown: true,
         dropdownItems: divisions.map(div => ({
             name: div.name,
-            path: `/product-divisions/${div.slug}`
+            path: `/products/${div.slug}`
         }))
     },
     {
@@ -216,18 +216,13 @@ export const navLinks = [
         hasDropdown: false
     },
     {
-        name: "Private Label & OEM",
-        path: "/private-label",
+        name: "Private Label & Custom Sourcing",
+        path: "/private-label-custom-sourcing",
         hasDropdown: false
     },
     {
-        name: "Global Markets",
-        path: "/global-markets",
-        hasDropdown: false
-    },
-    {
-        name: "About",
-        path: "/about",
+        name: "About Us",
+        path: "/about-us",
         hasDropdown: false
     },
     {
@@ -242,11 +237,10 @@ export const navLinks = [
 // ============================================
 
 export const footerQuickLinks = [
-    { name: "Product Divisions", path: "/product-divisions" },
+    { name: "Products", path: "/products" },
     { name: "Quality & Compliance", path: "/quality-compliance" },
-    { name: "Private Label & OEM", path: "/private-label" },
-    { name: "Global Markets", path: "/global-markets" },
-    { name: "About", path: "/about" },
+    { name: "Private Label & Custom Sourcing", path: "/private-label-custom-sourcing" },
+    { name: "About Us", path: "/about-us" },
     { name: "Contact", path: "/contact" }
 ];
 
