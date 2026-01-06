@@ -1,9 +1,9 @@
-import React from 'react'
 import { commercialScope } from '../../data/pavanity-data'
 import { FiGlobe, FiTag, FiMap, FiShield } from 'react-icons/fi'
+import type { ReactElement } from 'react'
 
 // Icon mapping
-const iconMap: { [key: string]: React.ReactElement } = {
+const iconMap: { [key: string]: ReactElement } = {
   'export': <FiGlobe className="w-full h-full" />,
   'custom-development': <FiTag className="w-full h-full" />,
   'markets': <FiMap className="w-full h-full" />,
