@@ -7,7 +7,7 @@ import aboutImage from '../../assets/img/about/about-banner-01.jpg'
 import videoBg from '../../assets/img/about/video-bg.jpg'
 
 // Icons
-import { FaIndustry, FaGlobeAmericas, FaShieldAlt, FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa'
+import { FaIndustry, FaShieldAlt, FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa'
 
 // Components
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
