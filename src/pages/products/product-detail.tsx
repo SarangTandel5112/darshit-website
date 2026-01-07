@@ -9,7 +9,6 @@ import placeholderImage from "../../assets/img/about/about-banner-01.jpg"; // Te
 import {
     FaBoxes,
     FaCertificate,
-    FaGlobeAmericas,
     FaIndustry,
     FaLeaf,
     FaShieldAlt,
@@ -33,11 +32,11 @@ const divisionDetails: { [key: string]: any } = {
         categories: [
             {
                 name: "Dehydrated Onion",
-                examples: "Onion Powder, Onion Flakes, Onion Granules",
+                examples: "Onion Powder, Onion Flakes, Onion Granules, Onion Chopped, Onion Minced",
             },
             {
                 name: "Dehydrated Garlic",
-                examples: "Garlic Powder, Garlic Flakes, Garlic Granules",
+                examples: "Garlic Powder, Garlic Flakes, Garlic Granules, Garlic Chopped, Garlic Minced",
             },
             {
                 name: "Custom Blends",
@@ -191,7 +190,7 @@ const divisionDetails: { [key: string]: any } = {
     },
     oilseeds: {
         overview:
-            "Premium oilseeds including sesame seeds, chia seeds, and flax seeds for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards.",
+            "Premium oilseeds including sesame seeds and chia seeds for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards.",
         categories: [
             {
                 name: "Sesame Seeds",
@@ -199,7 +198,7 @@ const divisionDetails: { [key: string]: any } = {
             },
             {
                 name: "Super Seeds",
-                examples: "Chia Seeds, Flax Seeds (Linseed)",
+                examples: "Chia Seeds",
             },
             {
                 name: "Hulled & Natural",
@@ -323,7 +322,7 @@ const divisionDetails: { [key: string]: any } = {
         categories: [
             {
                 name: "Seeds",
-                examples: "Cumin Seeds, Fenugreek Seeds, Mustard Seeds",
+                examples: "Cumin Seeds, Fenugreek Seeds, Mustard Seeds, Fennel Seeds",
             },
             {
                 name: "Whole Spices",
@@ -461,7 +460,7 @@ export default function DivisionDetail() {
             {/* ============================================ */}
             {/* AVAILABLE PRODUCTS LIST */}
             {/* ============================================ */}
-            <div className="s-pb-100 bg-[#F8F8F9] dark:bg-dark-secondary">
+            <div className="s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
                 <div className="container-fluid">
                     {/* Section Header */}
                     <div
@@ -529,129 +528,48 @@ export default function DivisionDetail() {
             </div>
 
             {/* ============================================ */}
-            {/* PRODUCT CATEGORIES SECTION */}
-            {/* ============================================ */}
-            <div className="s-pb-100">
-                <div className="container-fluid">
-                    {/* Section Header */}
-                    <div
-                        className="max-w-xl mx-auto mb-8 md:mb-12 text-center"
-                        data-aos="fade-up"
-                        data-aos-delay="100"
-                    >
-                        <div>
-                            <FaBoxes className="mx-auto size-16 text-primary" />
-                        </div>
-                        <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
-                            Product Categories
-                        </h3>
-                        <p className="mt-3">
-                            Explore the range of products available under{" "}
-                            {category.name}
-                        </p>
-                    </div>
-
-                    {/* Categories Grid */}
-                    <div
-                        className="max-w-[1720px] mx-auto"
-                        data-aos="fade-up"
-                        data-aos-delay="300"
-                    >
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-                            {details.categories.map(
-                                (category: any, index: number) => (
-                                    <div
-                                        key={index}
-                                        className="p-6 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg duration-300"
-                                    >
-                                        <h5 className="font-semibold text-lg md:text-xl text-primary">
-                                            {category.name}
-                                        </h5>
-                                        <p className="text-sm md:text-base mt-3 text-title/70 dark:text-white/70">
-                                            {category.examples}
-                                        </p>
-                                    </div>
-                                )
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* ============================================ */}
             {/* APPLICATIONS SECTION */}
             {/* ============================================ */}
-            <div className="s-pb-100">
+            <div className="s-py-100">
                 <div className="container-fluid">
                     <div
                         className="max-w-[1720px] mx-auto bg-[#F8F8F9] dark:bg-dark-secondary rounded-[10px] p-8 md:p-12"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        <div className="grid lg:grid-cols-2 gap-8">
-                            {/* Applications */}
-                            <div>
-                                <div className="flex items-center gap-3 mb-4">
-                                    <FaLeaf className="size-12 text-primary" />
-                                    <h4 className="font-semibold text-xl md:text-2xl">
-                                        Target Applications
-                                    </h4>
-                                </div>
-                                <ul className="space-y-3">
-                                    {details.applications.map(
-                                        (app: string, index: number) => (
-                                            <li
-                                                key={index}
-                                                className="flex items-start gap-3"
-                                            >
-                                                <svg
-                                                    className="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 20 20"
-                                                >
-                                                    <path
-                                                        fillRule="evenodd"
-                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                        clipRule="evenodd"
-                                                    />
-                                                </svg>
-                                                <span className="text-base md:text-lg">
-                                                    {app}
-                                                </span>
-                                            </li>
-                                        )
-                                    )}
-                                </ul>
+                        {/* Applications */}
+                        <div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <FaLeaf className="size-12 text-primary" />
+                                <h4 className="font-semibold text-xl md:text-2xl">
+                                    Target Applications
+                                </h4>
                             </div>
-
-                            {/* Markets */}
-                            <div>
-                                <div className="flex items-center gap-3 mb-4">
-                                    <FaGlobeAmericas className="size-12 text-primary" />
-                                    <h4 className="font-semibold text-xl md:text-2xl">
-                                        Export Markets
-                                    </h4>
-                                </div>
-                                <p className="text-base md:text-lg mb-4">
-                                    Products available for export to:
-                                </p>
-                                <div className="flex flex-wrap gap-3">
-                                    {[
-                                        "North America",
-                                        "Europe",
-                                        "Middle East",
-                                        "Asia",
-                                        "Africa",
-                                    ].map((region, index) => (
-                                        <span
+                            <ul className="space-y-3">
+                                {details.applications.map(
+                                    (app: string, index: number) => (
+                                        <li
                                             key={index}
-                                            className="px-4 py-2 bg-primary bg-opacity-10 text-primary border border-primary rounded-[5px] text-sm md:text-base font-medium"
+                                            className="flex items-start gap-3"
                                         >
-                                            {region}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
+                                            <svg
+                                                className="w-5 h-5 text-primary flex-shrink-0 mt-1"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                            >
+                                                <path
+                                                    fillRule="evenodd"
+                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                    clipRule="evenodd"
+                                                />
+                                            </svg>
+                                            <span className="text-base md:text-lg">
+                                                {app}
+                                            </span>
+                                        </li>
+                                    )
+                                )}
+                            </ul>
                         </div>
                     </div>
                 </div>

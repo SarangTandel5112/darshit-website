@@ -27,14 +27,18 @@ export const productsData: ProductCategory[] = [
     icon: "onion",
     image: "/src/assets/img/home-v1/pdct-cgry-01.jpg",
     tagline: "Premium Dehydrated Vegetables",
-    description: "Export-grade dehydrated onion and garlic products in powder, flakes, and granules form. Sourced from premium Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
+    description: "Export-grade dehydrated onion and garlic products in powder, flakes, granules, chopped, and minced form. Sourced from premium Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
     products: [
       { id: 101, name: "Dehydrated Onion Powder", slug: "dehydrated-onion-powder", category: "dehydrated-onion-garlic" },
       { id: 102, name: "Dehydrated Onion Flakes", slug: "dehydrated-onion-flakes", category: "dehydrated-onion-garlic" },
       { id: 103, name: "Dehydrated Onion Granules", slug: "dehydrated-onion-granules", category: "dehydrated-onion-garlic" },
+      { id: 107, name: "Dehydrated Onion Chopped", slug: "dehydrated-onion-chopped", category: "dehydrated-onion-garlic" },
+      { id: 108, name: "Dehydrated Onion Minced", slug: "dehydrated-onion-minced", category: "dehydrated-onion-garlic" },
       { id: 104, name: "Dehydrated Garlic Powder", slug: "dehydrated-garlic-powder", category: "dehydrated-onion-garlic" },
       { id: 105, name: "Dehydrated Garlic Flakes", slug: "dehydrated-garlic-flakes", category: "dehydrated-onion-garlic" },
       { id: 106, name: "Dehydrated Garlic Granules", slug: "dehydrated-garlic-granules", category: "dehydrated-onion-garlic" },
+      { id: 109, name: "Dehydrated Garlic Chopped", slug: "dehydrated-garlic-chopped", category: "dehydrated-onion-garlic" },
+      { id: 110, name: "Dehydrated Garlic Minced", slug: "dehydrated-garlic-minced", category: "dehydrated-onion-garlic" },
     ]
   },
   {
@@ -61,12 +65,11 @@ export const productsData: ProductCategory[] = [
     icon: "seed",
     image: "/src/assets/img/home-v1/pdct-cgry-03.jpg",
     tagline: "Premium Oilseeds for Export",
-    description: "High-quality sesame seeds (black & white), chia seeds, and flax seeds sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
+    description: "High-quality sesame seeds (black & white) and chia seeds sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
     products: [
       { id: 301, name: "Black Sesame Seeds", slug: "black-sesame-seeds", category: "oilseeds" },
       { id: 302, name: "White Sesame Seeds", slug: "white-sesame-seeds", category: "oilseeds" },
       { id: 303, name: "Chia Seeds", slug: "chia-seeds", category: "oilseeds" },
-      { id: 304, name: "Flax Seeds (Linseed)", slug: "flax-seeds-linseed", category: "oilseeds" },
     ]
   },
   {
@@ -114,11 +117,12 @@ export const productsData: ProductCategory[] = [
     icon: "spice",
     image: "/src/assets/img/home-v2/product/pdct-02.jpg",
     tagline: "Authentic Indian Spices",
-    description: "Export-quality whole and powdered spices including cumin, turmeric, chili, black pepper, and more. Sourced from India's premier spice-growing regions with traceability and quality assurance.",
+    description: "Export-quality whole and powdered spices including cumin, fennel, turmeric, chili, black pepper, and more. Sourced from India's premier spice-growing regions with traceability and quality assurance.",
     products: [
       { id: 701, name: "Cumin Seeds", slug: "cumin-seeds", category: "spices" },
       { id: 702, name: "Fenugreek Seeds", slug: "fenugreek-seeds", category: "spices" },
       { id: 703, name: "Mustard Seeds", slug: "mustard-seeds", category: "spices" },
+      { id: 710, name: "Fennel Seeds", slug: "fennel-seeds", category: "spices" },
       { id: 704, name: "Chilli (Whole & Powder)", slug: "chilli-whole-powder", category: "spices" },
       { id: 705, name: "Turmeric (Whole & Powder)", slug: "turmeric-whole-powder", category: "spices" },
       { id: 706, name: "Cinnamon", slug: "cinnamon", category: "spices" },
