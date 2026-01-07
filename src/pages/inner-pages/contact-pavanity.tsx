@@ -14,7 +14,7 @@ import contactImg from '../../assets/img/thumb/contact-thumb.jpg'
 import { FaEnvelope } from 'react-icons/fa'
 
 // Data
-import { divisions } from "../../data/pavanity-data";
+import { productsData } from "../../data/products-data";
 
 import Aos from "aos";
 
@@ -92,8 +92,8 @@ export default function ContactPavanity() {
                                     <label className="text-base md:text-lg text-title dark:text-white leading-none mb-2.5 block">Product of Interest *</label>
                                     <select className="w-full h-12 md:h-14 bg-snow dark:bg-dark-secondary border border-[#E3E5E6] text-slate-400 focus:border-primary p-4 outline-none duration-300" required>
                                         <option value="">Select product category</option>
-                                        {divisions.map((division) => (
-                                            <option key={division.id} value={division.slug}>{division.name}</option>
+                                        {productsData.map((category) => (
+                                            <option key={category.id} value={category.slug}>{category.name}</option>
                                         ))}
                                         <option value="private-label">Private Label & Custom Sourcing</option>
                                         <option value="general">General Enquiry</option>

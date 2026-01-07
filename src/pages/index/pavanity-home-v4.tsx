@@ -13,11 +13,12 @@ import bg from '../../assets/img/home-v4/banner-bg.jpg'
 import {
     heroContent,
     businessContinuity,
-    divisions,
     commercialScope,
     globalMarkets,
     businessEnquiries
 } from '../../data/pavanity-data'
+
+import { productsData } from '../../data/products-data'
 
 // Icons (you can replace with actual icons later)
 import { FaCheckCircle, FaShieldAlt, FaGlobeAmericas, FaFileAlt, FaBox, FaTruck } from 'react-icons/fa'
@@ -29,15 +30,6 @@ interface BusinessContinuityItem {
     title: string;
     description: string;
     icon: string;
-}
-
-interface Division {
-    id: number;
-    name: string;
-    slug: string;
-    tagline: string;
-    description: string;
-    image: string;
 }
 
 interface CommercialScopeItem {
@@ -202,37 +194,37 @@ export default function PavanityHomeV4() {
                         </Link>
                     </div>
 
-                    {/* 6 Division Cards Grid */}
+                    {/* Product Categories Cards Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" data-aos="fade-up" data-aos-delay="400">
-                        {divisions.map((division: Division, index: number)=>{
+                        {productsData.map((category, index: number)=>{
                             return(
                                 <Link
-                                    to={`/products/${division.slug}`}
+                                    to={`/products/${category.slug}`}
                                     className="group block"
                                     key={index}
                                 >
-                                    {/* Division Image */}
+                                    {/* Category Image */}
                                     <div className="relative overflow-hidden rounded-[10px]">
                                         <img
                                             className="w-full h-[300px] md:h-[350px] object-cover transform duration-300 group-hover:scale-110"
-                                            src={division.image}
-                                            alt={division.name}
+                                            src={category.image}
+                                            alt={category.name}
                                             onError={(e) => {
                                                 // Fallback for placeholder images
-                                                e.currentTarget.src = `https://via.placeholder.com/600x400/f5f5f5/666666?text=${division.slug}`
+                                                e.currentTarget.src = `https://via.placeholder.com/600x400/f5f5f5/666666?text=${category.slug}`
                                             }}
                                         />
                                         {/* Overlay on Hover */}
                                         <div className="absolute inset-0 bg-title bg-opacity-0 group-hover:bg-opacity-20 duration-300"></div>
                                     </div>
 
-                                    {/* Division Info */}
+                                    {/* Category Info */}
                                     <div className="mt-5 md:mt-6">
                                         <h4 className="font-semibold text-xl md:text-2xl dark:text-white leading-none">
-                                            {division.name}
+                                            {category.name}
                                         </h4>
                                         <p className="mt-3 text-title dark:text-white-light">
-                                            {division.tagline}
+                                            {category.tagline}
                                         </p>
                                         <div className="mt-4 inline-flex items-center text-primary font-medium gap-2 group-hover:gap-3 transition-all">
                                             <span>Explore Products</span>
