@@ -6,7 +6,7 @@ import bg from '../../assets/img/shortcode/breadcumb.jpg'
 import qualityImage from '../../assets/img/about/about-banner-03.jpg' // Placeholder
 
 // Icons
-import { FaShieldAlt, FaCertificate, FaClipboardCheck, FaLeaf, FaAward, FaCheckCircle, FaSeedling, FaBoxOpen, FaTags, FaShippingFast, FaListAlt } from 'react-icons/fa'
+import { FaShieldAlt, FaClipboardCheck, FaSeedling, FaBoxOpen, FaTags, FaShippingFast, FaListAlt } from 'react-icons/fa'
 
 // Components
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
@@ -69,66 +69,6 @@ export default function QualityCompliance() {
                             <p className="mt-3 text-base sm:text-lg">
                                 Quality parameters are aligned with buyer specifications and destination market requirements throughout the sourcing and export process.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {/* ============================================ */}
-        {/* CERTIFICATIONS SECTION */}
-        {/* ============================================ */}
-        <div className="s-pb-100">
-            <div className="container-fluid">
-                {/* Section Header */}
-                <div className="max-w-xl mx-auto mb-8 md:mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div>
-                        <FaCertificate className="mx-auto size-16 text-primary" />
-                    </div>
-                    <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
-                        Certifications & Standards
-                    </h3>
-                    <p className="mt-3">
-                        Certified operations supporting international food trade compliance
-                    </p>
-                </div>
-
-                {/* Certifications Grid */}
-                <div className="max-w-[1720px] mx-auto" data-aos="fade-up" data-aos-delay="300">
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-                        {/* FSSAI */}
-                        <div className="p-6 bg-white dark:bg-title border-2 border-primary rounded-[10px] text-center hover:shadow-lg duration-300">
-                            <FaCheckCircle className="size-12 mx-auto text-primary mb-3" />
-                            <h6 className="font-semibold text-lg">FSSAI</h6>
-                            <p className="text-sm mt-2 text-title/70 dark:text-white/70">Food Safety & Standards Authority of India</p>
-                        </div>
-
-                        {/* ISO 22000 */}
-                        <div className="p-6 bg-white dark:bg-title border-2 border-primary rounded-[10px] text-center hover:shadow-lg duration-300">
-                            <FaCheckCircle className="size-12 mx-auto text-primary mb-3" />
-                            <h6 className="font-semibold text-lg">ISO 22000</h6>
-                            <p className="text-sm mt-2 text-title/70 dark:text-white/70">Food Safety Management System</p>
-                        </div>
-
-                        {/* HACCP */}
-                        <div className="p-6 bg-white dark:bg-title border-2 border-primary rounded-[10px] text-center hover:shadow-lg duration-300">
-                            <FaCheckCircle className="size-12 mx-auto text-primary mb-3" />
-                            <h6 className="font-semibold text-lg">HACCP</h6>
-                            <p className="text-sm mt-2 text-title/70 dark:text-white/70">Hazard Analysis Critical Control Points</p>
-                        </div>
-
-                        {/* Organic */}
-                        <div className="p-6 bg-white dark:bg-title border-2 border-primary rounded-[10px] text-center hover:shadow-lg duration-300">
-                            <FaLeaf className="size-12 mx-auto text-primary mb-3" />
-                            <h6 className="font-semibold text-lg">Organic</h6>
-                            <p className="text-sm mt-2 text-title/70 dark:text-white/70">India Organic Certification</p>
-                        </div>
-
-                        {/* Halal */}
-                        <div className="p-6 bg-white dark:bg-title border-2 border-primary rounded-[10px] text-center hover:shadow-lg duration-300">
-                            <FaAward className="size-12 mx-auto text-primary mb-3" />
-                            <h6 className="font-semibold text-lg">Halal</h6>
-                            <p className="text-sm mt-2 text-title/70 dark:text-white/70">Halal Certification for Global Markets</p>
                         </div>
                     </div>
                 </div>

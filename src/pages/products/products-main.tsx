@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import bg from '../../assets/img/shortcode/breadcumb.jpg'
 
 // Data
-import { divisions } from "../../data/pavanity-data";
+import { productsData } from "../../data/products-data";
 
 // Components
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
@@ -58,19 +58,19 @@ export default function ProductsMain() {
                 {/* Product Categories Grid */}
                 <div className="max-w-[1720px] mx-auto" data-aos="fade-up" data-aos-delay="300">
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                        {divisions.map((division) => {
+                        {productsData.map((category) => {
                             return(
                                 <Link
-                                    to={`/products/${division.slug}`}
+                                    to={`/products/${category.slug}`}
                                     className="group relative overflow-hidden rounded-[10px] bg-white dark:bg-title border border-title/10 dark:border-white/10 hover:shadow-xl duration-300"
-                                    key={division.id}
+                                    key={category.id}
                                 >
                                     {/* Image Container */}
                                     <div className="relative overflow-hidden h-64 sm:h-72 lg:h-80">
                                         <img
                                             className="w-full h-full object-cover transform duration-500 group-hover:scale-110"
-                                            src={division.image}
-                                            alt={division.name}
+                                            src={category.image}
+                                            alt={category.name}
                                         />
                                         {/* Overlay on hover */}
                                         <div className="absolute inset-0 bg-title bg-opacity-0 group-hover:bg-opacity-40 duration-300"></div>
@@ -79,13 +79,13 @@ export default function ProductsMain() {
                                     {/* Content */}
                                     <div className="p-6 sm:p-8">
                                         <h3 className="text-xl md:text-2xl font-semibold leading-tight group-hover:text-primary duration-300">
-                                            {division.name}
+                                            {category.name}
                                         </h3>
                                         <p className="text-sm md:text-base text-title/70 dark:text-white/70 mt-2">
-                                            {division.tagline}
+                                            {category.tagline}
                                         </p>
                                         <p className="text-sm md:text-base mt-3 line-clamp-3">
-                                            {division.description}
+                                            {category.description}
                                         </p>
 
                                         {/* View Details Link */}

@@ -3,7 +3,7 @@ import logo from '../../assets/img/svg/logo.svg'
 import logoLight from '../../assets/img/svg/logo-light.svg'
 import { Link } from 'react-router-dom'
 import NavMenuPavanity from './nav-menu-pavanity'
-import { divisions } from '../../data/pavanity-data'
+import { productsData } from '../../data/products-data'
 
 export default function NavbarPavanity() {
     const [toggle , setToggle] = useState<boolean>(false)
@@ -42,11 +42,11 @@ export default function NavbarPavanity() {
                             {/* Products Dropdown */}
                             <li className={`relative ${['/products'].includes(current) || current.startsWith('/products/') ? 'active' : ''}`}>
                                 <Link to="/products">Products<span></span></Link>
-                                <ul className="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[250px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
-                                    {divisions.map((division) => (
-                                        <li key={division.id} className={`${current === `/products/${division.slug}` ? 'active' : ''}`}>
-                                            <Link to={`/products/${division.slug}`} className="menu-item">
-                                                {division.name}
+                                <ul className="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[280px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
+                                    {productsData.map((category) => (
+                                        <li key={category.id} className={`${current === `/products/${category.slug}` ? 'active' : ''}`}>
+                                            <Link to={`/products/${category.slug}`} className="menu-item">
+                                                {category.name}
                                             </Link>
                                         </li>
                                     ))}

@@ -200,15 +200,15 @@ export const businessEnquiries = {
 // NAVIGATION LINKS
 // ============================================
 
+// Note: Import productsData from products-data.ts to use in navbar
+// This navLinks is kept for reference but navbar uses productsData directly
+
 export const navLinks = [
     {
         name: "Products",
         path: "/products",
         hasDropdown: true,
-        dropdownItems: divisions.map(div => ({
-            name: div.name,
-            path: `/products/${div.slug}`
-        }))
+        dropdownItems: [] // Populated dynamically from productsData in navbar
     },
     {
         name: "Quality & Compliance",
