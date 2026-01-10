@@ -191,7 +191,7 @@ export const heroContent = {
 
 export const businessEnquiries = {
     heading: "For export supply discussions and commercial enquiries.",
-    email: "export@pavanity.com",
+    email: "business@pavanity.com",
     response: "Response within 24–48 working hours.",
     ctaText: "Request RFQ"
 };
@@ -262,8 +262,8 @@ export const footerContent = {
 // ============================================
 
 export const contactInfo = {
-    email: "export@pavanity.com",
+    email: "business@pavanity.com",
     phone: "+91 XXX XXX XXXX", // Update with actual phone
-    address: "Update with actual address",
+    address: "Jetpur - Rajkot 360-370, Gujarat, India",
     responseTime: "24-48 working hours"
 };

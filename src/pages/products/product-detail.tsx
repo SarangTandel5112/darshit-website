@@ -253,17 +253,17 @@ const divisionDetails: { [key: string]: any } = {
         quality:
             "Food-grade processing. Chemical-free production. Quality testing. Export documentation and certifications provided.",
     },
-    "value-added-ingredients": {
+    "agro-allied-food-products": {
         overview:
-            "Functional food ingredients including moringa powder and peanut butter for health food and nutraceutical industries.",
+            "Nutritional food ingredients including moringa powder, peanut butter, and peanut oil cake for health food and nutraceutical industries.",
         categories: [
             {
                 name: "Moringa Products",
-                examples: "Moringa Leaf Powder, Moringa Tea Cuts",
+                examples: "Moringa Powder",
             },
             {
-                name: "Peanut Butter",
-                examples: "Creamy, Crunchy, Organic Varieties",
+                name: "Peanut Products",
+                examples: "Peanut Butter, Peanut Oil Cake",
             },
             {
                 name: "Nutritional Powders",
@@ -278,7 +278,7 @@ const divisionDetails: { [key: string]: any } = {
             "Health Food Manufacturing",
             "Supplement Industry",
             "Functional Food Products",
-            "Protein Bar & Snack Production",
+            "Animal Feed Industry",
         ],
         packaging:
             "Bulk supply in 10kg, 15kg, 25kg units with moisture-proof and light-resistant packaging.",
