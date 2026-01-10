@@ -26,8 +26,8 @@ export const productsData: ProductCategory[] = [
     slug: "dehydrated-onion-garlic",
     icon: "onion",
     image: "/src/assets/img/home-v1/pdct-cgry-01.jpg",
-    tagline: "Premium Dehydrated Vegetables",
-    description: "Export-grade dehydrated onion and garlic products in powder, flakes, granules, chopped, and minced form. Sourced from premium Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
+    tagline: "Dehydrated Vegetables",
+    description: "Export-grade dehydrated onion and garlic products in powder, flakes, granules, chopped, and minced form. Sourced from Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
     products: [
       { id: 101, name: "Dehydrated Onion Powder", slug: "dehydrated-onion-powder", category: "dehydrated-onion-garlic" },
       { id: 102, name: "Dehydrated Onion Flakes", slug: "dehydrated-onion-flakes", category: "dehydrated-onion-garlic" },
@@ -43,49 +43,34 @@ export const productsData: ProductCategory[] = [
   },
   {
     id: 2,
-    name: "Millets & Grains",
-    slug: "millets-grains",
-    icon: "grain",
-    image: "/src/assets/img/home-v1/pdct-cgry-02.jpg",
-    tagline: "Ancient Grains for Modern Nutrition",
-    description: "Export-quality millets and grains including pearl millet, sorghum, finger millet, and foxtail millet. Sustainably sourced from Indian farms for health-conscious international markets and food manufacturers.",
-    products: [
-      { id: 201, name: "Pearl Millet (Bajra)", slug: "pearl-millet-bajra", category: "millets-grains" },
-      { id: 202, name: "Sorghum (Jowar)", slug: "sorghum-jowar", category: "millets-grains" },
-      { id: 203, name: "Finger Millet (Ragi)", slug: "finger-millet-ragi", category: "millets-grains" },
-      { id: 204, name: "Foxtail Millet", slug: "foxtail-millet", category: "millets-grains" },
-      { id: 205, name: "Peanuts (Raw / Shelled)", slug: "peanuts-raw-shelled", category: "millets-grains" },
-      { id: 206, name: "Groundnut Kernels", slug: "groundnut-kernels", category: "millets-grains" },
-    ]
-  },
-  {
-    id: 3,
     name: "Oilseeds",
     slug: "oilseeds",
     icon: "seed",
     image: "/src/assets/img/home-v1/pdct-cgry-03.jpg",
-    tagline: "Premium Oilseeds for Export",
-    description: "High-quality sesame seeds (black & white) and chia seeds sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
+    tagline: "Oilseeds for Export",
+    description: "High-quality sesame seeds (black & white), chia seeds, peanuts, and groundnut kernels sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
     products: [
       { id: 301, name: "Black Sesame Seeds", slug: "black-sesame-seeds", category: "oilseeds" },
       { id: 302, name: "White Sesame Seeds", slug: "white-sesame-seeds", category: "oilseeds" },
       { id: 303, name: "Chia Seeds", slug: "chia-seeds", category: "oilseeds" },
+      { id: 205, name: "Peanuts (Raw / Shelled)", slug: "peanuts-raw-shelled", category: "oilseeds" },
+      { id: 206, name: "Groundnut Kernels", slug: "groundnut-kernels", category: "oilseeds" },
     ]
   },
   {
-    id: 4,
+    id: 3,
     name: "Psyllium Husk",
     slug: "psyllium-husk",
     icon: "herb",
     image: "/src/assets/img/home-v1/ftur-pdct-01.jpg",
     tagline: "Natural Dietary Fiber",
-    description: "Premium-grade psyllium husk exported for pharmaceutical, nutraceutical, and food supplement industries. Sourced from Gujarat's finest plantations with consistent quality and compliance documentation.",
+    description: "Export-grade psyllium husk for pharmaceutical, nutraceutical, and food supplement industries. Sourced from Gujarat's finest plantations with consistent quality and compliance documentation.",
     products: [
       { id: 401, name: "Psyllium Husk", slug: "psyllium-husk", category: "psyllium-husk" },
     ]
   },
   {
-    id: 5,
+    id: 4,
     name: "Jaggery",
     slug: "jaggery",
     icon: "sugar",
@@ -98,26 +83,26 @@ export const productsData: ProductCategory[] = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     name: "Value-Added Food Ingredients",
     slug: "value-added-ingredients",
     icon: "food",
     image: "/src/assets/img/home-v2/product/pdct-01.jpg",
     tagline: "Functional Food Ingredients",
-    description: "Premium moringa leaf powder and peanut butter for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
+    description: "Moringa leaf powder and peanut butter for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
     products: [
       { id: 601, name: "Moringa Leaf Powder", slug: "moringa-leaf-powder", category: "value-added-ingredients" },
       { id: 602, name: "Peanut Butter", slug: "peanut-butter", category: "value-added-ingredients" },
     ]
   },
   {
-    id: 7,
+    id: 6,
     name: "Spices (Whole & Powder)",
     slug: "spices",
     icon: "spice",
     image: "/src/assets/img/home-v2/product/pdct-02.jpg",
     tagline: "Authentic Indian Spices",
-    description: "Export-quality whole and powdered spices including cumin, fennel, turmeric, chili, black pepper, and more. Sourced from India's premier spice-growing regions with traceability and quality assurance.",
+    description: "Export-quality whole and powdered spices including cumin, fennel, turmeric, chili, black pepper, and more. Sourced from India's spice-growing regions with traceability and quality assurance.",
     products: [
       { id: 701, name: "Cumin Seeds", slug: "cumin-seeds", category: "spices" },
       { id: 702, name: "Fenugreek Seeds", slug: "fenugreek-seeds", category: "spices" },

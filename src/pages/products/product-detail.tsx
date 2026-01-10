@@ -7,7 +7,6 @@ import placeholderImage from "../../assets/img/about/about-banner-01.jpg"; // Te
 
 // Icons
 import {
-    FaBoxes,
     FaCertificate,
     FaIndustry,
     FaLeaf,
@@ -57,36 +56,6 @@ const divisionDetails: { [key: string]: any } = {
             "Bulk supply in 10kg, 15kg, 20kg cartons with inner poly liners. Custom packaging configurations available for export orders.",
         quality:
             "Food-grade dehydration facility. Moisture content controlled per specifications. Microbiological testing. Export documentation and certificates of analysis provided.",
-    },
-    "millets-grains": {
-        overview:
-            "Bulk-supplied millets, grains, and cereal ingredients for international B2B buyers, food manufacturers, and HoReCa distribution. Sourced from agricultural regions and processed to meet export quality and buyer specifications.",
-        categories: [
-            {
-                name: "Millets",
-                examples:
-                    "Foxtail Millet, Pearl Millet, Finger Millet, Proso Millet",
-            },
-            {
-                name: "Ancient Grains",
-                examples: "Quinoa, Amaranth, Buckwheat, Sorghum",
-            },
-            { name: "Cereal Grains", examples: "Rice, Wheat, Oats, Barley" },
-            {
-                name: "Processed Grains",
-                examples: "Millet Flour, Grain Flakes, Puffed Grains",
-            },
-        ],
-        applications: [
-            "Food Manufacturing & Processing",
-            "Health Food Products",
-            "Breakfast Cereal Industry",
-            "Bakery & Snack Manufacturing",
-        ],
-        packaging:
-            "Bulk supply in 25kg, 50kg bags with food-grade inner liners. Custom packaging available for export requirements.",
-        quality:
-            "Clean sorting and grading processes. Moisture content controlled. Pesticide residue testing. Export documentation and phytosanitary certificates provided.",
     },
     "seeds-dietary-fibers": {
         overview:
@@ -190,7 +159,7 @@ const divisionDetails: { [key: string]: any } = {
     },
     oilseeds: {
         overview:
-            "Premium oilseeds including sesame seeds and chia seeds for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards.",
+            "High-quality oilseeds including sesame seeds, chia seeds, peanuts, and groundnut kernels for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards.",
         categories: [
             {
                 name: "Sesame Seeds",
@@ -201,8 +170,8 @@ const divisionDetails: { [key: string]: any } = {
                 examples: "Chia Seeds",
             },
             {
-                name: "Hulled & Natural",
-                examples: "Hulled Sesame, Natural Sesame",
+                name: "Peanuts & Groundnuts",
+                examples: "Peanuts (Raw / Shelled), Groundnut Kernels",
             },
             {
                 name: "Roasted & Raw",
@@ -222,7 +191,7 @@ const divisionDetails: { [key: string]: any } = {
     },
     "psyllium-husk": {
         overview:
-            "Premium-grade psyllium husk sourced from Gujarat's finest plantations for pharmaceutical, nutraceutical, and food supplement industries worldwide.",
+            "Export-grade psyllium husk sourced from Gujarat's finest plantations for pharmaceutical, nutraceutical, and food supplement industries worldwide.",
         categories: [
             {
                 name: "Psyllium Husk",
@@ -270,7 +239,7 @@ const divisionDetails: { [key: string]: any } = {
             },
             {
                 name: "Specialty Products",
-                examples: "Flavored Jaggery, Premium Grade",
+                examples: "Flavored Jaggery, Export Grade",
             },
         ],
         applications: [
@@ -286,7 +255,7 @@ const divisionDetails: { [key: string]: any } = {
     },
     "value-added-ingredients": {
         overview:
-            "Premium functional food ingredients including moringa powder and peanut butter for health food and nutraceutical industries.",
+            "Functional food ingredients including moringa powder and peanut butter for health food and nutraceutical industries.",
         categories: [
             {
                 name: "Moringa Products",
@@ -333,7 +302,7 @@ const divisionDetails: { [key: string]: any } = {
                 examples: "Chilli Powder, Turmeric Powder, Spice Blends",
             },
             {
-                name: "Premium Grades",
+                name: "Export Grades",
                 examples: "A-Grade, Export Quality, Organic Certified",
             },
         ],
