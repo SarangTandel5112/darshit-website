@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import bg from '../../assets/img/shortcode/breadcumb.jpg'
 
 // Icons
-import { FaTag, FaCog, FaFileContract, FaShippingFast, FaCheckCircle, FaIndustry } from 'react-icons/fa'
+import { FaTag, FaCog, FaFileContract, FaShippingFast } from 'react-icons/fa'
 
 // Components
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
@@ -209,65 +209,6 @@ export default function PrivateLabelCustomSourcing() {
                                     Products packaged with buyer branding, export documentation prepared, and shipment arranged with customs clearance support.
                                 </p>
                             </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        {/* ============================================ */}
-        {/* PRODUCT CATEGORIES FOR PRIVATE LABEL */}
-        {/* ============================================ */}
-        <div className="s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
-            <div className="container-fluid">
-                <div className="max-w-[1720px] mx-auto">
-
-                    {/* Section Header */}
-                    <div className="max-w-3xl mx-auto mb-8 md:mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
-                        <div className="mb-6">
-                            <FaIndustry className="mx-auto size-16 text-primary" />
-                        </div>
-                        <h3 className="font-medium leading-none text-2xl md:text-3xl">
-                            Product Categories Available for Private Label
-                        </h3>
-                        <p className="mt-3 text-base md:text-lg">
-                            All product categories available for custom branding, formulation, and export supply.
-                        </p>
-                    </div>
-
-                    {/* Product Categories Grid */}
-                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" data-aos="fade-up" data-aos-delay="300">
-
-                        <div className="bg-white dark:bg-title p-6 rounded-[10px] border border-primary/20 flex items-center gap-4">
-                            <FaCheckCircle className="text-primary size-6 flex-shrink-0" />
-                            <span className="font-medium text-lg">Dehydrated Products</span>
-                        </div>
-
-                        <div className="bg-white dark:bg-title p-6 rounded-[10px] border border-primary/20 flex items-center gap-4">
-                            <FaCheckCircle className="text-primary size-6 flex-shrink-0" />
-                            <span className="font-medium text-lg">Millets & Grains</span>
-                        </div>
-
-                        <div className="bg-white dark:bg-title p-6 rounded-[10px] border border-primary/20 flex items-center gap-4">
-                            <FaCheckCircle className="text-primary size-6 flex-shrink-0" />
-                            <span className="font-medium text-lg">Seeds & Dietary Fibers</span>
-                        </div>
-
-                        <div className="bg-white dark:bg-title p-6 rounded-[10px] border border-primary/20 flex items-center gap-4">
-                            <FaCheckCircle className="text-primary size-6 flex-shrink-0" />
-                            <span className="font-medium text-lg">Jaggery & Natural Sweeteners</span>
-                        </div>
-
-                        <div className="bg-white dark:bg-title p-6 rounded-[10px] border border-primary/20 flex items-center gap-4">
-                            <FaCheckCircle className="text-primary size-6 flex-shrink-0" />
-                            <span className="font-medium text-lg">Nutritional & Value-Added Ingredients</span>
-                        </div>
-
-                        <div className="bg-white dark:bg-title p-6 rounded-[10px] border border-primary/20 flex items-center gap-4">
-                            <FaCheckCircle className="text-primary size-6 flex-shrink-0" />
-                            <span className="font-medium text-lg">Healthy Snacks</span>
                         </div>
 
                     </div>

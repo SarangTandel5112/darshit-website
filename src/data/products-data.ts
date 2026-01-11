@@ -126,12 +126,6 @@ export const productsData: ProductCategory[] = [
                 slug: "peanuts-raw-shelled",
                 category: "oilseeds",
             },
-            {
-                id: 206,
-                name: "Groundnut Kernels",
-                slug: "groundnut-kernels",
-                category: "oilseeds",
-            },
         ],
     },
     {
