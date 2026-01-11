@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 // Images - Using template images as placeholders
 import bg from '../../assets/img/shortcode/breadcumb.jpg'
 import aboutImage from '../../assets/img/about/about-banner-01.jpg'
-import videoBg from '../../assets/img/about/video-bg.jpg'
 
 // Icons
 import { FaIndustry, FaShieldAlt, FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa'
@@ -138,29 +137,6 @@ export default function AboutPavanity() {
                             Supply of food ingredients and agri-based products for international B2B and HoReCa distribution channels.
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        {/* ============================================ */}
-        {/* MANUFACTURING & FACILITIES SECTION */}
-        {/* (Using video background section as inspiration) */}
-        {/* ============================================ */}
-        <div className="container-fluid" data-aos="fade-up" data-aos-delay="300">
-            <div className="bg-overlay before:bg-title before:bg-opacity-70 h-64 sm:h-96 lg:h-[500px] flex items-center justify-center max-w-[1720px] mx-auto rounded-[10px]" style={{backgroundImage:`url(${videoBg})`}}>
-                <div className="text-center px-6">
-                    <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold">
-                        Manufacturing & Export Infrastructure
-                    </h3>
-                    <p className="text-white text-lg sm:text-xl mt-4 max-w-2xl mx-auto">
-                        Equipped with processing, packaging, and quality control facilities aligned with international food safety standards.
-                    </p>
-                    <Link
-                        to="/contact"
-                        className="inline-block mt-8 bg-primary text-white px-8 py-4 text-base md:text-lg font-medium rounded-[5px] hover:bg-opacity-90 duration-300"
-                    >
-                        Request Business Enquiry
-                    </Link>
                 </div>
             </div>
         </div>
