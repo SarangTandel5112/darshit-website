@@ -403,8 +403,8 @@ export default function DivisionDetail() {
                         {/* Content Column */}
                         <div className="flex items-center py-8 sm:py-12 px-5 sm:px-12 md:px-8 lg:pr-12 lg:pl-16 2xl:pl-[160px] bg-[#F8F8F9] dark:bg-dark-secondary">
                             <div className="lg:max-w-[600px]">
-                                <div>
-                                    <FaIndustry className="size-16 text-primary" />
+                                <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center">
+                                    <FaIndustry className="size-16 text-white" />
                                 </div>
                                 <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
                                     Division Overview
@@ -437,8 +437,8 @@ export default function DivisionDetail() {
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        <div>
-                            <FaLeaf className="mx-auto size-16 text-primary" />
+                        <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center mx-auto">
+                            <FaLeaf className="size-16 text-white" />
                         </div>
                         <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
                             Available Products
@@ -458,21 +458,21 @@ export default function DivisionDetail() {
                             {category.products.map((product) => (
                                 <div
                                     key={product.id}
-                                    className="p-6 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group"
+                                    className="bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group overflow-hidden"
                                 >
-                                    <div className="flex items-start gap-3">
-                                        <svg
-                                            className="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                        >
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clipRule="evenodd"
+                                    {/* Product Image */}
+                                    {product.image && (
+                                        <div className="aspect-square overflow-hidden">
+                                            <img
+                                                src={product.image}
+                                                alt={product.name}
+                                                className="w-full h-full object-cover group-hover:scale-110 duration-500"
                                             />
-                                        </svg>
-                                        <h5 className="font-semibold text-base md:text-lg group-hover:text-primary duration-300">
+                                        </div>
+                                    )}
+                                    {/* Product Name */}
+                                    <div className="p-4">
+                                        <h5 className="font-semibold text-base md:text-lg group-hover:text-primary duration-300 text-center">
                                             {product.name}
                                         </h5>
                                     </div>
@@ -509,7 +509,9 @@ export default function DivisionDetail() {
                         {/* Applications */}
                         <div>
                             <div className="flex items-center gap-3 mb-4">
-                                <FaLeaf className="size-12 text-primary" />
+                                <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center">
+                                    <FaLeaf className="size-10 text-white" />
+                                </div>
                                 <h4 className="font-semibold text-xl md:text-2xl">
                                     Target Applications
                                 </h4>
@@ -557,7 +559,9 @@ export default function DivisionDetail() {
                         {/* Quality Standards */}
                         <div className="p-8 md:p-10 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px]">
                             <div className="flex items-center gap-3 mb-4">
-                                <FaShieldAlt className="size-12 text-primary" />
+                                <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center">
+                                    <FaShieldAlt className="size-10 text-white" />
+                                </div>
                                 <h4 className="font-semibold text-xl md:text-2xl">
                                     Quality & Compliance
                                 </h4>
@@ -570,7 +574,9 @@ export default function DivisionDetail() {
                         {/* Packaging Options */}
                         <div className="p-8 md:p-10 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px]">
                             <div className="flex items-center gap-3 mb-4">
-                                <FaCertificate className="size-12 text-primary" />
+                                <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center">
+                                    <FaCertificate className="size-10 text-white" />
+                                </div>
                                 <h4 className="font-semibold text-xl md:text-2xl">
                                     Packaging Options
                                 </h4>

@@ -57,8 +57,8 @@ export default function QualityCompliance() {
                     {/* Content Column */}
                     <div className="flex items-center py-8 sm:py-12 px-5 sm:px-12 md:px-8 lg:pr-12 lg:pl-16 2xl:pl-[160px] bg-[#F8F8F9] dark:bg-dark-secondary">
                         <div className="lg:max-w-[600px]">
-                            <div>
-                                <FaShieldAlt className="size-16 text-primary" />
+                            <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center">
+                                <FaShieldAlt className="size-16 text-white" />
                             </div>
                             <h2 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
                                 Quality & Compliance Approach
@@ -78,11 +78,11 @@ export default function QualityCompliance() {
         {/* ============================================ */}
         {/* QUALITY CONTROL PROCESSES - NEW STRUCTURE */}
         {/* ============================================ */}
-        <div className="s-pb-100 bg-[#F8F8F9] dark:bg-dark-secondary">
+        <div className="s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
             <div className="container-fluid">
                 <div className="max-w-xl mx-auto mb-8 md:mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div>
-                        <FaClipboardCheck className="mx-auto size-16 text-primary" />
+                    <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center mx-auto">
+                        <FaClipboardCheck className="size-16 text-white" />
                     </div>
                     <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
                         Quality Control Processes
@@ -96,7 +96,9 @@ export default function QualityCompliance() {
 
                     {/* 1. Sourcing Verification */}
                     <div className="p-6 md:p-8 bg-white dark:bg-title rounded-[10px] hover:shadow-lg duration-300">
-                        <FaSeedling className="size-12 text-primary mb-4" />
+                        <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                            <FaSeedling className="size-10 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mb-3">Sourcing Verification</h5>
                         <p className="text-base">
                             Agricultural products are sourced through direct farmers and regional suppliers with origin details and agreed quality parameters reviewed prior to export coordination.
@@ -105,7 +107,9 @@ export default function QualityCompliance() {
 
                     {/* 2. Specification Alignment */}
                     <div className="p-6 md:p-8 bg-white dark:bg-title rounded-[10px] hover:shadow-lg duration-300">
-                        <FaClipboardCheck className="size-12 text-primary mb-4" />
+                        <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                            <FaClipboardCheck className="size-10 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mb-3">Specification Alignment</h5>
                         <p className="text-base">
                             Product specifications are aligned with buyer requirements and intended applications before export preparation.
@@ -114,7 +118,9 @@ export default function QualityCompliance() {
 
                     {/* 3. Packaging & Labeling Review */}
                     <div className="p-6 md:p-8 bg-white dark:bg-title rounded-[10px] hover:shadow-lg duration-300">
-                        <FaTags className="size-12 text-primary mb-4" />
+                        <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                            <FaTags className="size-10 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mb-3">Packaging & Labeling Review</h5>
                         <p className="text-base">
                             Export packaging and labeling are coordinated to align with destination market regulations and buyer specifications.
@@ -123,7 +129,9 @@ export default function QualityCompliance() {
 
                     {/* 4. Pre-Shipment Review */}
                     <div className="p-6 md:p-8 bg-white dark:bg-title rounded-[10px] hover:shadow-lg duration-300">
-                        <FaShippingFast className="size-12 text-primary mb-4" />
+                        <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                            <FaShippingFast className="size-10 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mb-3">Pre-Shipment Review</h5>
                         <p className="text-base">
                             Export documentation and shipment details are reviewed prior to dispatch to support international trade requirements.
@@ -132,7 +140,9 @@ export default function QualityCompliance() {
 
                     {/* 5. Traceability Support */}
                     <div className="p-6 md:p-8 bg-white dark:bg-title rounded-[10px] hover:shadow-lg duration-300">
-                        <FaListAlt className="size-12 text-primary mb-4" />
+                        <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                            <FaListAlt className="size-10 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mb-3">Traceability Support</h5>
                         <p className="text-base">
                             Batch-level traceability is supported through coordinated records from sourcing to shipment for reference and compliance purposes.
@@ -141,7 +151,9 @@ export default function QualityCompliance() {
 
                     {/* 6. Documentation */}
                     <div className="p-6 md:p-8 bg-white dark:bg-title rounded-[10px] hover:shadow-lg duration-300">
-                        <FaBoxOpen className="size-12 text-primary mb-4" />
+                        <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                            <FaBoxOpen className="size-10 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mb-3">Export Documentation</h5>
                         <p className="text-base">
                             Export certificates, phytosanitary certificates, and compliance documentation provided as per destination requirements.

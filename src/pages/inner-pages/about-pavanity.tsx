@@ -57,8 +57,8 @@ export default function AboutPavanity() {
                     {/* Content Column */}
                     <div className="flex items-center py-8 sm:py-12 px-5 sm:px-12 md:px-8 lg:pr-12 lg:pl-16 2xl:pl-[160px] bg-[#F8F8F9] dark:bg-dark-secondary">
                         <div className="lg:max-w-[600px]">
-                            <div>
-                                <FaIndustry className="size-16 text-primary" />
+                            <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center">
+                                <FaIndustry className="size-16 text-white" />
                             </div>
                             <h2 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
                                 About Pavanity Global
@@ -85,8 +85,8 @@ export default function AboutPavanity() {
             <div className="container-fluid">
                 {/* Section Header */}
                 <div className="max-w-xl mx-auto mb-8 md:mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div>
-                        <FaCheckCircle className="mx-auto size-16 text-primary" />
+                    <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center mx-auto">
+                        <FaCheckCircle className="size-16 text-white" />
                     </div>
                     <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
                         Why Pavanity Global
@@ -102,7 +102,9 @@ export default function AboutPavanity() {
                     {/* Feature 1: Quality & Compliance */}
                     <div className="p-6 pb-0 rounded-[10px] relative">
                         <div className="w-[1px] h-[120px] absolute right-0 top-[30%] hidden 2xl:block border-l border-dashed border-primary"></div>
-                        <FaShieldAlt className="size-12 text-primary" />
+                        <div className="w-14 h-14 bg-primary rounded-[10px] flex items-center justify-center">
+                            <FaShieldAlt className="size-8 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mt-3 md:mt-7">Quality & Compliance</h5>
                         <p className="mt-2 sm:mt-3">
                             Trade conducted in alignment with applicable food safety regulations, certifications, and destination requirements.
@@ -112,7 +114,9 @@ export default function AboutPavanity() {
                     {/* Feature 3: Supply Continuity */}
                     <div className="p-6 pb-0 rounded-[10px] relative">
                         <div className="w-[1px] h-[120px] absolute right-0 top-[30%] hidden 2xl:block border-l border-dashed border-primary"></div>
-                        <FaIndustry className="size-12 text-primary" />
+                        <div className="w-14 h-14 bg-primary rounded-[10px] flex items-center justify-center">
+                            <FaIndustry className="size-8 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mt-3 md:mt-7">Supply Continuity</h5>
                         <p className="mt-2 sm:mt-3">
                             Export supply structured to support recurring volumes, predictable schedules, and long-term planning.
@@ -122,7 +126,9 @@ export default function AboutPavanity() {
                     {/* Feature 4: Custom Product Development */}
                     <div className="p-6 pb-0 rounded-[10px] relative">
                         <div className="w-[1px] h-[120px] absolute right-0 top-[30%] hidden 2xl:block border-l border-dashed border-primary"></div>
-                        <FaAward className="size-12 text-primary" />
+                        <div className="w-14 h-14 bg-primary rounded-[10px] flex items-center justify-center">
+                            <FaAward className="size-8 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mt-3 md:mt-7">Custom Product Development</h5>
                         <p className="mt-2 sm:mt-3">
                             Export supply under buyer specifications and custom formulations, subject to applicable market and regulatory requirements.
@@ -131,7 +137,9 @@ export default function AboutPavanity() {
 
                     {/* Feature 5: B2B Focus */}
                     <div className="p-6 pb-0 rounded-[10px] relative">
-                        <FaUsers className="size-12 text-primary" />
+                        <div className="w-14 h-14 bg-primary rounded-[10px] flex items-center justify-center">
+                            <FaUsers className="size-8 text-white" />
+                        </div>
                         <h5 className="font-semibold text-xl md:text-2xl mt-3 md:mt-7">B2B & HoReCa Focus</h5>
                         <p className="mt-2 sm:mt-3">
                             Supply of food ingredients and agri-based products for international B2B and HoReCa distribution channels.

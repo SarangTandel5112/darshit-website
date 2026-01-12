@@ -1,5 +1,3 @@
-import Switcher from '../switcher';
-
 interface NavMenuProps {
     toggle: boolean;
     setToggle: React.Dispatch<React.SetStateAction<boolean>>;
@@ -16,12 +14,6 @@ export default function NavMenuPavanity({toggle, setToggle}: NavMenuProps) {
                 <path className="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
             </svg>
         </button>
-
-        {/* Divider */}
-        <div className="w-[1px] bg-title/20 dark:bg-white/20 h-7 hidden sm:block"></div>
-
-        {/* Dark Mode Switcher */}
-        <Switcher/>
     </div>
   )
 }

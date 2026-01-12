@@ -53,7 +53,9 @@ export default function ContactPavanity() {
                     </div>
                     <div className="max-w-[725px] w-full mx-auto lg:mx-0">
                         <div data-aos="fade-up">
-                            <FaEnvelope className="size-16 text-primary" />
+                            <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center">
+                                <FaEnvelope className="size-16 text-white" />
+                            </div>
                             <h2 className="leading-none font-medium mt-3 md:mt-6 text-2xl md:text-3xl">Business Enquiries</h2>
                             <p className="max-w-[474px] mt-3 md:mt-4 font-medium">
                                 For export supply discussions, commercial enquiries, and bulk order requirements—submit your details and our team will respond within 24-48 working hours.
@@ -133,7 +135,9 @@ export default function ContactPavanity() {
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-center">
                         {/* Email */}
                         <div className="p-8 bg-[#F8F8F9] dark:bg-dark-secondary rounded-[10px]">
-                            <FaEnvelope className="mx-auto size-12 text-primary mb-4" />
+                            <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mx-auto mb-4">
+                                <FaEnvelope className="size-10 text-white" />
+                            </div>
                             <h4 className="text-xl font-semibold mb-2">Email</h4>
                             <p className="text-base">business@pavanity.com</p>
                         </div>
