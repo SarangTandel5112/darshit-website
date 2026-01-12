@@ -78,7 +78,7 @@ export default function QualityCompliance() {
         {/* ============================================ */}
         {/* QUALITY CONTROL PROCESSES - NEW STRUCTURE */}
         {/* ============================================ */}
-        <div className="s-pb-100 bg-[#F8F8F9] dark:bg-dark-secondary">
+        <div className="s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
             <div className="container-fluid">
                 <div className="max-w-xl mx-auto mb-8 md:mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
                     <div>
