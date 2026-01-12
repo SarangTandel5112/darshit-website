@@ -7,7 +7,7 @@ import FooterPavanity from '../../components/footer/footer-pavanity'
 import ScrollToTop from '../../components/scroll-to-top'
 
 // Hero Background Image
-const bg = '/images/home background.jpg'
+const bg = '/images/home-background.jpg'
 
 // Pavanity Data
 import {
