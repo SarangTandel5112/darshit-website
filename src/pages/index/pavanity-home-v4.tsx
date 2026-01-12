@@ -206,13 +206,11 @@ export default function PavanityHomeV4() {
                                     {/* Category Image */}
                                     <div className="relative overflow-hidden rounded-[10px]">
                                         <img
-                                            className="w-full h-[300px] md:h-[350px] object-cover transform duration-300 group-hover:scale-110 block relative z-0"
+                                            className="w-full h-[300px] md:h-[350px] object-cover transform duration-300 group-hover:scale-110 block"
                                             src={category.image}
                                             alt={category.name}
                                             loading="lazy"
                                         />
-                                        {/* Overlay on Hover */}
-                                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 duration-300 pointer-events-none z-10"></div>
                                     </div>
 
                                     {/* Category Info */}
