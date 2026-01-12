@@ -92,7 +92,7 @@ export default function NavbarPavanity() {
                         Request RFQ
                     </Link>
 
-                    <NavMenuPavanity toggle={toggle} setToggle={setToggle}/>
+                    <NavMenu toggle={toggle} setToggle={setToggle}/>
                 </div>
             </div>
         </div>
