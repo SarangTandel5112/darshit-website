@@ -58,7 +58,7 @@ export default function PavanityHomeV4() {
         {/* ============================================ */}
         {/* SECTION 1: HERO SECTION */}
         {/* ============================================ */}
-        <div className="pt-40 sm:pt-52 lg:pt-[280px] pb-52 lg:pb-[350px] 2xl:pb-[450px] bg-overlay dark:before:bg-title dark:before:bg-opacity-70" style={{backgroundImage:`url(${bg})`}}>
+        <div className="pt-40 sm:pt-52 lg:pt-[280px] pb-52 lg:pb-[350px] 2xl:pb-[450px] bg-overlay before:bg-title before:bg-opacity-60 dark:before:bg-title dark:before:bg-opacity-70" style={{backgroundImage:`url(${bg})`}}>
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <div className="max-w-[751px] mx-auto">
                     {/* Main Headline */}
@@ -204,14 +204,16 @@ export default function PavanityHomeV4() {
                                     key={index}
                                 >
                                     {/* Category Image */}
-                                    <div className="relative overflow-hidden rounded-[10px]">
+                                    <div className="relative overflow-hidden rounded-[10px] bg-gray-100 dark:bg-gray-800">
                                         <img
                                             className="w-full h-[300px] md:h-[350px] object-cover transform duration-300 group-hover:scale-110"
                                             src={category.image}
                                             alt={category.name}
+                                            onLoad={() => console.log('Image loaded:', category.name, category.image)}
                                             onError={(e) => {
+                                                console.error('Image failed to load:', category.name, category.image);
                                                 // Fallback for placeholder images
-                                                e.currentTarget.src = `https://via.placeholder.com/600x400/f5f5f5/666666?text=${category.slug}`
+                                                e.currentTarget.src = `https://via.placeholder.com/600x400/f5f5f5/666666?text=${encodeURIComponent(category.name)}`
                                             }}
                                         />
                                         {/* Overlay on Hover */}
