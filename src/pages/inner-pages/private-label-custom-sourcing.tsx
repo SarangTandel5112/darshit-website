@@ -49,8 +49,8 @@ export default function PrivateLabelCustomSourcing() {
 
                     {/* Content Section */}
                     <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-                        <div className="mb-6">
-                            <FaTag className="mx-auto size-16 text-primary" />
+                        <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center mx-auto mb-6">
+                            <FaTag className="size-16 text-white" />
                         </div>
                         <h2 className="font-medium leading-none text-2xl md:text-3xl lg:text-4xl">
                             Private Label Food Supply & Custom Ingredient Sourcing
@@ -86,7 +86,9 @@ export default function PrivateLabelCustomSourcing() {
 
                         {/* Service 1: Private Label Supply */}
                         <div className="bg-white dark:bg-title p-6 md:p-8 rounded-[10px] border border-title/10 dark:border-white/10 hover:shadow-lg duration-300">
-                            <FaTag className="size-12 text-primary mb-4" />
+                            <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                                <FaTag className="size-10 text-white" />
+                            </div>
                             <h4 className="text-xl md:text-2xl font-semibold mb-3">Private Label Supply</h4>
                             <p className="text-sm md:text-base">
                                 Export supply under buyer branding and packaging specifications. Products delivered with buyer-defined labels, formulations, and compliance documentation.
@@ -95,7 +97,9 @@ export default function PrivateLabelCustomSourcing() {
 
                         {/* Service 2: Custom Formulation */}
                         <div className="bg-white dark:bg-title p-6 md:p-8 rounded-[10px] border border-title/10 dark:border-white/10 hover:shadow-lg duration-300">
-                            <FaCog className="size-12 text-primary mb-4" />
+                            <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                                <FaCog className="size-10 text-white" />
+                            </div>
                             <h4 className="text-xl md:text-2xl font-semibold mb-3">Custom Formulation</h4>
                             <p className="text-sm md:text-base">
                                 Product development aligned with buyer specifications, ingredient preferences, and market requirements. Support for custom blends, flavors, and functional formulations.
@@ -104,7 +108,9 @@ export default function PrivateLabelCustomSourcing() {
 
                         {/* Service 3: Contract Sourcing */}
                         <div className="bg-white dark:bg-title p-6 md:p-8 rounded-[10px] border border-title/10 dark:border-white/10 hover:shadow-lg duration-300">
-                            <FaFileContract className="size-12 text-primary mb-4" />
+                            <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                                <FaFileContract className="size-10 text-white" />
+                            </div>
                             <h4 className="text-xl md:text-2xl font-semibold mb-3">Contract Sourcing</h4>
                             <p className="text-sm md:text-base">
                                 Long-term supply agreements structured for recurring volumes and predictable delivery schedules. Commercial terms defined for bulk orders and multi-year contracts.
@@ -113,7 +119,9 @@ export default function PrivateLabelCustomSourcing() {
 
                         {/* Service 4: Bulk Export Supply */}
                         <div className="bg-white dark:bg-title p-6 md:p-8 rounded-[10px] border border-title/10 dark:border-white/10 hover:shadow-lg duration-300">
-                            <FaShippingFast className="size-12 text-primary mb-4" />
+                            <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center mb-4">
+                                <FaShippingFast className="size-10 text-white" />
+                            </div>
                             <h4 className="text-xl md:text-2xl font-semibold mb-3">Bulk Export Supply</h4>
                             <p className="text-sm md:text-base">
                                 Bulk food ingredients and agricultural products for international buyers. Export documentation, quality certificates, and customs clearance support included.

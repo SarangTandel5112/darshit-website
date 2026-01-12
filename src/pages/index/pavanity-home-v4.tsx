@@ -97,8 +97,8 @@ export default function PavanityHomeV4() {
                 <div className="hv3-service-wrapper bg-white dark:bg-title rounded-[10px] -mt-16 relative z-10 xl:flex xl:justify-between sm:gap-5 grid sm:grid-cols-2">
                     {/* Card 1: Export-Ready */}
                     <div className="group flex items-center gap-5 p-6">
-                        <div className="w-14 md:w-[70px] h-14 p-[10px] md:h-[70px] flex items-center justify-center border border-primary rounded-[10px] group-hover:bg-primary duration-300">
-                            <FaShieldAlt className="text-primary group-hover:text-white duration-300 text-2xl md:text-3xl" />
+                        <div className="w-14 md:w-[70px] h-14 p-[10px] md:h-[70px] flex items-center justify-center bg-primary rounded-[10px] duration-300">
+                            <FaShieldAlt className="text-white duration-300 text-2xl md:text-3xl" />
                         </div>
                         <div>
                             <h5 className="font-medium leading-none text-lg lg:text-xl">Export-Ready</h5>
@@ -109,8 +109,8 @@ export default function PavanityHomeV4() {
 
                     {/* Card 2: Quality & Compliance */}
                     <div className="group flex items-center gap-5 p-6">
-                        <div className="w-14 md:w-[70px] h-14 p-[10px] md:h-[70px] flex items-center justify-center border border-primary rounded-[10px] group-hover:bg-primary duration-300">
-                            <FaCheckCircle className="text-primary group-hover:text-white duration-300 text-2xl md:text-3xl" />
+                        <div className="w-14 md:w-[70px] h-14 p-[10px] md:h-[70px] flex items-center justify-center bg-primary rounded-[10px] duration-300">
+                            <FaCheckCircle className="text-white duration-300 text-2xl md:text-3xl" />
                         </div>
                         <div>
                             <h5 className="font-medium leading-none text-lg lg:text-xl">Quality & Compliance</h5>
@@ -121,8 +121,8 @@ export default function PavanityHomeV4() {
 
                     {/* Card 3: International Trade */}
                     <div className="group flex items-center gap-5 p-6">
-                        <div className="w-14 md:w-[70px] h-14 p-[10px] md:h-[70px] flex items-center justify-center border border-primary rounded-[10px] group-hover:bg-primary duration-300">
-                            <FaGlobeAmericas className="text-primary group-hover:text-white duration-300 text-2xl md:text-3xl" />
+                        <div className="w-14 md:w-[70px] h-14 p-[10px] md:h-[70px] flex items-center justify-center bg-primary rounded-[10px] duration-300">
+                            <FaGlobeAmericas className="text-white duration-300 text-2xl md:text-3xl" />
                         </div>
                         <div>
                             <h5 className="font-medium leading-none text-lg lg:text-xl">International Trade</h5>
@@ -153,10 +153,10 @@ export default function PavanityHomeV4() {
                             return(
                                 <div className="bg-white dark:bg-title p-6 md:p-8 rounded-[10px] hover:shadow-lg duration-300" key={index}>
                                     {/* Icon */}
-                                    <div className="w-14 h-14 md:w-16 md:h-16 bg-primary bg-opacity-10 rounded-[10px] flex items-center justify-center mb-5">
-                                        {index === 0 && <FaTruck className="text-primary text-2xl md:text-3xl" />}
-                                        {index === 1 && <FaFileAlt className="text-primary text-2xl md:text-3xl" />}
-                                        {index === 2 && <FaShieldAlt className="text-primary text-2xl md:text-3xl" />}
+                                    <div className="w-14 h-14 md:w-16 md:h-16 bg-primary rounded-[10px] flex items-center justify-center mb-5">
+                                        {index === 0 && <FaTruck className="text-white text-2xl md:text-3xl" />}
+                                        {index === 1 && <FaFileAlt className="text-white text-2xl md:text-3xl" />}
+                                        {index === 2 && <FaShieldAlt className="text-white text-2xl md:text-3xl" />}
                                     </div>
 
                                     {/* Title */}
@@ -257,11 +257,11 @@ export default function PavanityHomeV4() {
                                     key={index}
                                 >
                                     {/* Icon */}
-                                    <div className="w-12 h-12 md:w-14 md:h-14 border-2 border-primary rounded-[10px] flex items-center justify-center group-hover:bg-primary duration-300 mb-5">
-                                        {index === 0 && <FaBox className="text-primary group-hover:text-white duration-300 text-xl md:text-2xl" />}
-                                        {index === 1 && <FaCheckCircle className="text-primary group-hover:text-white duration-300 text-xl md:text-2xl" />}
-                                        {index === 2 && <FaGlobeAmericas className="text-primary group-hover:text-white duration-300 text-xl md:text-2xl" />}
-                                        {index === 3 && <FaShieldAlt className="text-primary group-hover:text-white duration-300 text-xl md:text-2xl" />}
+                                    <div className="w-12 h-12 md:w-14 md:h-14 bg-primary rounded-[10px] flex items-center justify-center duration-300 mb-5">
+                                        {index === 0 && <FaBox className="text-white duration-300 text-xl md:text-2xl" />}
+                                        {index === 1 && <FaCheckCircle className="text-white duration-300 text-xl md:text-2xl" />}
+                                        {index === 2 && <FaGlobeAmericas className="text-white duration-300 text-xl md:text-2xl" />}
+                                        {index === 3 && <FaShieldAlt className="text-white duration-300 text-xl md:text-2xl" />}
                                     </div>
 
                                     {/* Title */}
