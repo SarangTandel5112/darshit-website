@@ -58,7 +58,7 @@ export default function PavanityHomeV4() {
         {/* ============================================ */}
         {/* SECTION 1: HERO SECTION */}
         {/* ============================================ */}
-        <div className="pt-40 sm:pt-52 lg:pt-[280px] pb-52 lg:pb-[350px] 2xl:pb-[450px] bg-overlay before:bg-title before:bg-opacity-60 dark:before:bg-title dark:before:bg-opacity-70" style={{backgroundImage:`url(${bg})`}}>
+        <div className="pt-40 sm:pt-52 lg:pt-[280px] pb-52 lg:pb-[350px] 2xl:pb-[450px] bg-overlay before:bg-title before:bg-opacity-30 dark:before:bg-title dark:before:bg-opacity-40" style={{backgroundImage:`url(${bg})`}}>
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <div className="max-w-[751px] mx-auto">
                     {/* Main Headline */}
