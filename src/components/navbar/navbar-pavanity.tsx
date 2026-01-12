@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import logo from '../../assets/img/svg/logo.svg'
 import logoLight from '../../assets/img/svg/logo-light.svg'
 import { Link } from 'react-router-dom'
-import NavMenuPavanity from './nav-menu-pavanity'
+import NavMenu from './nav-menu'
 import { productsData } from '../../data/products-data'
 
 export default function NavbarPavanity() {
