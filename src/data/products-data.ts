@@ -148,7 +148,7 @@ export const productsData: ProductCategory[] = [
         name: "Psyllium Husk",
         slug: "psyllium-husk",
         icon: "herb",
-        image: "/src/assets/img/home-v1/ftur-pdct-01.jpg",
+        image: "/images/moringa .jpg",
         tagline: "Natural Dietary Fiber",
         description:
             "Export-grade psyllium husk for pharmaceutical, nutraceutical, and food supplement industries. Sourced from Gujarat's finest plantations with consistent quality and compliance documentation.",
@@ -158,6 +158,7 @@ export const productsData: ProductCategory[] = [
                 name: "Psyllium Husk",
                 slug: "psyllium-husk",
                 category: "psyllium-husk",
+                image: "/images/moringa .jpg",
             },
         ],
     },
