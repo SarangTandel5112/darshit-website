@@ -458,21 +458,21 @@ export default function DivisionDetail() {
                             {category.products.map((product) => (
                                 <div
                                     key={product.id}
-                                    className="p-6 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group"
+                                    className="bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group overflow-hidden"
                                 >
-                                    <div className="flex items-start gap-3">
-                                        <svg
-                                            className="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                        >
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clipRule="evenodd"
+                                    {/* Product Image */}
+                                    {product.image && (
+                                        <div className="aspect-square overflow-hidden">
+                                            <img
+                                                src={product.image}
+                                                alt={product.name}
+                                                className="w-full h-full object-cover group-hover:scale-110 duration-500"
                                             />
-                                        </svg>
-                                        <h5 className="font-semibold text-base md:text-lg group-hover:text-primary duration-300">
+                                        </div>
+                                    )}
+                                    {/* Product Name */}
+                                    <div className="p-4">
+                                        <h5 className="font-semibold text-base md:text-lg group-hover:text-primary duration-300 text-center">
                                             {product.name}
                                         </h5>
                                     </div>

@@ -6,8 +6,8 @@ import NavbarPavanity from '../../components/navbar/navbar-pavanity'
 import FooterPavanity from '../../components/footer/footer-pavanity'
 import ScrollToTop from '../../components/scroll-to-top'
 
-// Hero Background Image (placeholder - replace with actual image)
-import bg from '../../assets/img/home-v4/banner-bg.jpg'
+// Hero Background Image
+const bg = '/images/home background.jpg'
 
 // Pavanity Data
 import {
