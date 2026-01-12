@@ -68,12 +68,10 @@ export default function ProductsMain() {
                                     {/* Image Container */}
                                     <div className="relative overflow-hidden h-64 sm:h-72 lg:h-80">
                                         <img
-                                            className="w-full h-full object-cover transform duration-500 group-hover:scale-110"
+                                            className="w-full h-full object-cover transform duration-500 group-hover:scale-110 block"
                                             src={category.image}
                                             alt={category.name}
                                         />
-                                        {/* Overlay on hover */}
-                                        <div className="absolute inset-0 bg-title bg-opacity-0 group-hover:bg-opacity-40 duration-300"></div>
                                     </div>
 
                                     {/* Content */}
