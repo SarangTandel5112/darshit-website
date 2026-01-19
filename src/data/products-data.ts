@@ -226,7 +226,7 @@ export const productsData: ProductCategory[] = [
         name: "Spices",
         slug: "spices",
         icon: "spice",
-        image: "/images/spices-main.jpeg",
+        image: "/images/spices-profile.jpeg",
         tagline: "Authentic Indian Spices",
         description:
             "Export-quality whole and powdered spices including cumin, fennel, turmeric, chili, black pepper, and more. Sourced from India's spice-growing regions with traceability and quality assurance.",
