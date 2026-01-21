@@ -66,7 +66,7 @@ export default function PavanityHomeV4() {
             {/* SECTION 1: HERO SECTION */}
             {/* ============================================ */}
             <div
-                className="pt-40 sm:pt-52 lg:pt-[280px] pb-52 lg:pb-[350px] 2xl:pb-[450px] bg-overlay before:bg-title before:bg-opacity-20 dark:before:bg-title dark:before:bg-opacity-30"
+                className="pt-40 sm:pt-52 lg:pt-[280px] pb-52 lg:pb-[350px] 2xl:pb-[450px] bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${bg})` }}
             >
                 <div
@@ -76,17 +76,35 @@ export default function PavanityHomeV4() {
                 >
                     <div className="max-w-[751px] mx-auto">
                         {/* Main Headline */}
-                        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">
+                        <h2
+                            className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug font-bold"
+                            style={{
+                                textShadow:
+                                    "2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6)",
+                            }}
+                        >
                             {heroContent.h1}
                         </h2>
 
                         {/* Sub Headline */}
-                        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug mt-3 md:mt-4 font-secondary text-primary font-normal">
+                        <h3
+                            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug mt-3 md:mt-4 font-secondary text-white font-medium"
+                            style={{
+                                textShadow:
+                                    "2px 2px 6px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.6)",
+                            }}
+                        >
                             {heroContent.h2}
                         </h3>
 
                         {/* Description */}
-                        <p className="mt-3 md:mt-4 text-base md:text-lg">
+                        <p
+                            className="mt-3 md:mt-4 text-base md:text-lg text-white"
+                            style={{
+                                textShadow:
+                                    "1px 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.6)",
+                            }}
+                        >
                             {heroContent.description}
                         </p>
 
@@ -94,16 +112,23 @@ export default function PavanityHomeV4() {
                         <div>
                             <Link
                                 to="/products"
-                                className="group md:text-lg font-medium leading-none text-title dark:text-white flex items-center gap-3 mt-3"
+                                className="group md:text-lg font-medium leading-none text-white flex items-center gap-3 mt-3"
+                                style={{
+                                    textShadow:
+                                        "1px 1px 4px rgba(0, 0, 0, 0.8)",
+                                }}
                             >
                                 <span className="text-underline leading-none">
                                     View Products
                                 </span>
                                 <svg
-                                    className="fill-current text-title dark:text-white w-5 md:w-7"
+                                    className="fill-current text-white w-5 md:w-7"
                                     viewBox="0 0 31 12"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
+                                    style={{
+                                        filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8))",
+                                    }}
                                 >
                                     <path d="M30.2303 6.58892C30.5232 6.29603 30.5232 5.82116 30.2303 5.52826L25.4574 0.755293C25.1645 0.462399 24.6896 0.462399 24.3967 0.755293C24.1038 1.04819 24.1038 1.52306 24.3967 1.81595L28.6393 6.05859L24.3967 10.3012C24.1038 10.5941 24.1038 11.069 24.3967 11.3619C24.6896 11.6548 25.1645 11.6548 25.4574 11.3619L30.2303 6.58892ZM0 6.80859L29.7 6.80859V5.30859L0 5.30859L0 6.80859Z" />
                                 </svg>
