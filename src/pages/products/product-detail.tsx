@@ -420,6 +420,65 @@ export default function DivisionDetail() {
                                         Request Product Catalog
                                     </Link>
                                 </div>
+
+                                {/* Product Specifications */}
+                                {category.specifications && (
+                                    <div className="mt-8 md:mt-10">
+                                        <h4 className="font-semibold text-xl md:text-2xl mb-4">
+                                            Product Specifications
+                                        </h4>
+                                        <div className="space-y-3">
+                                            {category.specifications.size && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">Size:</span>
+                                                    <span className="text-base">{category.specifications.size}</span>
+                                                </div>
+                                            )}
+                                            {category.specifications.origin && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">Origin:</span>
+                                                    <span className="text-base">{category.specifications.origin}</span>
+                                                </div>
+                                            )}
+                                            {category.specifications.color && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">Color:</span>
+                                                    <span className="text-base">{category.specifications.color}</span>
+                                                </div>
+                                            )}
+                                            {category.specifications.aroma && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">Aroma:</span>
+                                                    <span className="text-base">{category.specifications.aroma}</span>
+                                                </div>
+                                            )}
+                                            {category.specifications.packing && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">Packing:</span>
+                                                    <span className="text-base">{category.specifications.packing}</span>
+                                                </div>
+                                            )}
+                                            {category.specifications.qualities && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">Qualities:</span>
+                                                    <span className="text-base">{category.specifications.qualities}</span>
+                                                </div>
+                                            )}
+                                            {category.specifications.standard && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">Standard:</span>
+                                                    <span className="text-base">{category.specifications.standard}</span>
+                                                </div>
+                                            )}
+                                            {category.specifications.moq && (
+                                                <div className="flex">
+                                                    <span className="font-semibold text-base w-32 flex-shrink-0">MOQ:</span>
+                                                    <span className="text-base">{category.specifications.moq}</span>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -456,8 +515,9 @@ export default function DivisionDetail() {
                     >
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
                             {category.products.map((product) => (
-                                <div
+                                <Link
                                     key={product.id}
+                                    to={`/products/${slug}/${product.slug}`}
                                     className="bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group overflow-hidden"
                                 >
                                     {/* Product Image */}
@@ -476,7 +536,7 @@ export default function DivisionDetail() {
                                             {product.name}
                                         </h5>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
