@@ -1,11 +1,24 @@
 // Product Categories and Items for Pavanity Global
 
+export interface ProductSpecifications {
+    size?: string;
+    origin?: string;
+    color?: string;
+    aroma?: string;
+    packing?: string;
+    qualities?: string;
+    standard?: string;
+    moq?: string;
+}
+
 export interface Product {
     id: number;
     name: string;
     slug: string;
     category: string;
     image?: string;
+    description?: string;
+    specifications?: ProductSpecifications;
 }
 
 export interface ProductCategory {
@@ -17,6 +30,7 @@ export interface ProductCategory {
     tagline: string;
     description: string;
     products: Product[];
+    specifications?: ProductSpecifications;
 }
 
 // Complete Products Catalog
@@ -37,6 +51,16 @@ export const productsData: ProductCategory[] = [
                 slug: "dehydrated-onion-powder",
                 category: "dehydrated-onion-garlic",
                 image: "/images/dehydrated-onions-powder.jpeg",
+                description: "White Onion Powder provides a smooth, concentrated onion profile designed for flavour mixes, instant foods, sauces, and large-scale manufacturing. Pavanity Global emphasizes precise specifications, consistent supply cycles, and organized export processes to support reliable procurement. The powder blends easily into dry and liquid formulations, ensuring predictable performance in diverse production environments.",
+                specifications: {
+                    size: "80 To 100 mesh",
+                    origin: "Gujarat - India",
+                    color: "White",
+                    aroma: "Strong Aroma Represents Indian Origin Products",
+                    packing: "20 KG, strong poly bag inside cartoon",
+                    qualities: "A-grade, Commercial Grade",
+                    moq: "20 FCL 7–8 MT, 40 FCL H/C 17–18 MT",
+                },
             },
             {
                 id: 102,
@@ -44,6 +68,16 @@ export const productsData: ProductCategory[] = [
                 slug: "dehydrated-onion-flakes",
                 category: "dehydrated-onion-garlic",
                 image: "/images/dehydrated-onion-flakes.jpeg",
+                description: "White Onion Flakes deliver a consistent onion profile that aligns well with diverse food formulations across global markets. Pavanity Global focuses on providing clear product parameters, steady availability, and well-managed export coordination, ensuring a smooth and predictable sourcing experience. The flakes integrate easily into seasonings, dry blends, sauces, and processed preparations, offering a reliable ingredient that supports uniformity and efficiency in production workflows.",
+                specifications: {
+                    size: "8 To 15 MM",
+                    origin: "Gujarat - India",
+                    color: "White",
+                    aroma: "Strong Aroma Represents Indian Origin Products",
+                    packing: "14 KG, strong poly bag inside cartoon",
+                    qualities: "A-grade, Commercial Grade",
+                    moq: "20 FCL 7–8 MT, 40 FCL H/C 17–18 MT",
+                },
             },
             {
                 id: 103,
@@ -51,6 +85,16 @@ export const productsData: ProductCategory[] = [
                 slug: "dehydrated-onion-granules",
                 category: "dehydrated-onion-garlic",
                 image: "/images/DEHYDRATED-ONION-GRANUELS.jpeg",
+                description: "White Onion Granules offer a uniform particle size that fits smoothly into blends, seasoning mixes, and industrial food preparations across global markets. Pavanity Global provides well-defined specifications, steady availability, and organized export coordination to support consistent sourcing. The granules disperse evenly in dry and wet formulations, giving a reliable ingredient option for streamlined production workflows.",
+                specifications: {
+                    size: "24 To 60 mesh",
+                    origin: "Gujarat - India",
+                    color: "White",
+                    aroma: "Strong Aroma Represents Indian Origin Products",
+                    packing: "20 KG, strong poly bag inside cartoon",
+                    qualities: "A-grade, Commercial Grade",
+                    moq: "20 FCL 7–8 MT, 40 FCL H/C 17–18 MT",
+                },
             },
             {
                 id: 107,
@@ -58,6 +102,16 @@ export const productsData: ProductCategory[] = [
                 slug: "dehydrated-onion-chopped",
                 category: "dehydrated-onion-garlic",
                 image: "/images/dehydrated-onion-chopped.jpeg",
+                description: "White Onion Chopped provides a balanced texture and clean onion character suitable for ready mixes, dehydrated blends, and large-scale processing applications. Pavanity Global ensures clear product parameters, dependable supply, and structured export handling, making procurement predictable and efficient. The chopped format integrates easily into formulations requiring visible onion pieces and consistent performance.",
+                specifications: {
+                    size: "3 To 5 MM",
+                    origin: "Gujarat - India",
+                    color: "White",
+                    aroma: "Strong Aroma Represents Indian Origin Products",
+                    packing: "20 KG, strong poly bag inside cartoon",
+                    qualities: "A-grade, Commercial Grade",
+                    moq: "20 FCL 7–8 MT, 40 FCL H/C 17–18 MT",
+                },
             },
             {
                 id: 108,
@@ -65,6 +119,16 @@ export const productsData: ProductCategory[] = [
                 slug: "dehydrated-onion-minced",
                 category: "dehydrated-onion-garlic",
                 image: "/images/dehydrated-onions-minced.jpeg",
+                description: "White Onion Minced delivers fine, controlled sizing that works well in seasoning bases, dry blends, sauces, and prepared food systems. With defined specifications, stable availability, and smooth export coordination, Pavanity Global supports a seamless sourcing experience. The minced form offers uniform distribution in recipes and helps maintain consistency in production.",
+                specifications: {
+                    size: "1 To 3 MM",
+                    origin: "Gujarat - India",
+                    color: "White",
+                    aroma: "Strong Aroma Represents Indian Origin Products",
+                    packing: "20 KG, strong poly bag inside cartoon",
+                    qualities: "A-grade, Commercial Grade",
+                    moq: "20 FCL 7–8 MT, 40 FCL H/C 17–18 MT",
+                },
             },
             {
                 id: 104,
@@ -152,6 +216,15 @@ export const productsData: ProductCategory[] = [
         tagline: "Natural Dietary Fiber",
         description:
             "Export-grade psyllium husk for pharmaceutical, nutraceutical, and food supplement industries. Sourced from Gujarat's finest plantations with consistent quality and compliance documentation.",
+        specifications: {
+            size: "80 to 100 mesh, 100 to 120 mesh",
+            origin: "Gujarat, India",
+            color: "White",
+            aroma: "Strong Aroma represents Indian Origin product",
+            packing: "20 Kg. and 25 Kg. strong Poly bag inside cartoon",
+            qualities: "A - Grade, Commercial grade",
+            standard: "ELB, LB and SB",
+        },
         products: [
             {
                 id: 401,

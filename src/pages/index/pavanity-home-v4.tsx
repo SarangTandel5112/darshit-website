@@ -418,7 +418,7 @@ export default function PavanityHomeV4() {
             {/* ============================================ */}
             {/* SECTION 5: GLOBAL MARKETS (5 Regions) */}
             {/* ============================================ */}
-            <div className="s-py-100">
+            <div className="s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
                 <div className="container">
                     <div className="max-w-1366 mx-auto">
                         {/* Section Header */}
@@ -431,31 +431,45 @@ export default function PavanityHomeV4() {
                                 Global Markets
                             </h2>
                             <p className="mt-4 text-base md:text-lg text-title dark:text-white-light max-w-[700px] mx-auto">
-                                Serving food businesses across key global
-                                regions.
+                                Serving food businesses across key global regions.
                             </p>
                         </div>
 
-                        {/* 5 Region Badges */}
+                        {/* Two Column Layout: Map + Regions */}
                         <div
-                            className="flex flex-wrap items-center justify-center gap-5 md:gap-6"
+                            className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-12 items-center"
                             data-aos="fade-up"
                             data-aos-delay="300"
                         >
-                            {globalMarkets.map(
-                                (market: GlobalMarket, index: number) => {
-                                    return (
-                                        <div
-                                            className="px-8 md:px-10 py-5 md:py-6 bg-white dark:bg-title border-2 border-primary rounded-[10px] hover:bg-primary hover:text-white dark:hover:text-white group duration-300"
-                                            key={index}
-                                        >
-                                            <h4 className="text-lg md:text-xl font-semibold text-center whitespace-nowrap group-hover:text-white">
-                                                {market.region}
-                                            </h4>
-                                        </div>
-                                    );
-                                }
-                            )}
+                            {/* Left: World Map */}
+                            <div className="order-2 lg:order-1">
+                                <img
+                                    src="/images/map.png"
+                                    alt="Global Markets Map"
+                                    className="w-full h-auto"
+                                />
+                            </div>
+
+                            {/* Right: Region List */}
+                            <div className="order-1 lg:order-2 space-y-4 md:space-y-5">
+                                {globalMarkets.map(
+                                    (market: GlobalMarket, index: number) => {
+                                        return (
+                                            <div
+                                                key={index}
+                                                className="flex items-center gap-4 p-4 md:p-5 bg-white dark:bg-title border-2 border-primary/20 rounded-[10px] hover:border-primary hover:shadow-lg group duration-300"
+                                            >
+                                                <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl group-hover:scale-110 duration-300">
+                                                    {index + 1}
+                                                </div>
+                                                <h4 className="text-base md:text-lg font-semibold group-hover:text-primary duration-300">
+                                                    {market.region}
+                                                </h4>
+                                            </div>
+                                        );
+                                    }
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
