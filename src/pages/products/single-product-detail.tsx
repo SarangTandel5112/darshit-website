@@ -252,9 +252,8 @@ export default function SingleProductDetail() {
                                 {category.products
                                     .filter((p) => p.slug !== productSlug)
                                     .map((relatedProduct) => (
-                                        <Link
+                                        <div
                                             key={relatedProduct.id}
-                                            to={`/products/${categorySlug}/${relatedProduct.slug}`}
                                             className="bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group overflow-hidden"
                                         >
                                             {/* Product Image */}
@@ -272,8 +271,15 @@ export default function SingleProductDetail() {
                                                 <h5 className="font-semibold text-base md:text-lg group-hover:text-primary duration-300 text-center">
                                                     {relatedProduct.name}
                                                 </h5>
+                                                {/* View Product Button */}
+                                                <Link
+                                                    to={`/products/${categorySlug}/${relatedProduct.slug}`}
+                                                    className="inline-block w-full mt-4 bg-primary text-white px-4 py-2 text-sm font-medium rounded-[5px] hover:bg-opacity-90 duration-300 text-center"
+                                                >
+                                                    View Product
+                                                </Link>
                                             </div>
-                                        </Link>
+                                        </div>
                                     ))}
                             </div>
                         </div>
