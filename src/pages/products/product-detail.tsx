@@ -25,21 +25,101 @@ import Aos from "aos";
 
 // Product category detailed content - Export-focused
 const divisionDetails: { [key: string]: any } = {
-    "dehydrated-onion-garlic": {
+    "white-onion": {
         overview:
-            "Bulk-supplied dehydrated onion and garlic products for international B2B buyers, food manufacturers, and HoReCa distribution. Processed under controlled dehydration conditions to meet export quality standards and buyer specifications.",
+            "Bulk-supplied dehydrated white onion products for international B2B buyers, food manufacturers, and HoReCa distribution. Processed under controlled dehydration conditions to meet export quality standards and buyer specifications.",
         categories: [
             {
-                name: "Dehydrated Onion",
-                examples: "Onion Powder, Onion Flakes, Onion Granules, Onion Chopped, Onion Minced",
+                name: "Dehydrated White Onion",
+                examples: "White Onion Powder, White Onion Flakes, White Onion Granules, White Onion Chopped, White Onion Minced",
             },
+            {
+                name: "Custom Blends",
+                examples: "Onion Mix, Seasoning Bases, Curry Powders",
+            },
+            {
+                name: "Food-Grade Ingredients",
+                examples: "Culinary Applications, Seasoning Manufacturing",
+            },
+        ],
+        applications: [
+            "Food Manufacturing & Processing",
+            "Instant Food Products",
+            "HoReCa (Hotels, Restaurants, Catering)",
+            "Ready-to-Eat Meal Manufacturers",
+        ],
+        packaging:
+            "Bulk supply in 10kg, 15kg, 20kg cartons with inner poly liners. Custom packaging configurations available for export orders.",
+        quality:
+            "Food-grade dehydration facility. Moisture content controlled per specifications. Microbiological testing. Export documentation and certificates of analysis provided.",
+    },
+    "red-onion": {
+        overview:
+            "Bulk-supplied dehydrated red onion products for international B2B buyers, food manufacturers, and HoReCa distribution. Processed under controlled dehydration conditions to meet export quality standards and buyer specifications.",
+        categories: [
+            {
+                name: "Dehydrated Red Onion",
+                examples: "Red Onion Powder, Red Onion Flakes, Red Onion Granules, Red Onion Chopped, Red Onion Minced",
+            },
+            {
+                name: "Custom Blends",
+                examples: "Onion Mix, Seasoning Bases, Curry Powders",
+            },
+            {
+                name: "Food-Grade Ingredients",
+                examples: "Culinary Applications, Seasoning Manufacturing",
+            },
+        ],
+        applications: [
+            "Food Manufacturing & Processing",
+            "Instant Food Products",
+            "HoReCa (Hotels, Restaurants, Catering)",
+            "Ready-to-Eat Meal Manufacturers",
+        ],
+        packaging:
+            "Bulk supply in 10kg, 15kg, 20kg cartons with inner poly liners. Custom packaging configurations available for export orders.",
+        quality:
+            "Food-grade dehydration facility. Moisture content controlled per specifications. Microbiological testing. Export documentation and certificates of analysis provided.",
+    },
+    "pink-onion": {
+        overview:
+            "Bulk-supplied dehydrated pink onion products for international B2B buyers, food manufacturers, and HoReCa distribution. Processed under controlled dehydration conditions to meet export quality standards and buyer specifications.",
+        categories: [
+            {
+                name: "Dehydrated Pink Onion",
+                examples: "Pink Onion Powder, Pink Onion Flakes, Pink Onion Granules, Pink Onion Chopped, Pink Onion Minced",
+            },
+            {
+                name: "Custom Blends",
+                examples: "Onion Mix, Seasoning Bases, Curry Powders",
+            },
+            {
+                name: "Food-Grade Ingredients",
+                examples: "Culinary Applications, Seasoning Manufacturing",
+            },
+        ],
+        applications: [
+            "Food Manufacturing & Processing",
+            "Instant Food Products",
+            "HoReCa (Hotels, Restaurants, Catering)",
+            "Ready-to-Eat Meal Manufacturers",
+        ],
+        packaging:
+            "Bulk supply in 10kg, 15kg, 20kg cartons with inner poly liners. Custom packaging configurations available for export orders.",
+        quality:
+            "Food-grade dehydration facility. Moisture content controlled per specifications. Microbiological testing. Export documentation and certificates of analysis provided.",
+    },
+    "garlic": {
+        overview:
+            "Bulk-supplied dehydrated garlic products for international B2B buyers, food manufacturers, and HoReCa distribution. Processed under controlled dehydration conditions to meet export quality standards and buyer specifications.",
+        categories: [
             {
                 name: "Dehydrated Garlic",
                 examples: "Garlic Powder, Garlic Flakes, Garlic Granules, Garlic Chopped, Garlic Minced",
             },
             {
                 name: "Custom Blends",
-                examples: "Onion-Garlic Mix, Seasoning Bases, Curry Powders",
+                examples: "Garlic Mix, Seasoning Bases, Curry Powders",
             },
             {
                 name: "Food-Grade Ingredients",
@@ -515,9 +595,8 @@ export default function DivisionDetail() {
                     >
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
                             {category.products.map((product) => (
-                                <Link
+                                <div
                                     key={product.id}
-                                    to={`/products/${slug}/${product.slug}`}
                                     className="bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group overflow-hidden"
                                 >
                                     {/* Product Image */}
@@ -535,13 +614,20 @@ export default function DivisionDetail() {
                                         <h5 className="font-semibold text-base md:text-lg group-hover:text-primary duration-300 text-center">
                                             {product.name}
                                         </h5>
+                                        {/* View Product Button */}
+                                        <Link
+                                            to={`/products/${slug}/${product.slug}`}
+                                            className="inline-block w-full mt-4 bg-primary text-white px-4 py-2 text-sm font-medium rounded-[5px] hover:bg-opacity-90 duration-300 text-center"
+                                        >
+                                            View Product
+                                        </Link>
                                     </div>
-                                </Link>
+                                </div>
                             ))}
                         </div>
                     </div>
 
-                    {/* Contact CTA below products */}
+                    {/* View Products Button */}
                     <div className="max-w-3xl mx-auto mt-12 text-center" data-aos="fade-up" data-aos-delay="500">
                         <p className="text-base md:text-lg">
                             Need detailed specifications, pricing, or MOQ information for any of these products?
