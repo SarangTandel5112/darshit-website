@@ -270,8 +270,6 @@ const divisionDetails: { [key: string]: any } = {
             "Certified processing facility. Purity testing. Microbiological analysis. Export documentation provided.",
     },
     "psyllium-husk": {
-        overview:
-            "Export-grade psyllium husk sourced from Gujarat's finest plantations for pharmaceutical, nutraceutical, and food supplement industries worldwide.",
         categories: [
             {
                 name: "Psyllium Husk",

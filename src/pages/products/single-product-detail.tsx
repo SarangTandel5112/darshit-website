@@ -134,87 +134,93 @@ export default function SingleProductDetail() {
                                         <h4 className="font-semibold text-xl md:text-2xl mb-4">
                                             Product Specifications
                                         </h4>
-                                        <div className="space-y-3">
-                                            {product.specifications.size && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        Size:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.size}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {product.specifications.origin && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        Origin:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.origin}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {product.specifications.color && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        Color:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.color}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {product.specifications.aroma && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        Aroma:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.aroma}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {product.specifications.packing && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        Packing:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.packing}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {product.specifications.qualities && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        Qualities:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.qualities}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {product.specifications.standard && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        Standard:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.standard}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {product.specifications.moq && (
-                                                <div className="flex">
-                                                    <span className="font-semibold text-base w-32 flex-shrink-0">
-                                                        MOQ:
-                                                    </span>
-                                                    <span className="text-base">
-                                                        {product.specifications.moq}
-                                                    </span>
-                                                </div>
-                                            )}
+                                        <div className="bg-white dark:bg-dark-secondary rounded-[10px] overflow-hidden border border-title/10 dark:border-white/10">
+                                            <div className="overflow-x-auto">
+                                                <table className="w-full">
+                                                    <tbody>
+                                                        {product.specifications.origin && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Origin
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.origin}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.size && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Size
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.size}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.color && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Color
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.color}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.aroma && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Aroma
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.aroma}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.qualities && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Qualities
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.qualities}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.packing && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Packing
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.packing}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.standard && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Standard
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.standard}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.moq && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    MOQ
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.moq}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 )}
