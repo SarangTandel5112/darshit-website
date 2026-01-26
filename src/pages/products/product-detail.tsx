@@ -239,19 +239,19 @@ const divisionDetails: { [key: string]: any } = {
     },
     oilseeds: {
         overview:
-            "High-quality oilseeds including sesame seeds, chia seeds, peanuts, and groundnut kernels for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards.",
+            "High-quality oilseeds including sesame seeds, chia seeds, and premium peanuts for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards.",
         categories: [
             {
                 name: "Sesame Seeds",
-                examples: "Black Sesame Seeds, Natural Sesame Seeds",
+                examples: "Black Sesame Seeds, Hulled Sesame Seeds, Natural Sesame Seeds",
             },
             {
                 name: "Super Seeds",
                 examples: "Chia Seeds",
             },
             {
-                name: "Peanuts & Groundnuts",
-                examples: "Peanuts (Raw / Shelled), Groundnut Kernels",
+                name: "Premium Peanuts",
+                examples: "Java Peanuts, TJ Peanuts, Bold Peanuts",
             },
             {
                 name: "Roasted & Raw",
