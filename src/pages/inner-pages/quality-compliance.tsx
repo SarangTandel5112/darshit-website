@@ -293,6 +293,58 @@ export default function QualityCompliance() {
         </div>
 
         {/* ============================================ */}
+        {/* STUFFING CAPACITY - CONTAINER LOADING */}
+        {/* ============================================ */}
+        <div className="s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
+            <div className="container-fluid">
+                <div
+                    className="max-w-xl mx-auto mb-8 md:mb-12 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <h3 className="font-medium leading-none text-2xl md:text-3xl">
+                        Stuffing Capacity – Container Loading
+                    </h3>
+                    <p className="mt-3 text-base md:text-lg">
+                        Maximum loading capacity for Psyllium Husk containers
+                    </p>
+                </div>
+
+                <div
+                    className="max-w-4xl mx-auto"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
+                    <div className="bg-white dark:bg-title rounded-[10px] overflow-hidden shadow-lg">
+                        <div className="overflow-x-auto">
+                            <table className="w-full">
+                                <thead>
+                                    <tr className="bg-primary">
+                                        <th className="p-4 text-left text-white text-base md:text-lg font-semibold">Container Size</th>
+                                        <th className="p-4 text-center text-white text-base md:text-lg font-semibold">Maximum Loading Without Pallet</th>
+                                        <th className="p-4 text-center text-white text-base md:text-lg font-semibold">Maximum Loading With Pallets</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b border-title/10 dark:border-white/10 hover:bg-[#F8F8F9] dark:hover:bg-dark-secondary duration-300">
+                                        <td className="p-4 text-base font-medium">20 ft Container</td>
+                                        <td className="p-4 text-base text-center">9 MT</td>
+                                        <td className="p-4 text-base text-center">5 MT</td>
+                                    </tr>
+                                    <tr className="border-b border-title/10 dark:border-white/10 hover:bg-[#F8F8F9] dark:hover:bg-dark-secondary duration-300">
+                                        <td className="p-4 text-base font-medium">40 ft Container</td>
+                                        <td className="p-4 text-base text-center">20 MT</td>
+                                        <td className="p-4 text-base text-center">10 MT</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* ============================================ */}
         {/* CONTACT CTA */}
         {/* ============================================ */}
         <div className="s-pb-100">
