@@ -164,9 +164,138 @@ export default function QualityCompliance() {
         </div>
 
         {/* ============================================ */}
-        {/* CONTACT CTA */}
+        {/* CONTAINER LOAD CAPACITY */}
         {/* ============================================ */}
         <div className="s-py-100">
+            <div className="container-fluid">
+                <div className="max-w-xl mx-auto mb-8 md:mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center mx-auto">
+                        <FaShippingFast className="size-16 text-white" />
+                    </div>
+                    <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
+                        Container Load Capacity
+                    </h3>
+                    <p className="mt-3">
+                        Standard FCL capacity for dehydrated onion and garlic products
+                    </p>
+                </div>
+
+                <div className="max-w-[1720px] mx-auto space-y-8" data-aos="fade-up" data-aos-delay="300">
+                    {/* Dehydrated Garlic Products Table */}
+                    <div className="bg-white dark:bg-title rounded-[10px] overflow-hidden">
+                        <div className="bg-primary p-4">
+                            <h4 className="text-white text-xl md:text-2xl font-semibold">Dehydrated Garlic Products</h4>
+                        </div>
+                        <div className="overflow-x-auto">
+                            <table className="w-full">
+                                <thead>
+                                    <tr className="bg-[#F8F8F9] dark:bg-dark-secondary">
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">Sr No.</th>
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">Product</th>
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">20' FCL</th>
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">40' FCL</th>
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">Packing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">1</td>
+                                        <td className="p-4 text-base">Dehydrated Garlic Cloves</td>
+                                        <td className="p-4 text-base">12 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">2</td>
+                                        <td className="p-4 text-base">Dehydrated Garlic Powder</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">3</td>
+                                        <td className="p-4 text-base">Dehydrated Garlic Granules</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">4</td>
+                                        <td className="p-4 text-base">Dehydrated Garlic Minced</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">5</td>
+                                        <td className="p-4 text-base">Dehydrated Garlic Chopped</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {/* Dehydrated Onion Products Table */}
+                    <div className="bg-white dark:bg-title rounded-[10px] overflow-hidden">
+                        <div className="bg-primary p-4">
+                            <h4 className="text-white text-xl md:text-2xl font-semibold">Dehydrated Onion Products (White/Red/Pink)</h4>
+                        </div>
+                        <div className="overflow-x-auto">
+                            <table className="w-full">
+                                <thead>
+                                    <tr className="bg-[#F8F8F9] dark:bg-dark-secondary">
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">Product</th>
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">20' FCL</th>
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">40' FCL</th>
+                                        <th className="text-left p-4 font-semibold text-base md:text-lg">Packing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">Dehydrated White/Red/Pink Onion Flakes</td>
+                                        <td className="p-4 text-base">7 MT</td>
+                                        <td className="p-4 text-base">16 MT</td>
+                                        <td className="p-4 text-base">14 KG Paper bag inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">Dehydrated White/Red/Pink Onion Powder</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">Dehydrated White/Red/Pink Onion Chopped</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">Dehydrated White/Red/Pink Onion Granules</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                    <tr className="border-t border-title/10 dark:border-white/10">
+                                        <td className="p-4 text-base">Dehydrated White/Red/Pink Onion Minced</td>
+                                        <td className="p-4 text-base">14–15 MT</td>
+                                        <td className="p-4 text-base">24 MT</td>
+                                        <td className="p-4 text-base">20 KG / 25 KG Box packing inside poly bag</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* ============================================ */}
+        {/* CONTACT CTA */}
+        {/* ============================================ */}
+        <div className="s-pb-100">
             <div className="container-fluid">
                 <div className="max-w-3xl mx-auto text-center p-8 md:p-12 bg-primary rounded-[10px]" data-aos="fade-up" data-aos-delay="100">
                     <h3 className="text-white text-2xl md:text-3xl font-semibold">

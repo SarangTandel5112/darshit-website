@@ -115,7 +115,7 @@ const divisionDetails: { [key: string]: any } = {
         categories: [
             {
                 name: "Dehydrated Garlic",
-                examples: "Garlic Powder, Garlic Flakes, Garlic Granules, Garlic Chopped, Garlic Minced",
+                examples: "Garlic Powder, Garlic Granules, Garlic Chopped, Garlic Minced, Garlic Cloves",
             },
             {
                 name: "Custom Blends",
@@ -243,7 +243,7 @@ const divisionDetails: { [key: string]: any } = {
         categories: [
             {
                 name: "Sesame Seeds",
-                examples: "Black Sesame Seeds, White Sesame Seeds",
+                examples: "Black Sesame Seeds, Natural Sesame Seeds",
             },
             {
                 name: "Super Seeds",
