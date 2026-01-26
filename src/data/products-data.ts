@@ -148,6 +148,7 @@ export const productsData: ProductCategory[] = [
                 slug: "red-onion-powder",
                 category: "red-onion",
                 image: "/images/dehydrated-onions-powder.jpeg",
+                description: "Red Onion Powder delivers a smooth, concentrated onion note formulated for sauces, dry mixes, instant foods, and large-scale manufacturing. Pavanity Global ensures accurate specifications, stable supply cycles, and streamlined export processes for dependable sourcing. The powder blends seamlessly into various systems, supporting controlled flavour delivery and uniform results across production lines.",
             },
             {
                 id: 202,
@@ -155,6 +156,7 @@ export const productsData: ProductCategory[] = [
                 slug: "red-onion-flakes",
                 category: "red-onion",
                 image: "/images/dehydrated-onion-flakes.jpeg",
+                description: "Red Onion Flakes provide a defined cut size with a natural red tone that performs effectively in seasoning blends, dehydrated preparations, and processed formulations across international markets. Pavanity Global follows clear product parameters, ensures steady availability, and maintains organized export coordination to support reliable procurement. The flakes integrate evenly into dry and semi-moist systems, offering consistent behaviour and smooth handling across production workflows.",
             },
             {
                 id: 203,
@@ -162,6 +164,7 @@ export const productsData: ProductCategory[] = [
                 slug: "red-onion-granules",
                 category: "red-onion",
                 image: "/images/DEHYDRATED-ONION-GRANUELS.jpeg",
+                description: "Red Onion Granules offer consistent particle uniformity suitable for flavour blends, spice applications, and industrial recipes across global markets. Pavanity Global supports sourcing through steady availability, rigorous parameter clarity, and organized export coordination. The granules disperse evenly in all types of formulations, enhancing operational efficiency and performance consistency during production.",
             },
             {
                 id: 204,
@@ -169,6 +172,7 @@ export const productsData: ProductCategory[] = [
                 slug: "red-onion-chopped",
                 category: "red-onion",
                 image: "/images/dehydrated-onion-chopped.jpeg",
+                description: "Red Onion Chopped features an even particle size suitable for applications that require both flavour contribution and visible onion presence. Pavanity Global offers structured specifications, predictable availability, and well-managed export logistics to enable uninterrupted sourcing. The chopped format fits cleanly into mixes, bases, and industrial preparations, supporting uniform dispersion and dependable processing performance.",
             },
             {
                 id: 205,
@@ -176,6 +180,7 @@ export const productsData: ProductCategory[] = [
                 slug: "red-onion-minced",
                 category: "red-onion",
                 image: "/images/dehydrated-onions-minced.jpeg",
+                description: "Red Onion Minced provides fine, controlled sizing that distributes smoothly in seasoning bases, sauce formulations, and processed food systems. Pavanity Global maintains defined quality parameters, stable supply planning, and coordinated export handling to ensure consistency throughout the procurement process. The minced particles blend efficiently into dry and wet applications, supporting balanced flavour release and predictable production outcomes.",
             },
         ],
     },
@@ -195,6 +200,7 @@ export const productsData: ProductCategory[] = [
                 slug: "pink-onion-powder",
                 category: "pink-onion",
                 image: "/images/dehydrated-onions-powder.jpeg",
+                description: "Pink Onion Powder offers a smooth, refined onion note that blends effectively into mixes, ready preparations, and industrial recipes. Pavanity Global provides well-structured parameters, predictable supply cycles, and organized export support to maintain consistent sourcing. The powder integrates easily into dry and wet systems, offering uniform flavour delivery and stable production performance.",
             },
             {
                 id: 302,
@@ -202,6 +208,7 @@ export const productsData: ProductCategory[] = [
                 slug: "pink-onion-flakes",
                 category: "pink-onion",
                 image: "/images/dehydrated-onion-flakes.jpeg",
+                description: "Pink Onion Flakes feature a mild onion profile and a soft natural hue that aligns well with seasoning blends, dry mixes, and processed preparations across international markets. Pavanity Global provides defined specifications, consistent availability, and organized export coordination to maintain smooth sourcing experiences. The flakes disperse evenly in formulations, supporting steady performance and balanced product outcomes.",
             },
             {
                 id: 303,
@@ -209,6 +216,7 @@ export const productsData: ProductCategory[] = [
                 slug: "pink-onion-granules",
                 category: "pink-onion",
                 image: "/images/DEHYDRATED-ONION-GRANUELS.jpeg",
+                description: "Pink Onion Granules provide uniform particle distribution suited for seasoning blends, dry formulations, and large-scale processing applications. Pavanity Global ensures clarity in specifications, regular availability, and streamlined export coordination for reliable procurement. The granules incorporate cleanly into production workflows, supporting operational consistency and efficient blending.",
             },
             {
                 id: 304,
@@ -216,6 +224,7 @@ export const productsData: ProductCategory[] = [
                 slug: "pink-onion-chopped",
                 category: "pink-onion",
                 image: "/images/dehydrated-onion-chopped.jpeg",
+                description: "Pink Onion Chopped offers a uniform particulate size designed for formulations requiring visible onion texture with controlled colour influence. Pavanity Global maintains structured specifications, dependable supply planning, and efficient export management to ensure consistent sourcing. The chopped format integrates cleanly into blends and food systems, delivering predictable distribution and stable functionality.",
             },
             {
                 id: 305,
@@ -223,6 +232,7 @@ export const productsData: ProductCategory[] = [
                 slug: "pink-onion-minced",
                 category: "pink-onion",
                 image: "/images/dehydrated-onions-minced.jpeg",
+                description: "Pink Onion Minced delivers fine, accurate sizing that works well in sauces, mixes, and industrial preparations where even flavour distribution is required. Pavanity Global supports consistent sourcing through clear parameters, steady availability, and organized export processes. The minced format disperses smoothly across dry and liquid applications, contributing to balanced formulation performance.",
             },
         ],
     },
@@ -234,7 +244,7 @@ export const productsData: ProductCategory[] = [
         image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
         tagline: "Dehydrated Garlic",
         description:
-            "Export-grade dehydrated garlic products in powder, flakes, granules, chopped, and minced form. Sourced from Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
+            "Export-grade dehydrated garlic products in powder, granules, chopped, minced, and cloves form. Sourced from Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
         products: [
             {
                 id: 401,
@@ -242,13 +252,12 @@ export const productsData: ProductCategory[] = [
                 slug: "garlic-powder",
                 category: "garlic",
                 image: "/images/powder.jpeg",
-            },
-            {
-                id: 402,
-                name: "Dehydrated Garlic Flakes",
-                slug: "garlic-flakes",
-                category: "garlic",
-                image: "/images/flakes.jpeg",
+                description: "Dehydrated Garlic Powder delivers a smooth and concentrated garlic note ideal for flavour blends, sauces, instant mixes, and ready foods. Pavanity Global offers accurate specifications, steady supply, and well-structured export coordination for dependable procurement. The fine powder blends quickly and ensures uniform taste across all applications.",
+                specifications: {
+                    size: "Powder / 80–100 mesh",
+                    origin: "India",
+                    packing: "10 kgs, 20 kgs, 25 kgs - Laminated paperbag and box",
+                },
             },
             {
                 id: 403,
@@ -256,6 +265,12 @@ export const productsData: ProductCategory[] = [
                 slug: "garlic-granules",
                 category: "garlic",
                 image: "/images/granuels.jpeg",
+                description: "Dehydrated Garlic Granules provide uniform sizing suitable for spice blends, seasonings, and general food preparation. Pavanity Global ensures clear specifications, regular availability, and smooth export management, making sourcing simple. The granules mix evenly in both dry and liquid uses, supporting consistency in the final product.",
+                specifications: {
+                    size: "Granules / 0.5–1 mm",
+                    origin: "India",
+                    packing: "10 kgs, 20 kgs, 25 kgs - Laminated paperbag and box",
+                },
             },
             {
                 id: 404,
@@ -263,6 +278,12 @@ export const productsData: ProductCategory[] = [
                 slug: "garlic-chopped",
                 category: "garlic",
                 image: "/images/chopped.jpeg",
+                description: "Dehydrated Garlic Chopped offers a balanced texture and clear garlic profile suitable for a wide range of food uses. Pavanity Global provides defined product details, steady availability, and organized export support to ensure smooth sourcing. The chopped pieces blend easily into various preparations where a visible garlic presence is preferred.",
+                specifications: {
+                    size: "Chopped / 3–5 mm",
+                    origin: "India",
+                    packing: "10 kgs, 20 kgs, 25 kgs - Laminated paperbag and box",
+                },
             },
             {
                 id: 405,
@@ -270,6 +291,25 @@ export const productsData: ProductCategory[] = [
                 slug: "garlic-minced",
                 category: "garlic",
                 image: "/images/minced.jpeg",
+                description: "Dehydrated Garlic Minced features fine, even particle sizing that fits well into seasonings, mixes, sauces, and everyday food applications. Pavanity Global maintains consistent quality, reliable supply, and coordinated export handling, helping buyers receive a dependable ingredient. The minced format spreads uniformly and supports balanced flavour throughout the recipe.",
+                specifications: {
+                    size: "Minced / 1–3 mm",
+                    origin: "India",
+                    packing: "10 kgs, 20 kgs, 25 kgs - Laminated paperbag and box",
+                },
+            },
+            {
+                id: 406,
+                name: "Dehydrated Garlic Cloves",
+                slug: "garlic-cloves",
+                category: "garlic",
+                image: "/images/chopped.jpeg",
+                description: "Dehydrated Garlic Cloves retain their natural shape and clean garlic profile, making them suitable for preparations requiring larger, identifiable pieces. Pavanity Global provides consistent parameters, predictable availability, and organized export support for easy sourcing. The cloves incorporate smoothly into various culinary uses.",
+                specifications: {
+                    size: "Cloves",
+                    origin: "India",
+                    packing: "25 kgs - Laminated paperbag, liner bag and box",
+                },
             },
         ],
     },
@@ -281,7 +321,7 @@ export const productsData: ProductCategory[] = [
         image: "/images/oil-seeds.jpeg",
         tagline: "Oilseeds for Export",
         description:
-            "High-quality sesame seeds (black & white), chia seeds, peanuts, and groundnut kernels sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
+            "High-quality sesame seeds (black & natural), chia seeds, peanuts, and groundnut kernels sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
         products: [
             {
                 id: 501,
@@ -292,8 +332,8 @@ export const productsData: ProductCategory[] = [
             },
             {
                 id: 502,
-                name: "White Sesame Seeds",
-                slug: "white-sesame-seeds",
+                name: "Natural Sesame Seeds",
+                slug: "natural-sesame-seeds",
                 category: "oilseeds",
                 image: "/images/sesame-seeds-dark-background.jpg",
             },
