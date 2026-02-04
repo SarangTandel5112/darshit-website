@@ -10,32 +10,32 @@
 ### ✅ All Core Files Created
 
 1. **`/src/components/navbar/navbar-pavanity.tsx`** - New Pavanity Navbar
-   - Product Divisions dropdown (6 divisions)
-   - Quality & Compliance, Private Label & OEM, Global Markets, About, Contact links
-   - "Request RFQ" button (desktop + mobile)
-   - NO login, cart, wishlist, search
-   - Sticky scroll behavior with dark mode support
+    - Product Divisions dropdown (6 divisions)
+    - Quality & Compliance, Private Label & OEM, Global Markets, About, Contact links
+    - "Request RFQ" button (desktop + mobile)
+    - NO login, cart, wishlist, search
+    - Sticky scroll behavior with dark mode support
 
 2. **`/src/components/footer/footer-pavanity.tsx`** - New Pavanity Footer
-   - Brand name & tagline section
-   - Quick links (horizontal layout)
-   - Motto: "Pulse. Partner. Prevail."
-   - Copyright & legal links
-   - Clean, minimal B2B design
+    - Brand name & tagline section
+    - Quick links (horizontal layout)
+    - Motto: "Pulse. Partner. Prevail."
+    - Copyright & legal links
+    - Clean, minimal B2B design
 
 3. **`/src/pages/index/pavanity-home-v4.tsx`** - New Home Page
-   - All 7 sections implemented:
-     - ✅ Section 1: Hero Section
-     - ✅ Section 2: Business Continuity (3 cards)
-     - ✅ Section 3: Product Divisions (6 cards)
-     - ✅ Section 4: Commercial Scope (4 cards)
-     - ✅ Section 5: Global Markets (5 regions)
-     - ✅ Section 6: Business Enquiries
-     - ✅ Section 7: Footer
+    - All 7 sections implemented:
+        - ✅ Section 1: Hero Section
+        - ✅ Section 2: Business Continuity (3 cards)
+        - ✅ Section 3: Product Divisions (6 cards)
+        - ✅ Section 4: Commercial Scope (4 cards)
+        - ✅ Section 5: Global Markets (5 regions)
+        - ✅ Section 6: Business Enquiries
+        - ✅ Section 7: Footer
 
 4. **`/src/App.tsx`** - Updated Routing
-   - New default home: `PavanityHomeV4`
-   - Old templates preserved for reference
+    - New default home: `PavanityHomeV4`
+    - Old templates preserved for reference
 
 ---
 
@@ -50,6 +50,7 @@
 ## 📋 WHAT EACH SECTION LOOKS LIKE
 
 ### **SECTION 1: Hero Section**
+
 ```
 ┌───────────────────────────────────────────────────────┐
 │  [Background Image: Manufacturing/Quality Facility]   │
@@ -64,7 +65,9 @@
 │  ✓ Export-Ready  ✓ Quality & Compliance  ✓ Int'l...  │
 └───────────────────────────────────────────────────────┘
 ```
+
 **Features:**
+
 - Full-width background image
 - H1 + H2 headlines
 - Description text
@@ -75,6 +78,7 @@
 ---
 
 ### **SECTION 2: Business Continuity (3 Cards)**
+
 ```
 ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
 │  [Truck Icon]    │  │  [File Icon]     │  │  [Shield Icon]   │
@@ -85,7 +89,9 @@
 │  structured to...│  │  conducted...    │  │  operations...   │
 └──────────────────┘  └──────────────────┘  └──────────────────┘
 ```
+
 **Features:**
+
 - 3-column grid (responsive: 1 col mobile → 3 cols desktop)
 - Icon + title + description
 - Hover shadow effect
@@ -94,6 +100,7 @@
 ---
 
 ### **SECTION 3: Product Divisions (6 Cards)**
+
 ```
 ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
 │  [Division   │  │  [Division   │  │  [Division   │
@@ -123,7 +130,9 @@
 │  Products →  │  │  Products →  │  │  Products →  │
 └──────────────┘  └──────────────┘  └──────────────┘
 ```
+
 **Features:**
+
 - 6 cards in 3-column grid (2 rows)
 - Division image with hover zoom effect
 - Division name (with ™ symbol)
@@ -135,6 +144,7 @@
 ---
 
 ### **SECTION 4: Commercial Scope (4 Cards)**
+
 ```
 ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐
 │  [Box Icon] │  │ [Check Icon]│  │ [Globe Icon]│  │[Shield Icon]│
@@ -145,7 +155,9 @@
 │  food...    │  │  supply...  │  │  particip...│  │  conducted..│
 └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘
 ```
+
 **Features:**
+
 - 4-column grid (responsive: 1 col mobile → 4 cols desktop)
 - Icon with border, hover fills background
 - Title + description
@@ -155,6 +167,7 @@
 ---
 
 ### **SECTION 5: Global Markets (5 Regions)**
+
 ```
 ┌───────────────────────────────────────────────────────┐
 │              Serving food businesses across           │
@@ -166,7 +179,9 @@
 │  └───────────┘  └───────────┘  └───────────┘        │
 └───────────────────────────────────────────────────────┘
 ```
+
 **Features:**
+
 - Simple badge layout
 - 5 region cards with border
 - Hover effect (background becomes primary color, text becomes white)
@@ -175,6 +190,7 @@
 ---
 
 ### **SECTION 6: Business Enquiries**
+
 ```
 ┌───────────────────────────────────────────────────────┐
 │  [Primary Blue Background]                            │
@@ -190,7 +206,9 @@
 │                                                        │
 └───────────────────────────────────────────────────────┘
 ```
+
 **Features:**
+
 - Full-width primary color background
 - Centered content
 - Large email link (clickable mailto:)
@@ -201,6 +219,7 @@
 ---
 
 ### **SECTION 7: Footer**
+
 ```
 ┌───────────────────────────────────────────────────────┐
 │  [Logo]                                               │
@@ -224,7 +243,9 @@
 │  Privacy Policy │ Terms & Conditions │ Export...     │
 └───────────────────────────────────────────────────────┘
 ```
+
 **Features:**
+
 - Logo + brand name + tagline at top
 - Horizontal quick links (centered)
 - Motto in center with borders
@@ -237,23 +258,27 @@
 ## 🎨 DESIGN FEATURES
 
 ### ✅ Template-Quality Design
+
 - Professional index-v4 layout
 - Smooth hover animations
 - AOS (Animate On Scroll) effects
 - Consistent spacing and typography
 
 ### ✅ Responsive Design
+
 - Mobile-first approach
 - Breakpoints: mobile (< 768px) → tablet (768-1023px) → desktop (1024px+)
 - Touch-friendly buttons (44px minimum height)
 - Collapsible mobile menu
 
 ### ✅ Dark Mode Support
+
 - All sections support light/dark mode
 - Automatic theme switching
 - Proper contrast ratios
 
 ### ✅ Accessibility
+
 - Semantic HTML
 - Proper heading hierarchy (H1 → H2 → H3)
 - ARIA labels
@@ -264,6 +289,7 @@
 ## 🔧 TECHNICAL DETAILS
 
 ### Component Structure
+
 ```
 pavanity-home-v4.tsx
 ├── NavbarPavanity
@@ -278,11 +304,13 @@ pavanity-home-v4.tsx
 ```
 
 ### Data Source
+
 All content comes from: `/src/data/pavanity-data.ts`
 
 No hardcoded text - everything is data-driven and easy to update.
 
 ### Routing
+
 ```
 /                           → PavanityHomeV4 (NEW DEFAULT)
 /test-home                  → TestHome (old custom)
@@ -296,44 +324,52 @@ No hardcoded text - everything is data-driven and easy to update.
 ## 🖼️ CURRENT STATUS: PLACEHOLDER IMAGES
 
 ### Images Currently Used:
+
 1. **Hero Background:** `/assets/img/home-v4/banner-bg.jpg` (template image)
 2. **Division Images:** Placeholder fallback URLs
 
 ### What Happens:
+
 - If image fails to load, shows placeholder: `https://via.placeholder.com/600x400/f5f5f5/666666?text={slug}`
 - You can replace images anytime without code changes
 
 ### To Replace Images:
+
 1. Add your images to `/src/assets/img/pavanity/` folder
 2. Update paths in `/src/data/pavanity-data.ts`:
-   ```typescript
-   divisions: [
-       {
-           id: 1,
-           name: "Pavanity SpiceLine™",
-           image: "/src/assets/img/pavanity/spiceline.jpg", // UPDATE THIS
-           ...
-       }
-   ]
-   ```
+    ```typescript
+    divisions: [
+        {
+            id: 1,
+            name: "Pavanity SpiceLine™",
+            image: "/src/assets/img/pavanity/spiceline.jpg", // UPDATE THIS
+            ...
+        }
+    ]
+    ```
 
 ---
 
 ## 📱 HOW TO VIEW YOUR WEBSITE
 
 ### Option 1: Already Running
+
 Since the dev server is already running, just open your browser:
+
 ```
 http://localhost:5173/
 ```
 
 ### Option 2: Restart Server
+
 If you closed it, restart with:
+
 ```bash
 npm run dev
 ```
 
 ### Option 3: Build for Production
+
 ```bash
 npm run build
 npm run preview
@@ -344,6 +380,7 @@ npm run preview
 ## 🎯 WHAT TO TEST
 
 ### ✅ Checklist:
+
 - [ ] Hero section displays correctly
 - [ ] All 3 Business Continuity cards show
 - [ ] All 6 Product Division cards show
@@ -365,48 +402,51 @@ npm run preview
 ## 🚀 NEXT STEPS (OPTIONAL)
 
 ### Immediate Next Steps:
+
 1. **Replace Images** - Add your real product/facility images
 2. **Test on Mobile** - Check responsive design on phone
 3. **Test Dark Mode** - If keeping it, verify all sections look good
 
 ### Future Development:
+
 1. **Create Inner Pages:**
-   - `/product-divisions` - Main product page
-   - `/product-divisions/spiceline` - Individual division pages (x6)
-   - `/quality-compliance` - Quality & compliance page
-   - `/private-label` - Private label & OEM page
-   - `/global-markets` - Global markets page
-   - `/about` - About company page
-   - `/contact` - Contact & RFQ form page
+    - `/product-divisions` - Main product page
+    - `/product-divisions/spiceline` - Individual division pages (x6)
+    - `/quality-compliance` - Quality & compliance page
+    - `/private-label` - Private label & OEM page
+    - `/global-markets` - Global markets page
+    - `/about` - About company page
+    - `/contact` - Contact & RFQ form page
 
 2. **Add Contact Form:**
-   - Create RFQ form with fields:
-     - Company Name
-     - Contact Person
-     - Email
-     - Phone
-     - Country
-     - Product Interest
-     - Quantity
-     - Message
+    - Create RFQ form with fields:
+        - Company Name
+        - Contact Person
+        - Email
+        - Phone
+        - Country
+        - Product Interest
+        - Quantity
+        - Message
 
 3. **Legal Pages:**
-   - Privacy Policy
-   - Terms & Conditions
-   - Export Compliance
+    - Privacy Policy
+    - Terms & Conditions
+    - Export Compliance
 
 4. **Enhancements:**
-   - Add real icons (replace React Icons with custom SVGs)
-   - Add world map for Global Markets section
-   - Add image gallery for divisions
-   - Add certifications section
-   - Add client testimonials (if needed)
+    - Add real icons (replace React Icons with custom SVGs)
+    - Add world map for Global Markets section
+    - Add image gallery for divisions
+    - Add certifications section
+    - Add client testimonials (if needed)
 
 ---
 
 ## 📂 FILES CREATED/MODIFIED
 
 ### New Files Created:
+
 ```
 ✅ /src/components/navbar/navbar-pavanity.tsx
 ✅ /src/components/footer/footer-pavanity.tsx
@@ -414,11 +454,13 @@ npm run preview
 ```
 
 ### Files Modified:
+
 ```
 🔄 /src/App.tsx (routing updated)
 ```
 
 ### Files Used (No Changes):
+
 ```
 📁 /src/data/pavanity-data.ts (already exists)
 📁 /src/components/scroll-to-top.tsx (reused)
@@ -430,28 +472,38 @@ npm run preview
 ## 💡 TIPS & RECOMMENDATIONS
 
 ### 1. **Customize Colors**
+
 To match Pavanity branding exactly, update:
+
 ```
 /tailwind.config.js
 ```
+
 Change the `primary` color to your brand color.
 
 ### 2. **Update Logo**
+
 Replace these files:
+
 ```
-/src/assets/img/svg/logo.svg (light mode logo)
+/src/assets/img/svg/logo.png (light mode logo)
 /src/assets/img/svg/logo-light.svg (dark mode logo)
 ```
 
 ### 3. **Update Content**
+
 All content is in:
+
 ```
 /src/data/pavanity-data.ts
 ```
+
 No need to touch code - just update the data!
 
 ### 4. **Add More Sections**
+
 If you want to add more sections to the home page:
+
 1. Add the section component to `pavanity-home-v4.tsx`
 2. Add data to `pavanity-data.ts`
 3. Follow the same pattern as existing sections
@@ -461,12 +513,14 @@ If you want to add more sections to the home page:
 ## 🎨 WHAT MAKES THIS DIFFERENT FROM CUSTOM COMPONENTS?
 
 ### Your Old Approach (Custom):
+
 - Created all components from scratch
 - Simpler styling
 - Less polish
 - More work needed
 
 ### New Approach (Template-Based):
+
 - ✅ Uses professional template design
 - ✅ Smooth animations (AOS)
 - ✅ Hover effects
@@ -480,6 +534,7 @@ If you want to add more sections to the home page:
 ## ✅ SUMMARY
 
 ### What Works Right Now:
+
 1. ✅ Complete home page with all 7 sections
 2. ✅ Professional navbar with Product Divisions dropdown
 3. ✅ Clean footer with brand motto
@@ -490,12 +545,14 @@ If you want to add more sections to the home page:
 8. ✅ Data-driven content (easy to update)
 
 ### What Needs Your Input:
+
 1. ⚠️ Replace placeholder images with real images
 2. ⚠️ Update logo (currently using template logo)
 3. ⚠️ Review content accuracy in pavanity-data.ts
 4. ⚠️ Test on your preferred browsers/devices
 
 ### What's Next (Future):
+
 1. 📝 Create inner pages (About, Quality, Product divisions, etc.)
 2. 📝 Add contact/RFQ form
 3. 📝 Add legal pages
@@ -508,18 +565,23 @@ If you want to add more sections to the home page:
 If you want to modify anything:
 
 ### Change Content:
+
 Edit: `/src/data/pavanity-data.ts`
 
 ### Change Layout:
+
 Edit: `/src/pages/index/pavanity-home-v4.tsx`
 
 ### Change Header:
+
 Edit: `/src/components/navbar/navbar-pavanity.tsx`
 
 ### Change Footer:
+
 Edit: `/src/components/footer/footer-pavanity.tsx`
 
 ### Change Colors:
+
 Edit: `/tailwind.config.js`
 
 ---
