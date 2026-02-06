@@ -239,7 +239,7 @@ const divisionDetails: { [key: string]: any } = {
     },
     oilseeds: {
         overview:
-            "High-quality oilseeds including sesame seeds, chia seeds, and premium peanuts for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards.",
+            "High-quality oilseeds including sesame seeds, chia seeds, and premium peanuts for international B2B buyers and food manufacturers. Sourced from certified Indian farms and processed to meet export quality standards. Suitable for tahini, bakery, and Asian cuisine.",
         categories: [
             {
                 name: "Sesame Seeds",

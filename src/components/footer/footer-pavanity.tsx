@@ -5,6 +5,7 @@ import {
     footerQuickLinks,
     footerLegalLinks,
     footerContent,
+    officeLocations,
 } from "../../data/pavanity-data";
 
 interface LinkData {
@@ -63,6 +64,28 @@ export default function FooterPavanity() {
                         <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-title dark:text-white italic">
                             {footerContent.motto}
                         </p>
+                    </div>
+
+                    {/* Our Presence Section */}
+                    <div className="py-8 md:py-10 border-b border-bdr-clr dark:border-bdr-clr-drk">
+                        <h4 className="text-center text-xl md:text-2xl font-semibold text-title dark:text-white mb-6">
+                            Our Presence
+                        </h4>
+                        <div className="grid sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+                            {officeLocations.map((location) => (
+                                <div
+                                    key={location.id}
+                                    className="text-center p-4 rounded-lg bg-[#F8F8F9] dark:bg-dark-secondary"
+                                >
+                                    <h5 className="text-lg md:text-xl font-semibold text-primary mb-2">
+                                        {location.country}
+                                    </h5>
+                                    <p className="text-sm md:text-base text-title dark:text-white-light">
+                                        {location.address}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Bottom Section - Copyright & Legal Links */}
