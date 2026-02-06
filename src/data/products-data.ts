@@ -513,7 +513,7 @@ export const productsData: ProductCategory[] = [
         image: "/images/agro-and-filled-food-products-main.jpeg",
         tagline: "Nutritional Food Ingredients",
         description:
-            "Moringa powder, peanut butter, and peanut oil cake for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
+            "Moringa powder and peanut butter for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
         products: [
             {
                 id: 801,
@@ -546,13 +546,6 @@ export const productsData: ProductCategory[] = [
                     standard: "Manufactured following Good Manufacturing Practices (GMP) - Facility follows standard food safety management systems - Batch testing available upon request - Export packaging meets international shipment standards - Store in a cool, dry place, away from direct sunlight - Refrigeration not required unless specified - Stir well if natural oil separation occurs - Allergen Information: Contains peanuts - May be processed in a facility handling other allergens",
                     moq: "Available Variants: Creamy, Crunchy, Natural Unsweetened, Chocolate, Honey, Jaggery, High-Protein, Custom Flavours",
                 },
-            },
-            {
-                id: 803,
-                name: "Peanut Oil Cake",
-                slug: "peanut-oil-cake",
-                category: "agro-allied-food-products",
-                image: "/images/top-view-nuts-with-copy-space.jpg",
             },
             {
                 id: 804,
