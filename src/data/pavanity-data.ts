@@ -267,3 +267,20 @@ export const contactInfo = {
     address: "Jetpur - Rajkot 360-370, Gujarat, India",
     responseTime: "24-48 working hours"
 };
+
+// ============================================
+// OUR PRESENCE - OFFICE LOCATIONS
+// ============================================
+
+export const officeLocations = [
+    {
+        id: 1,
+        country: "Australia",
+        address: "270 Highlander Drive, Craigieburn, Melbourne, Victoria 3064"
+    },
+    {
+        id: 2,
+        country: "India",
+        address: "Amardham, Dhoraji Road, Jetpur, Rajkot, Gujarat 360 370"
+    }
+];

@@ -50,7 +50,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated White Onion Powder",
                 slug: "white-onion-powder",
                 category: "white-onion",
-                image: "/images/dehydrated-onions-powder.jpeg",
+                image: "/images/white-powder.jpg",
                 description: "White Onion Powder provides a smooth, concentrated onion profile designed for flavour mixes, instant foods, sauces, and large-scale manufacturing. Pavanity Global emphasizes precise specifications, consistent supply cycles, and organized export processes to support reliable procurement. The powder blends easily into dry and liquid formulations, ensuring predictable performance in diverse production environments.",
                 specifications: {
                     size: "80 To 100 mesh",
@@ -67,7 +67,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated White Onion Flakes",
                 slug: "white-onion-flakes",
                 category: "white-onion",
-                image: "/images/dehydrated-onion-flakes.jpeg",
+                image: "/images/white-flakes.jpg",
                 description: "White Onion Flakes deliver a consistent onion profile that aligns well with diverse food formulations across global markets. Pavanity Global focuses on providing clear product parameters, steady availability, and well-managed export coordination, ensuring a smooth and predictable sourcing experience. The flakes integrate easily into seasonings, dry blends, sauces, and processed preparations, offering a reliable ingredient that supports uniformity and efficiency in production workflows.",
                 specifications: {
                     size: "8 To 15 MM",
@@ -84,7 +84,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated White Onion Granules",
                 slug: "white-onion-granules",
                 category: "white-onion",
-                image: "/images/DEHYDRATED-ONION-GRANUELS.jpeg",
+                image: "/images/white-granuels.jpg",
                 description: "White Onion Granules offer a uniform particle size that fits smoothly into blends, seasoning mixes, and industrial food preparations across global markets. Pavanity Global provides well-defined specifications, steady availability, and organized export coordination to support consistent sourcing. The granules disperse evenly in dry and wet formulations, giving a reliable ingredient option for streamlined production workflows.",
                 specifications: {
                     size: "24 To 60 mesh",
@@ -101,7 +101,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated White Onion Chopped",
                 slug: "white-onion-chopped",
                 category: "white-onion",
-                image: "/images/dehydrated-onion-chopped.jpeg",
+                image: "/images/white-chopped.jpg",
                 description: "White Onion Chopped provides a balanced texture and clean onion character suitable for ready mixes, dehydrated blends, and large-scale processing applications. Pavanity Global ensures clear product parameters, dependable supply, and structured export handling, making procurement predictable and efficient. The chopped format integrates easily into formulations requiring visible onion pieces and consistent performance.",
                 specifications: {
                     size: "3 To 5 MM",
@@ -118,7 +118,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated White Onion Minced",
                 slug: "white-onion-minced",
                 category: "white-onion",
-                image: "/images/dehydrated-onions-minced.jpeg",
+                image: "/images/white-minced.jpg",
                 description: "White Onion Minced delivers fine, controlled sizing that works well in seasoning bases, dry blends, sauces, and prepared food systems. With defined specifications, stable availability, and smooth export coordination, Pavanity Global supports a seamless sourcing experience. The minced form offers uniform distribution in recipes and helps maintain consistency in production.",
                 specifications: {
                     size: "1 To 3 MM",
@@ -147,7 +147,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Red Onion Powder",
                 slug: "red-onion-powder",
                 category: "red-onion",
-                image: "/images/dehydrated-onions-powder.jpeg",
+                image: "/images/red-powder.jpg",
                 description: "Red Onion Powder delivers a smooth, concentrated onion note formulated for sauces, dry mixes, instant foods, and large-scale manufacturing. Pavanity Global ensures accurate specifications, stable supply cycles, and streamlined export processes for dependable sourcing. The powder blends seamlessly into various systems, supporting controlled flavour delivery and uniform results across production lines.",
             },
             {
@@ -155,7 +155,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Red Onion Flakes",
                 slug: "red-onion-flakes",
                 category: "red-onion",
-                image: "/images/dehydrated-onion-flakes.jpeg",
+                image: "/images/red-flakes.jpg",
                 description: "Red Onion Flakes provide a defined cut size with a natural red tone that performs effectively in seasoning blends, dehydrated preparations, and processed formulations across international markets. Pavanity Global follows clear product parameters, ensures steady availability, and maintains organized export coordination to support reliable procurement. The flakes integrate evenly into dry and semi-moist systems, offering consistent behaviour and smooth handling across production workflows.",
             },
             {
@@ -163,7 +163,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Red Onion Granules",
                 slug: "red-onion-granules",
                 category: "red-onion",
-                image: "/images/DEHYDRATED-ONION-GRANUELS.jpeg",
+                image: "/images/red-granuels.jpg",
                 description: "Red Onion Granules offer consistent particle uniformity suitable for flavour blends, spice applications, and industrial recipes across global markets. Pavanity Global supports sourcing through steady availability, rigorous parameter clarity, and organized export coordination. The granules disperse evenly in all types of formulations, enhancing operational efficiency and performance consistency during production.",
             },
             {
@@ -171,7 +171,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Red Onion Chopped",
                 slug: "red-onion-chopped",
                 category: "red-onion",
-                image: "/images/dehydrated-onion-chopped.jpeg",
+                image: "/images/red-chopped.jpg",
                 description: "Red Onion Chopped features an even particle size suitable for applications that require both flavour contribution and visible onion presence. Pavanity Global offers structured specifications, predictable availability, and well-managed export logistics to enable uninterrupted sourcing. The chopped format fits cleanly into mixes, bases, and industrial preparations, supporting uniform dispersion and dependable processing performance.",
             },
             {
@@ -179,7 +179,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Red Onion Minced",
                 slug: "red-onion-minced",
                 category: "red-onion",
-                image: "/images/dehydrated-onions-minced.jpeg",
+                image: "/images/red-minced.jpg",
                 description: "Red Onion Minced provides fine, controlled sizing that distributes smoothly in seasoning bases, sauce formulations, and processed food systems. Pavanity Global maintains defined quality parameters, stable supply planning, and coordinated export handling to ensure consistency throughout the procurement process. The minced particles blend efficiently into dry and wet applications, supporting balanced flavour release and predictable production outcomes.",
             },
         ],
@@ -199,7 +199,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Powder",
                 slug: "pink-onion-powder",
                 category: "pink-onion",
-                image: "/images/dehydrated-onions-powder.jpeg",
+                image: "/images/pink-powder.jpg",
                 description: "Pink Onion Powder offers a smooth, refined onion note that blends effectively into mixes, ready preparations, and industrial recipes. Pavanity Global provides well-structured parameters, predictable supply cycles, and organized export support to maintain consistent sourcing. The powder integrates easily into dry and wet systems, offering uniform flavour delivery and stable production performance.",
             },
             {
@@ -207,7 +207,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Flakes",
                 slug: "pink-onion-flakes",
                 category: "pink-onion",
-                image: "/images/dehydrated-onion-flakes.jpeg",
+                image: "/images/pink-flakes.jpg",
                 description: "Pink Onion Flakes feature a mild onion profile and a soft natural hue that aligns well with seasoning blends, dry mixes, and processed preparations across international markets. Pavanity Global provides defined specifications, consistent availability, and organized export coordination to maintain smooth sourcing experiences. The flakes disperse evenly in formulations, supporting steady performance and balanced product outcomes.",
             },
             {
@@ -215,7 +215,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Granules",
                 slug: "pink-onion-granules",
                 category: "pink-onion",
-                image: "/images/DEHYDRATED-ONION-GRANUELS.jpeg",
+                image: "/images/pink-granuels.jpg",
                 description: "Pink Onion Granules provide uniform particle distribution suited for seasoning blends, dry formulations, and large-scale processing applications. Pavanity Global ensures clarity in specifications, regular availability, and streamlined export coordination for reliable procurement. The granules incorporate cleanly into production workflows, supporting operational consistency and efficient blending.",
             },
             {
@@ -223,7 +223,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Chopped",
                 slug: "pink-onion-chopped",
                 category: "pink-onion",
-                image: "/images/dehydrated-onion-chopped.jpeg",
+                image: "/images/pink-chopped.jpg",
                 description: "Pink Onion Chopped offers a uniform particulate size designed for formulations requiring visible onion texture with controlled colour influence. Pavanity Global maintains structured specifications, dependable supply planning, and efficient export management to ensure consistent sourcing. The chopped format integrates cleanly into blends and food systems, delivering predictable distribution and stable functionality.",
             },
             {
@@ -231,7 +231,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Minced",
                 slug: "pink-onion-minced",
                 category: "pink-onion",
-                image: "/images/dehydrated-onions-minced.jpeg",
+                image: "/images/pink-minced.jpg",
                 description: "Pink Onion Minced delivers fine, accurate sizing that works well in sauces, mixes, and industrial preparations where even flavour distribution is required. Pavanity Global supports consistent sourcing through clear parameters, steady availability, and organized export processes. The minced format disperses smoothly across dry and liquid applications, contributing to balanced formulation performance.",
             },
         ],
@@ -328,7 +328,7 @@ export const productsData: ProductCategory[] = [
                 name: "Black Sesame Seeds",
                 slug: "black-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/black-sesame-seeds.jpg",
+                image: "/images/black-sesame-seeds copy.jpg",
                 description: "Z Black Sesame Seeds have a natural dark colour and a clean seed appearance. They are commonly used in general food applications where uniform seed texture and visual appeal are preferred. The seeds are suitable for everyday usage and can be included in a variety of food preparations. Pavanity Global offers Z Black Sesame Seeds with clear specifications and structured supply options for regular buyer requirements.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -342,7 +342,7 @@ export const productsData: ProductCategory[] = [
                 name: "Hulled Sesame Seeds",
                 slug: "hulled-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/sesame-seeds-dark-background.jpg",
+                image: "/images/hulled-sesame-seeds.jpg",
                 description: "Hulled Sesame Seeds offer a clean surface and uniform light tone. These seeds are suitable for multiple food uses where a soft texture and refined appearance are preferred. They integrate comfortably into various standard applications. Pavanity Global provides Hulled Sesame Seeds with clear specifications for straightforward procurement.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -356,7 +356,7 @@ export const productsData: ProductCategory[] = [
                 name: "Natural Sesame Seeds",
                 slug: "natural-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/sesame-seeds-dark-background.jpg",
+                image: "/images/natural-sesame-seeds.jpg",
                 description: "Natural White Sesame Seeds feature a light seed colour and smooth texture. They are commonly used in general food practices where neat seed appearance and simple functionality are important. Their balanced seed profile supports easy usage across different food categories. Pavanity Global presents Natural White Sesame Seeds with defined parameters suitable for regular sourcing needs.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -386,7 +386,7 @@ export const productsData: ProductCategory[] = [
                 name: "Java Peanuts",
                 slug: "java-peanuts",
                 category: "oilseeds",
-                image: "/images/peanuts.jpg",
+                image: "/images/java-peanut.png",
                 description: "Java Peanuts are known for their naturally mild aroma, smooth taste, and uniform round kernel shape. They are appreciated for their balanced composition, offering a dependable combination of protein, healthy fats, and essential nutrients. Java peanuts are commonly used in snacks, roasted mixes, and general food applications due to their clean flavour and steady performance. Pavanity Global maintains consistent quality parameters, reliable availability, and organized export support, ensuring smooth sourcing for buyers. Their natural sweetness, uniform kernel appearance, and stable handling characteristics make Java peanuts a preferred choice across multiple market segments.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -400,7 +400,7 @@ export const productsData: ProductCategory[] = [
                 name: "TJ Peanuts",
                 slug: "tj-peanuts",
                 category: "oilseeds",
-                image: "/images/peanuts.jpg",
+                image: "/images/tj-peanuts.png",
                 description: "TJ Peanuts feature a neat and uniform kernel profile that supports a wide range of culinary and food-related uses. They carry a balanced taste and natural richness, offering suitability for snacks, roasted applications, blending, and everyday consumption. Their structure allows for dependable behaviour during use, supporting both flavour and texture needs. Pavanity Global focuses on steady supply, clear specifications, and well-coordinated export operations, helping buyers receive a consistent and predictable product. This combination of reliability and natural peanut quality makes TJ peanuts a solid fit for varied markets.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -414,7 +414,7 @@ export const productsData: ProductCategory[] = [
                 name: "Bold Peanuts",
                 slug: "bold-peanuts",
                 category: "oilseeds",
-                image: "/images/peanuts.jpg",
+                image: "/images/bold-peanut.png",
                 description: "Bold Peanuts are recognized for their larger kernel size, firm texture, and fuller peanut character. They provide a naturally rich taste and are suitable for a variety of uses including direct consumption, snacks, confectionery, and general food preparation. Their strength, shape retention, and natural oil balance make them favourable in applications requiring a noticeable peanut presence. Pavanity Global ensures defined quality parameters, consistent supply cycles, and structured export coordination to support smooth sourcing. Bold peanuts offer dependable performance and a stable profile, making them a popular and versatile choice for buyers.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -430,7 +430,7 @@ export const productsData: ProductCategory[] = [
         name: "Psyllium Husk",
         slug: "psyllium-husk",
         icon: "herb",
-        image: "/images/psyllium-husk.jpeg",
+        image: "/images/psyllium-husk.jpg",
         tagline: "Natural Dietary Fiber",
         description:
             "Export-grade psyllium husk for pharmaceutical, nutraceutical, and food supplement industries. Sourced from Gujarat's finest plantations with consistent quality and compliance documentation.",
@@ -449,7 +449,7 @@ export const productsData: ProductCategory[] = [
                 name: "Psyllium Husk",
                 slug: "psyllium-husk",
                 category: "psyllium-husk",
-                image: "/images/psyllium-husk.jpeg",
+                image: "/images/psyllium-husk.jpg",
                 description: "Psyllium Husk from Pavanity Global is a natural, light-coloured husk known for its smooth texture and easy blending characteristics, making it suitable for a variety of everyday food applications. Its clean appearance, neutral taste, and ability to absorb water allow it to fit well into bakery mixes, beverages, food blends, and supplement preparations. Offered in multiple purities such as 85%, 95%, 98%, and 99%, Psyllium Husk supports a wide range of formulation needs across both standard and premium product categories. Its simple handling, natural composition, and versatile usage make it a practical ingredient for various food-related requirements.",
                 specifications: {
                     origin: "India",
@@ -513,14 +513,14 @@ export const productsData: ProductCategory[] = [
         image: "/images/agro-and-filled-food-products-main.jpeg",
         tagline: "Nutritional Food Ingredients",
         description:
-            "Moringa powder, peanut butter, and peanut oil cake for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
+            "Moringa powder and peanut butter for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
         products: [
             {
                 id: 801,
                 name: "Moringa Leaf Powder",
                 slug: "moringa-powder",
                 category: "agro-allied-food-products",
-                image: "/images/moringa.jpg",
+                image: "/images/moringa-powder.png",
                 description: "Moringa Leaf Powder is produced from the dried leaves of the Moringa oleifera tree, known globally as the \"Miracle Tree\" due to its extraordinary nutritional value. The leaves are carefully harvested, shade-dried to preserve essential nutrients, and finely milled into a vibrant green powder. Rich in antioxidants, vitamins, minerals, amino acids, and chlorophyll, Moringa Leaf Powder is widely used in the nutraceutical, food, and herbal supplement industries. Its excellent digestibility and natural, plant-based composition make it a preferred ingredient for health-focused formulations, beverages, capsules, and functional foods. Our product meets strict international quality standards, ensuring maximum purity, safety, and export readiness.",
                 specifications: {
                     size: "80 Mesh",
@@ -548,18 +548,11 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 803,
-                name: "Peanut Oil Cake",
-                slug: "peanut-oil-cake",
-                category: "agro-allied-food-products",
-                image: "/images/top-view-nuts-with-copy-space.jpg",
-            },
-            {
                 id: 804,
                 name: "Indian Groundnut Extraction Meal",
                 slug: "indian-groundnut-extraction-meal",
                 category: "agro-allied-food-products",
-                image: "/images/top-view-nuts-with-copy-space.jpg",
+                image: "/images/groundnut-extraction-meal.png",
                 description: "Peanut Extraction Meal, also known as Groundnut Extraction Meal, is obtained after the oil extraction process from peanuts. It is commonly used as a protein-rich component in animal and poultry feed formulations. The product is supplied in granule or powder form and supports regular feed requirements. The meal is suitable for poultry, cattle, and livestock feed applications. It is brown in color, easy to blend with other feed ingredients, and used as part of daily feed rations. Peanut Extraction Meal helps maintain consistent nutrition levels and can be included in various feed formulations depending on the needs of buyers or feed manufacturers.",
                 specifications: {
                     color: "Brown",
