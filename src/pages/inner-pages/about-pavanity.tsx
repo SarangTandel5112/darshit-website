@@ -6,7 +6,7 @@ import bg from '../../assets/img/shortcode/breadcumb.jpg'
 import aboutImage from '../../assets/img/about/about-banner-01.jpg'
 
 // Icons
-import { FaIndustry, FaShieldAlt, FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa'
+import { FaIndustry, FaShieldAlt, FaCheckCircle, FaAward, FaUsers, FaFlask } from 'react-icons/fa'
 
 // Components
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
@@ -64,7 +64,7 @@ export default function AboutPavanity() {
                                 About Pavanity Global
                             </h2>
                             <p className="mt-3 text-base sm:text-lg">
-                                Pavanity Global is an agricultural sourcing and export coordination company supplying food and agricultural ingredients to international B2B and HoReCa markets.
+                                Pavanity Global is part of the Pavanity Group of Companies, specializing in agricultural sourcing and export coordination for food and agricultural ingredients to international B2B and HoReCa markets.
                             </p>
                             <p className="mt-3 text-base sm:text-lg">
                                 We specialize in structured sourcing and export supply aligned with buyer specifications, quality standards, and destination market regulations. Our product portfolio includes agricultural commodities, dehydrated products, natural food ingredients, and value-added food supplies tailored for bulk and private label requirements.
@@ -72,6 +72,43 @@ export default function AboutPavanity() {
                             <p className="mt-3 text-base sm:text-lg">
                                 Our operations are designed to support consistency, compliance, and long-term supply continuity for international buyers. Pavanity Global focuses on transparent trade practices and export documentation support.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* ============================================ */}
+        {/* PAVANITY CHEMICAL SECTION */}
+        {/* ============================================ */}
+        <div className="s-pb-100 bg-[#F8F8F9] dark:bg-dark-secondary">
+            <div className="container-fluid" data-aos="fade-up" data-aos-delay="100">
+                <div className="max-w-[1720px] mx-auto flex flex-col lg:grid lg:grid-cols-2">
+                    {/* Content Column */}
+                    <div className="flex items-center py-8 sm:py-12 px-5 sm:px-12 md:px-8 lg:pr-16 lg:pl-12 2xl:pl-[160px]">
+                        <div className="lg:max-w-[600px]">
+                            <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center">
+                                <FaFlask className="size-16 text-white" />
+                            </div>
+                            <h2 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
+                                Pavanity Chemical
+                            </h2>
+                            <p className="mt-3 text-base sm:text-lg">
+                                Pavanity Chemical is a sister concern within the Pavanity Group of Companies, specializing in industrial chemicals, specialty chemicals, and chemical raw materials for various industries.
+                            </p>
+                            <p className="mt-3 text-base sm:text-lg">
+                                Operating with the same commitment to quality and compliance, Pavanity Chemical serves manufacturing, pharmaceutical, textile, and industrial sectors with reliable chemical supply solutions.
+                            </p>
+                            <p className="mt-3 text-base sm:text-lg">
+                                The company focuses on structured sourcing, quality assurance, and regulatory compliance to support industrial requirements across domestic and international markets.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Image Column */}
+                    <div className="lg:bg-white lg:dark:bg-title lg:pl-10 2xl:pl-0 relative">
+                        <div>
+                            <img className="object-cover w-full" src={aboutImage} alt="Pavanity Chemical - Industrial Chemicals"/>
                         </div>
                     </div>
                 </div>

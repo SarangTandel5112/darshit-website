@@ -282,5 +282,10 @@ export const officeLocations = [
         id: 2,
         country: "India",
         address: "Amardham, Dhoraji Road, Jetpur, Rajkot, Gujarat 360 370"
+    },
+    {
+        id: 3,
+        country: "Kenya",
+        address: "3rd Parkland, Near Diamond Plaza, Opposite Shree Vallabhdham Haveli, Nairobi 00100"
     }
 ];
