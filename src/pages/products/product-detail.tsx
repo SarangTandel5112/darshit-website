@@ -3,12 +3,10 @@ import { Link, useParams } from "react-router-dom";
 
 // Images
 import bg from "../../assets/img/shortcode/breadcumb.jpg";
-import placeholderImage from "../../assets/img/about/about-banner-01.jpg"; // Temporary placeholder
 
 // Icons
 import {
     FaCertificate,
-    FaIndustry,
     FaLeaf,
     FaShieldAlt,
 } from "react-icons/fa";
