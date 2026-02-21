@@ -272,27 +272,32 @@ const divisionDetails: { [key: string]: any } = {
     "psyllium-husk": {
         categories: [
             {
+                name: "Psyllium Seeds",
+                examples: "Premium quality seeds from Gujarat and Rajasthan",
+            },
+            {
                 name: "Psyllium Husk",
-                examples: "95% Purity, 98% Purity, 99% Purity",
+                examples: "85%, 95%, 98%, 99% Purity grades",
             },
             {
-                name: "Psyllium Powder",
-                examples: "Food Grade, Pharmaceutical Grade",
+                name: "Psyllium Husk Powder",
+                examples: "80-100 mesh, 100-120 mesh - Food & Pharmaceutical grade",
             },
             {
-                name: "Industrial Grade",
-                examples: "Psyllium Seeds, Psyllium Meal",
+                name: "Psyllium Khakha Powder",
+                examples: "Fiber-rich byproduct for animal feed and agriculture",
             },
             {
-                name: "Custom Specifications",
-                examples: "Mesh Size, Purity Level",
+                name: "Psyllium Cattle Feed Fiber",
+                examples: "Natural fiber supplement for dairy and farm animals",
             },
         ],
         applications: [
-            "Pharmaceutical Industry",
-            "Dietary Supplement Manufacturing",
-            "Functional Food Products",
-            "Health & Wellness Products",
+            "Pharmaceutical & Nutraceutical Industry",
+            "Food & Beverage Manufacturing",
+            "Animal Feed & Livestock Nutrition",
+            "Agriculture & Soil Conditioning",
+            "Biodegradable & Industrial Products",
         ],
         packaging:
             "Bulk supply in 25kg bags with inner poly liners. Custom packaging available for export orders.",

@@ -138,6 +138,16 @@ export default function SingleProductDetail() {
                                             <div className="overflow-x-auto">
                                                 <table className="w-full">
                                                     <tbody>
+                                                        {product.specifications.ingredients && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Ingredients
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.ingredients}
+                                                                </td>
+                                                            </tr>
+                                                        )}
                                                         {product.specifications.origin && (
                                                             <tr className="border-b border-title/10 dark:border-white/10">
                                                                 <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
@@ -195,6 +205,16 @@ export default function SingleProductDetail() {
                                                                 </td>
                                                                 <td className="p-4 text-base">
                                                                     {product.specifications.packing}
+                                                                </td>
+                                                            </tr>
+                                                        )}
+                                                        {product.specifications.packingType && (
+                                                            <tr className="border-b border-title/10 dark:border-white/10">
+                                                                <td className="p-4 font-semibold text-base bg-[#F8F8F9] dark:bg-title w-1/3">
+                                                                    Packing Type
+                                                                </td>
+                                                                <td className="p-4 text-base">
+                                                                    {product.specifications.packingType}
                                                                 </td>
                                                             </tr>
                                                         )}
