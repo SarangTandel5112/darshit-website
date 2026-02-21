@@ -465,6 +465,7 @@ export default function DivisionDetail() {
             {/* ============================================ */}
             {/* DIVISION OVERVIEW SECTION */}
             {/* ============================================ */}
+            {/*
             <div className="s-pb-100 pt-12 md:pt-16">
                 <div
                     className="container-fluid"
@@ -472,7 +473,7 @@ export default function DivisionDetail() {
                     data-aos-delay="100"
                 >
                     <div className="max-w-[1720px] mx-auto flex flex-col-reverse lg:grid lg:grid-cols-2">
-                        {/* Image Column */}
+                        {/* Image Column *\/}
                         <div className="lg:bg-[#F8F8F9] lg:dark:bg-dark-secondary lg:pr-10 2xl:pr-0 relative">
                             <div>
                                 <img
@@ -483,7 +484,7 @@ export default function DivisionDetail() {
                             </div>
                         </div>
 
-                        {/* Content Column */}
+                        {/* Content Column *\/}
                         <div className="flex items-center py-8 sm:py-12 px-5 sm:px-12 md:px-8 lg:pr-12 lg:pl-16 2xl:pl-[160px] bg-[#F8F8F9] dark:bg-dark-secondary">
                             <div className="lg:max-w-[600px]">
                                 <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center">
@@ -504,7 +505,7 @@ export default function DivisionDetail() {
                                     </Link>
                                 </div>
 
-                                {/* Product Specifications */}
+                                {/* Product Specifications *\/}
                                 {category.specifications && (
                                     <div className="mt-8 md:mt-10">
                                         <h4 className="font-semibold text-xl md:text-2xl mb-4">
@@ -567,6 +568,7 @@ export default function DivisionDetail() {
                     </div>
                 </div>
             </div>
+            */}
 
             {/* ============================================ */}
             {/* AVAILABLE PRODUCTS LIST */}

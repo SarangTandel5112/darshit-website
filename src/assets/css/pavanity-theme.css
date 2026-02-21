@@ -12,7 +12,7 @@
     --pavanity-border-gray: #E0E0E0;       /* Soft Gray - Dividers, Cards */
 
     /* ACCENT COLORS - Minimal Use */
-    --pavanity-accent-blue: #bb976d;       /* Professional Gold/Bronze - CTAs, Links */
+    --pavanity-accent-blue: #20a839;       /* Professional Green - CTAs, Links */
     --pavanity-success-green: #2D6A4F;     /* Muted Green - Trust Indicators */
 
     /* BACKGROUND */
@@ -24,7 +24,7 @@
     --pavanity-text-light: #999999;
 }
 
-/* Override template primary color (#BB976D) with Pavanity accent blue */
+/* Override template primary color (#20a839) with Pavanity accent */
 .bg-primary,
 [class*="bg-primary"] {
     background-color: var(--pavanity-accent-blue) !important;
@@ -53,7 +53,7 @@
     fill: var(--pavanity-accent-blue) !important;
 }
 
-.bg-\[\#BB976D\] {
+.bg-\[\#20a839\] {
     background-color: var(--pavanity-accent-blue) !important;
 }
 
@@ -71,8 +71,8 @@
 }
 
 .btn-primary:hover {
-    background-color: #9a7b57; /* Darker gold/bronze on hover */
-    border-color: #9a7b57;
+    background-color: #1a8f30; /* Darker green on hover */
+    border-color: #1a8f30;
 }
 
 .btn-outline {
@@ -129,7 +129,7 @@
     display: inline-flex;
     align-items: center;
     padding: 8px 16px;
-    background-color: rgba(187, 151, 109, 0.1);
+    background-color: rgba(32, 168, 57, 0.1);
     color: var(--pavanity-accent-blue);
     border-radius: 4px;
     font-size: 14px;
@@ -174,10 +174,10 @@
 }
 
 .rfq-button:hover {
-    background-color: #9a7b57;
-    border-color: #9a7b57;
+    background-color: #1a8f30;
+    border-color: #1a8f30;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(187, 151, 109, 0.3);
+    box-shadow: 0 4px 12px rgba(32, 168, 57, 0.3);
 }
 
 .rfq-button-outline {
@@ -243,7 +243,7 @@
 .region-badge {
     display: inline-block;
     padding: 12px 24px;
-    background-color: rgba(187, 151, 109, 0.1);
+    background-color: rgba(32, 168, 57, 0.1);
     color: var(--pavanity-accent-blue);
     border-radius: 4px;
     font-weight: 500;

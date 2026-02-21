@@ -2,9 +2,23 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/img/svg/logo.png";
 import logoLight from "../../assets/img/svg/logo-light.svg";
 import {
+    FaFacebookF,
+    FaLinkedinIn,
+    FaInstagram,
+    FaTwitter,
+    FaEnvelope,
+    FaPhone,
+    FaMapMarkerAlt,
+    FaChevronRight,
+} from "react-icons/fa";
+
+import {
     footerQuickLinks,
+    footerProductCategories,
     footerLegalLinks,
     footerContent,
+    socialMedia,
+    contactInfo,
     officeLocations,
 } from "../../data/pavanity-data";
 
@@ -13,107 +27,206 @@ interface LinkData {
     path: string;
 }
 
-export default function FooterPavanity() {
-    return (
-        <div className="s-py-100-50">
-            <div className="container">
-                <div className="max-w-1366 mx-auto">
-                    {/* Brand Section - Top */}
-                    <div className="text-center pb-10 md:pb-12 border-b border-bdr-clr dark:border-bdr-clr-drk">
-                        <Link to="/" className="inline-block mb-4">
-                            <img
-                                src={logo}
-                                alt="Pavanity Global"
-                                className="dark:hidden w-[150px] sm:w-[200px] mx-auto"
-                            />
-                            <img
-                                src={logoLight}
-                                alt="Pavanity Global"
-                                className="dark:block hidden w-[150px] sm:w-[200px] mx-auto"
-                            />
-                        </Link>
-                        <h3 className="text-2xl md:text-3xl font-bold leading-none dark:text-white mt-4">
-                            {footerContent.brandName}
-                        </h3>
-                        <p className="text-base md:text-lg text-title dark:text-white-light mt-2">
-                            {footerContent.tagline}
-                        </p>
-                    </div>
+interface SocialMediaData {
+    name: string;
+    url: string;
+    icon: string;
+}
 
-                    {/* Quick Links Section - Middle */}
-                    <div className="py-8 md:py-10">
-                        <div className="flex flex-wrap items-center justify-center gap-x-6 lg:gap-x-8 gap-y-3">
-                            {footerQuickLinks.map(
-                                (link: LinkData, index: number) => (
-                                    <Link
-                                        key={index}
-                                        to={link.path}
-                                        className="text-title dark:text-white text-sm md:text-base hover:text-primary dark:hover:text-primary duration-100 inline-block group"
+export default function FooterPavanity() {
+    const getSocialIcon = (iconName: string) => {
+        switch (iconName) {
+            case "facebook":
+                return <FaFacebookF />;
+            case "linkedin":
+                return <FaLinkedinIn />;
+            case "instagram":
+                return <FaInstagram />;
+            case "twitter":
+                return <FaTwitter />;
+            default:
+                return null;
+        }
+    };
+
+    return (
+        <footer className="bg-title dark:bg-dark text-white pt-16 pb-6">
+            <div className="container">
+                <div className="max-w-[1720px] mx-auto">
+                    {/* Main Footer Content */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pb-12 border-b border-white/10">
+                        {/* Column 1: About Company */}
+                        <div className="lg:col-span-1">
+                            <Link to="/" className="inline-block mb-6">
+                                <img
+                                    src={logoLight}
+                                    alt="Pavanity Global"
+                                    className="w-[180px]"
+                                />
+                            </Link>
+                            <p className="text-white/80 text-sm leading-relaxed mb-6">
+                                {footerContent.description}
+                            </p>
+
+                            {/* Social Media Icons */}
+                            <div className="flex items-center gap-3">
+                                {socialMedia.map(
+                                    (social: SocialMediaData, index: number) => (
+                                        <a
+                                            key={index}
+                                            href={social.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center text-white transition-all duration-300"
+                                            aria-label={social.name}
+                                        >
+                                            {getSocialIcon(social.icon)}
+                                        </a>
+                                    )
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Column 2: Quick Links */}
+                        <div>
+                            <h4 className="text-lg font-semibold text-white mb-6">
+                                Quick Links
+                            </h4>
+                            <ul className="space-y-3">
+                                {footerQuickLinks.map(
+                                    (link: LinkData, index: number) => (
+                                        <li key={index}>
+                                            <Link
+                                                to={link.path}
+                                                className="text-white/80 hover:text-primary text-sm flex items-center gap-2 group transition-all duration-300"
+                                            >
+                                                <FaChevronRight className="text-xs group-hover:translate-x-1 transition-transform" />
+                                                {link.name}
+                                            </Link>
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+                        </div>
+
+                        {/* Column 3: Product Categories */}
+                        <div>
+                            <h4 className="text-lg font-semibold text-white mb-6">
+                                Our Products
+                            </h4>
+                            <ul className="space-y-3">
+                                {footerProductCategories.map(
+                                    (link: LinkData, index: number) => (
+                                        <li key={index}>
+                                            <Link
+                                                to={link.path}
+                                                className="text-white/80 hover:text-primary text-sm flex items-center gap-2 group transition-all duration-300"
+                                            >
+                                                <FaChevronRight className="text-xs group-hover:translate-x-1 transition-transform" />
+                                                {link.name}
+                                            </Link>
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+                        </div>
+
+                        {/* Column 4: Contact Information */}
+                        <div>
+                            <h4 className="text-lg font-semibold text-white mb-6">
+                                Contact Us
+                            </h4>
+                            <ul className="space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <FaMapMarkerAlt className="text-primary mt-1 flex-shrink-0" />
+                                    <div>
+                                        <p className="text-white/80 text-sm leading-relaxed">
+                                            {officeLocations[1].address}
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <FaEnvelope className="text-primary flex-shrink-0" />
+                                    <a
+                                        href={`mailto:${contactInfo.email}`}
+                                        className="text-white/80 hover:text-primary text-sm transition-colors"
                                     >
-                                        <span className="text-underline-primary">
-                                            {link.name}
-                                        </span>
-                                    </Link>
-                                ),
-                            )}
+                                        {contactInfo.email}
+                                    </a>
+                                </li>
+                                <li className="flex items-center gap-3">
+                                    <FaPhone className="text-primary flex-shrink-0" />
+                                    <a
+                                        href={`tel:${contactInfo.phone}`}
+                                        className="text-white/80 hover:text-primary text-sm transition-colors"
+                                    >
+                                        {contactInfo.phone}
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    {/* Motto Section */}
-                    <div className="text-center py-6 md:py-8 border-y border-bdr-clr dark:border-bdr-clr-drk">
-                        <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-title dark:text-white italic">
-                            {footerContent.motto}
-                        </p>
-                    </div>
-
-                    {/* Our Presence Section */}
-                    <div className="py-8 md:py-10 border-b border-bdr-clr dark:border-bdr-clr-drk">
-                        <h4 className="text-center text-xl md:text-2xl font-semibold text-title dark:text-white mb-6">
-                            Our Presence
+                    {/* Office Locations Section */}
+                    <div className="py-8 border-b border-white/10">
+                        <h4 className="text-lg font-semibold text-white mb-6 text-center">
+                            Our Global Presence
                         </h4>
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {officeLocations.map((location) => (
                                 <div
                                     key={location.id}
-                                    className="text-center p-4 rounded-lg bg-[#F8F8F9] dark:bg-dark-secondary"
+                                    className="bg-white/5 hover:bg-white/10 p-5 rounded-lg transition-all duration-300 border border-white/10"
                                 >
-                                    <h5 className="text-lg md:text-xl font-semibold text-primary mb-2">
-                                        {location.country}
-                                    </h5>
-                                    <p className="text-sm md:text-base text-title dark:text-white-light">
-                                        {location.address}
-                                    </p>
+                                    <div className="flex items-start gap-3">
+                                        <FaMapMarkerAlt className="text-primary mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h5 className="text-white font-semibold mb-2">
+                                                {location.country}
+                                            </h5>
+                                            <p className="text-white/70 text-sm leading-relaxed">
+                                                {location.address}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    {/* Bottom Section - Copyright & Legal Links */}
-                    <div className="pt-8 md:pt-10 flex flex-col md:flex-row items-center justify-between gap-4">
-                        {/* Copyright */}
-                        <p className="text-title dark:text-white-light text-sm md:text-base text-center md:text-left">
-                            {footerContent.copyright}
-                        </p>
+                    {/* Bottom Footer */}
+                    <div className="pt-8">
+                        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                            {/* Copyright */}
+                            <p className="text-white/60 text-sm text-center md:text-left">
+                                {footerContent.copyright}
+                            </p>
 
-                        {/* Legal Links */}
-                        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-                            {footerLegalLinks.map(
-                                (link: LinkData, index: number) => (
-                                    <Link
-                                        key={index}
-                                        to={link.path}
-                                        className="text-title dark:text-white-light text-sm hover:text-primary dark:hover:text-primary duration-100 inline-block group"
-                                    >
-                                        <span className="text-underline-primary">
+                            {/* Legal Links */}
+                            <div className="flex flex-wrap items-center justify-center gap-6">
+                                {footerLegalLinks.map(
+                                    (link: LinkData, index: number) => (
+                                        <Link
+                                            key={index}
+                                            to={link.path}
+                                            className="text-white/60 hover:text-primary text-sm transition-colors"
+                                        >
                                             {link.name}
-                                        </span>
-                                    </Link>
-                                ),
-                            )}
+                                        </Link>
+                                    )
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Motto */}
+                        <div className="text-center mt-6 pt-6 border-t border-white/10">
+                            <p className="text-white/80 text-lg font-semibold italic">
+                                {footerContent.motto}
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
