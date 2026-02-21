@@ -237,11 +237,23 @@ export const navLinks = [
 // ============================================
 
 export const footerQuickLinks = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about-us" },
     { name: "Products", path: "/products" },
     { name: "Quality & Compliance", path: "/quality-compliance" },
     { name: "Private Label & Custom Sourcing", path: "/private-label-custom-sourcing" },
-    { name: "About Us", path: "/about-us" },
     { name: "Contact", path: "/contact" }
+];
+
+export const footerProductCategories = [
+    { name: "Dehydrated White Onion", path: "/products/white-onion" },
+    { name: "Dehydrated Red Onion", path: "/products/red-onion" },
+    { name: "Dehydrated Pink Onion", path: "/products/pink-onion" },
+    { name: "Dehydrated Garlic", path: "/products/garlic" },
+    { name: "Oilseeds", path: "/products/oilseeds" },
+    { name: "Psyllium Husk", path: "/products/psyllium-husk" },
+    { name: "Spices", path: "/products/spices" },
+    { name: "Agro & Allied Products", path: "/products/agro-allied" }
 ];
 
 export const footerLegalLinks = [
@@ -254,8 +266,16 @@ export const footerContent = {
     brandName: "PAVANITY GLOBAL",
     tagline: "International Food & Ingredient Supplier",
     motto: "Pulse. Partner. Prevail.",
-    copyright: "© 2025 Pavanity Global. All rights reserved."
+    copyright: "© 2025 Pavanity Global. All rights reserved.",
+    description: "Pavanity Global specializes in agricultural sourcing and export coordination for food and agricultural ingredients to international B2B and HoReCa markets."
 };
+
+export const socialMedia = [
+    { name: "Facebook", url: "https://facebook.com/pavanityglobal", icon: "facebook" },
+    { name: "LinkedIn", url: "https://linkedin.com/company/pavanityglobal", icon: "linkedin" },
+    { name: "Instagram", url: "https://instagram.com/pavanityglobal", icon: "instagram" },
+    { name: "Twitter", url: "https://twitter.com/pavanityglobal", icon: "twitter" }
+];
 
 // ============================================
 // CONTACT INFORMATION
