@@ -307,5 +307,10 @@ export const officeLocations = [
         id: 3,
         country: "Kenya",
         address: "3rd Parkland, Near Diamond Plaza, Opposite Shree Vallabhdham Haveli, Nairobi 00100"
+    },
+    {
+        id: 4,
+        country: "Mozambique",
+        address: "E.I.CABO DELGADO, Cidade de Pemba NUIT, 147646887, Pemba, Mozambique, Africa"
     }
 ];
