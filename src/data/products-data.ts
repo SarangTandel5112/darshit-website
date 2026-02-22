@@ -417,6 +417,60 @@ export const productsData: ProductCategory[] = [
     },
     {
         id: 5,
+        name: "Value Added Dehydrated Products",
+        slug: "value-added-dehydrated-products",
+        icon: "onion",
+        image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+        tagline: "Value Added Dehydrated Products",
+        description:
+            "Export-grade value-added dehydrated onion products including fried onion and toasted onion in various cut sizes. Processed with controlled fat levels for food service, manufacturing, and industrial applications.",
+        products: [
+            {
+                id: 501,
+                name: "Dehydrated Fried Onion",
+                slug: "dehydrated-fried-onion",
+                category: "value-added-dehydrated-products",
+                image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+                description: "Dehydrated Fried Onion offers rich golden color, crispy texture, and concentrated onion flavor. Available in multiple fat levels and quality grades to suit diverse food manufacturing and culinary applications. Perfect for toppings, snacks, ready-to-eat meals, and industrial food processing.",
+                specifications: {
+                    size: "Flakes",
+                    origin: "India",
+                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize - Fat Level: 12%, 8%",
+                    packing: "14 kg strong poly bag covered with paper bag or 20 kg strong poly bag covered with 5 ply carton, Customize",
+                },
+            },
+            {
+                id: 502,
+                name: "Toasted Onion Kibbled",
+                slug: "toasted-onion-kibbled",
+                category: "value-added-dehydrated-products",
+                image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+                description: "Toasted Onion Kibbled provides a distinct toasted flavor profile with controlled fat content. Available in flakes and chopped sizes with customizable quality grades. Ideal for seasoning blends, soup mixes, and savory food applications requiring enhanced onion character.",
+                specifications: {
+                    size: "Flakes, Chopped",
+                    origin: "India",
+                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize - Fat Level: 12%, 8%",
+                    packing: "14 kg strong poly bag covered with paper bag or 20 kg strong poly bag covered with 5 ply carton, Customize",
+                },
+            },
+            {
+                id: 503,
+                name: "Toasted Onion Chopped",
+                slug: "toasted-onion-chopped",
+                category: "value-added-dehydrated-products",
+                image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+                description: "Toasted Onion Chopped delivers authentic toasted onion taste with uniform particle size. Processed in flakes and chopped formats with adjustable fat levels to meet specific buyer requirements. Suitable for instant foods, dry blends, and ready meal preparations.",
+                specifications: {
+                    size: "Flakes, Chopped",
+                    origin: "India",
+                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize - Fat Level: 12%, 8%",
+                    packing: "14 kg strong poly bag covered with paper bag or 20 kg strong poly bag covered with 5 ply carton, Customize",
+                },
+            },
+        ],
+    },
+    {
+        id: 6,
         name: "Oilseeds",
         slug: "oilseeds",
         icon: "seed",
@@ -426,7 +480,7 @@ export const productsData: ProductCategory[] = [
             "High-quality sesame seeds (black, hulled & natural), chia seeds, and premium peanuts (Java, TJ, Bold) sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
         products: [
             {
-                id: 501,
+                id: 601,
                 name: "Black Sesame Seeds",
                 slug: "black-sesame-seeds",
                 category: "oilseeds",
@@ -440,7 +494,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 502,
+                id: 602,
                 name: "Hulled Sesame Seeds",
                 slug: "hulled-sesame-seeds",
                 category: "oilseeds",
@@ -454,7 +508,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 503,
+                id: 603,
                 name: "Natural Sesame Seeds",
                 slug: "natural-sesame-seeds",
                 category: "oilseeds",
@@ -468,7 +522,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 504,
+                id: 604,
                 name: "Chia Seeds",
                 slug: "chia-seeds",
                 category: "oilseeds",
@@ -484,7 +538,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 505,
+                id: 605,
                 name: "Java Peanuts",
                 slug: "java-peanuts",
                 category: "oilseeds",
@@ -498,7 +552,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 506,
+                id: 606,
                 name: "TJ Peanuts",
                 slug: "tj-peanuts",
                 category: "oilseeds",
@@ -512,7 +566,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 507,
+                id: 607,
                 name: "Bold Peanuts",
                 slug: "bold-peanuts",
                 category: "oilseeds",
@@ -528,7 +582,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 6,
+        id: 7,
         name: "Psyllium Husk",
         slug: "psyllium-husk",
         icon: "herb",
@@ -547,7 +601,7 @@ export const productsData: ProductCategory[] = [
         },
         products: [
             {
-                id: 601,
+                id: 701,
                 name: "Psyllium Seeds",
                 slug: "psyllium-seeds",
                 category: "psyllium-husk",
@@ -560,7 +614,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 602,
+                id: 702,
                 name: "Psyllium Husk",
                 slug: "psyllium-husk",
                 category: "psyllium-husk",
@@ -575,7 +629,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 603,
+                id: 703,
                 name: "Psyllium Husk Powder",
                 slug: "psyllium-husk-powder",
                 category: "psyllium-husk",
@@ -591,7 +645,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 604,
+                id: 704,
                 name: "Psyllium Khakha Powder",
                 slug: "psyllium-khakha-powder",
                 category: "psyllium-husk",
@@ -604,7 +658,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 605,
+                id: 705,
                 name: "Psyllium Cattle Feed Fiber",
                 slug: "psyllium-cattle-feed-fiber",
                 category: "psyllium-husk",
@@ -619,7 +673,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 7,
+        id: 8,
         name: "Jaggery",
         slug: "jaggery",
         icon: "sugar",
@@ -629,7 +683,7 @@ export const productsData: ProductCategory[] = [
             "Traditional Indian jaggery in cubes and powder form. Unrefined natural sweetener ideal for health-conscious food manufacturers, confectionery, and beverage industries worldwide.",
         products: [
             {
-                id: 701,
+                id: 801,
                 name: "Jaggery Cubes",
                 slug: "jaggery-cubes",
                 category: "jaggery",
@@ -645,7 +699,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 702,
+                id: 802,
                 name: "Jaggery Powder",
                 slug: "jaggery-powder",
                 category: "jaggery",
@@ -662,7 +716,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 8,
+        id: 9,
         name: "Agro and Allied Food Products",
         slug: "agro-allied-food-products",
         icon: "food",
@@ -672,7 +726,7 @@ export const productsData: ProductCategory[] = [
             "Moringa powder and peanut butter for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
         products: [
             {
-                id: 801,
+                id: 901,
                 name: "Moringa Leaf Powder",
                 slug: "moringa-powder",
                 category: "agro-allied-food-products",
@@ -688,7 +742,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 802,
+                id: 902,
                 name: "Peanut Butter",
                 slug: "peanut-butter",
                 category: "agro-allied-food-products",
@@ -704,7 +758,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 804,
+                id: 904,
                 name: "Indian Groundnut Extraction Meal",
                 slug: "indian-groundnut-extraction-meal",
                 category: "agro-allied-food-products",
@@ -719,7 +773,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 9,
+        id: 10,
         name: "Spices",
         slug: "spices",
         icon: "spice",
@@ -729,7 +783,7 @@ export const productsData: ProductCategory[] = [
             "Pavanity Global supplies a wide range of Indian spices used in cooking, seasoning, and food processing. Our focus is on clean sourcing, proper grading, and safe packing so that buyers receive steady quality for international requirements. We deal in red chilli, cloves, turmeric fingers, green cardamom, cumin seeds, fenugreek seeds, fennel seeds, black mustard seeds, and yellow mustard seeds.",
         products: [
             {
-                id: 901,
+                id: 1001,
                 name: "Cumin Seeds",
                 slug: "cumin-seeds",
                 category: "spices",
@@ -743,7 +797,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 902,
+                id: 1002,
                 name: "Fenugreek Seeds",
                 slug: "fenugreek-seeds",
                 category: "spices",
@@ -757,7 +811,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 903,
+                id: 1003,
                 name: "Black Mustard Seeds",
                 slug: "mustard-seeds",
                 category: "spices",
@@ -771,7 +825,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 904,
+                id: 1004,
                 name: "Fennel Seeds",
                 slug: "fennel-seeds",
                 category: "spices",
@@ -785,7 +839,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 905,
+                id: 1005,
                 name: "Red Chilli Whole",
                 slug: "chilli-whole-powder",
                 category: "spices",
@@ -798,7 +852,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 906,
+                id: 1006,
                 name: "Turmeric Fingers",
                 slug: "turmeric-whole-powder",
                 category: "spices",
@@ -811,7 +865,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 907,
+                id: 1007,
                 name: "Cinnamon Powder",
                 slug: "cinnamon",
                 category: "spices",
@@ -825,7 +879,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 908,
+                id: 1008,
                 name: "Cloves (Whole)",
                 slug: "cloves",
                 category: "spices",
@@ -838,14 +892,14 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 909,
+                id: 1009,
                 name: "Black Pepper",
                 slug: "black-pepper",
                 category: "spices",
                 image: "/images/spices-profile.jpeg",
             },
             {
-                id: 910,
+                id: 1010,
                 name: "Green Cardamom",
                 slug: "cardamom",
                 category: "spices",
@@ -859,7 +913,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 911,
+                id: 1011,
                 name: "Yellow Mustard Seeds",
                 slug: "yellow-mustard-seeds",
                 category: "spices",
