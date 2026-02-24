@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Images - Using template images as placeholders
-import bg from '../../assets/img/shortcode/breadcumb.jpg'
-import aboutImage from '../../assets/img/about/about-banner-01.jpg'
+import bg from '../../assets/img/about-us-top-header.jpeg'
+import aboutImage from '../../assets/img/about-us.jpeg'
 
-// Icons
+// Icons 
 import { FaIndustry, FaShieldAlt, FaCheckCircle, FaAward, FaUsers, FaFlask } from 'react-icons/fa'
 
 // Components

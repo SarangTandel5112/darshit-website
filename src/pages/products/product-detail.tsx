@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 // Images
 import bg from "../../assets/img/shortcode/breadcumb.jpg";
-
+ 
 // Icons
 import {
     FaCertificate,

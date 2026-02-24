@@ -6,9 +6,9 @@ import NavbarPavanity from "../../components/navbar/navbar-pavanity";
 import FooterPavanity from "../../components/footer/footer-pavanity";
 import ScrollToTop from "../../components/scroll-to-top";
 
-// Images
-import bg from '../../assets/img/shortcode/breadcumb.jpg'
-import contactImg from '../../assets/img/thumb/contact-thumb.jpg'
+// Images 
+import bg from '../../assets/img/contact-us-header.jpg' // Placeholder
+import contactImg from '../../assets/img/contact-us.jpg'
 
 // Icons
 import { FaEnvelope } from 'react-icons/fa'

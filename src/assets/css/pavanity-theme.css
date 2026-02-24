@@ -12,7 +12,7 @@
     --pavanity-border-gray: #E0E0E0;       /* Soft Gray - Dividers, Cards */
 
     /* ACCENT COLORS - Minimal Use */
-    --pavanity-accent-blue: #20a839;       /* Professional Green - CTAs, Links */
+    --pavanity-accent-blue: #599e2d;       /* Professional Green - CTAs, Links */
     --pavanity-success-green: #2D6A4F;     /* Muted Green - Trust Indicators */
 
     /* BACKGROUND */
@@ -24,7 +24,7 @@
     --pavanity-text-light: #999999;
 }
 
-/* Override template primary color (#20a839) with Pavanity accent */
+/* Override template primary color (#599e2d) with Pavanity accent */
 .bg-primary,
 [class*="bg-primary"] {
     background-color: var(--pavanity-accent-blue) !important;
@@ -53,7 +53,7 @@
     fill: var(--pavanity-accent-blue) !important;
 }
 
-.bg-\[\#20a839\] {
+.bg-\[\#599e2d\] {
     background-color: var(--pavanity-accent-blue) !important;
 }
 

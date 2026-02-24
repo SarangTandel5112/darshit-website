@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Images
-import bg from '../../assets/img/shortcode/breadcumb.jpg'
+import bg from '../../assets/img/private-label-top-header.jpeg'
 
 // Icons
 import { FaTag, FaCog, FaFileContract, FaShippingFast } from 'react-icons/fa'
 
-// Components
+// Components 
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
 import FooterPavanity from "../../components/footer/footer-pavanity";
 import ScrollToTop from "../../components/scroll-to-top";

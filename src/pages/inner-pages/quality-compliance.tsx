@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Images
-import bg from '../../assets/img/shortcode/breadcumb.jpg'
-import qualityImage from '../../assets/img/about/about-banner-03.jpg' // Placeholder
+import bg from '../../assets/img/quality-compliance-top-header.jpeg'
+import qualityImage from '../../assets/img/quality-compliance.jpeg' // Placeholder
 
-// Icons
+// Icons 
 import { FaShieldAlt, FaClipboardCheck, FaSeedling, FaBoxOpen, FaTags, FaShippingFast, FaListAlt } from 'react-icons/fa'
 
 // Components

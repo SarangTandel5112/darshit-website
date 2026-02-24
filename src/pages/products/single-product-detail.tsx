@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 // Images
 import bg from "../../assets/img/shortcode/breadcumb.jpg";
-import placeholderImage from "../../assets/img/about/about-banner-01.jpg";
+import placeholderImage from "../../assets/img/about/about-banner-01.jpg"; 
 
 // Icons
 import { FaIndustry } from "react-icons/fa";
