@@ -28,7 +28,7 @@ const ScrollToTop = () => {
   return (
     <div className="fixed bottom-4 right-4 z-50">
         {isVisible && (
-            <button onClick={scrollToTop} className="bg-[#20a839] text-white hover:bg-black p-3 shadow-lg transition duration-300">
+            <button onClick={scrollToTop} className="bg-[#599e2d] text-white hover:bg-black p-3 shadow-lg transition duration-300">
               <FiArrowUp/>
             </button>
         )}

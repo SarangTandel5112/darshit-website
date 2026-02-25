@@ -484,7 +484,7 @@ export const productsData: ProductCategory[] = [
                 name: "Black Sesame Seeds",
                 slug: "black-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/black-sesame-seeds copy.jpg",
+                image: "/images/black-sesame-seeds.jpeg",
                 description: "Z Black Sesame Seeds have a natural dark colour and a clean seed appearance. They are commonly used in general food applications where uniform seed texture and visual appeal are preferred. The seeds are suitable for everyday usage and can be included in a variety of food preparations. Pavanity Global offers Z Black Sesame Seeds with clear specifications and structured supply options for regular buyer requirements.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -512,7 +512,7 @@ export const productsData: ProductCategory[] = [
                 name: "Natural Sesame Seeds",
                 slug: "natural-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/natural-sesame-seeds.jpg",
+                image: "/images/natural-sesame-seeds.jpeg",
                 description: "Natural White Sesame Seeds feature a light seed colour and smooth texture. They are commonly used in general food practices where neat seed appearance and simple functionality are important. Their balanced seed profile supports easy usage across different food categories. Pavanity Global presents Natural White Sesame Seeds with defined parameters suitable for regular sourcing needs.",
                 specifications: {
                     origin: "Gujarat - India",
@@ -687,7 +687,7 @@ export const productsData: ProductCategory[] = [
                 name: "Jaggery Cubes",
                 slug: "jaggery-cubes",
                 category: "jaggery",
-                image: "/images/jaggery-cubes.jpg",
+                image: "/images/jaggery-cubes.jpeg",
                 description: "Jaggery from Pavanity Global is known for its natural sweetness, clean appearance, and smooth texture, making it suitable for a wide range of food applications. Its golden to brown color and naturally formed structure reflect traditional methods, offering a simple and authentic sweetening option. Jaggery is valued for its mild flavour and suitability for varied culinary preferences across global markets.",
                 specifications: {
                     origin: "India",
@@ -703,7 +703,7 @@ export const productsData: ProductCategory[] = [
                 name: "Jaggery Powder",
                 slug: "jaggery-powder",
                 category: "jaggery",
-                image: "/images/jaggery-powder.jpg",
+                image: "/images/jaggery-powder.jpeg",
                 description: "Jaggery Powder from Pavanity Global offers a fine, free-flowing texture with a natural golden tone, making it easy to blend into many food preparations. Its mild aroma and smooth mixing character make it suitable for different applications where a natural sweetening profile is needed. The powder form supports convenient handling and general formulation requirements.",
                 specifications: {
                     origin: "India",
@@ -746,7 +746,7 @@ export const productsData: ProductCategory[] = [
                 name: "Peanut Butter",
                 slug: "peanut-butter",
                 category: "agro-allied-food-products",
-                image: "/images/homemade-peanut-butter-with-peanuts-grey-concrete-table-top-view.jpg",
+                image: "/images/peanut-butter.jpeg",
                 description: "Pavanity Global supplies peanut butter for international trade in multiple variants such as creamy, crunchy, unsweetened, chocolate, honey, and jaggery. The product is prepared through a consistent process and offered in retail jars or bulk pails as per buyer requirements. We support private label projects, bulk supply, and market-specific packaging for importers, distributors, and wholesale buyers.",
                 specifications: {
                     color: "Light to medium brown",
@@ -815,7 +815,7 @@ export const productsData: ProductCategory[] = [
                 name: "Black Mustard Seeds",
                 slug: "mustard-seeds",
                 category: "spices",
-                image: "/images/spices-profile.jpeg",
+                image: "/images/black-mustard-seeds.jpeg",
                 description: "Black mustard seeds are used in oil extraction, seasoning, and tempering. They offer a natural pungent taste and are widely used in food industries. We provide clean, uniform seeds suitable for bulk export. Keywords: black mustard seeds exporter, Indian mustard supplier, rai exporter.",
                 specifications: {
                     color: "Black–dark brown",
@@ -829,7 +829,7 @@ export const productsData: ProductCategory[] = [
                 name: "Fennel Seeds",
                 slug: "fennel-seeds",
                 category: "spices",
-                image: "/images/spices-profile.jpeg",
+                image: "/images/fennel-seeds.jpeg",
                 description: "Fennel seeds are used in cooking, mouth fresheners, seasoning mixes, and food processing. They have a mild sweet flavor and steady aroma. Our fennel seeds are sorted to maintain good color and quality for export. Keywords: fennel seeds exporter, saunf supplier India, fennel wholesale, spice exporter India.",
                 specifications: {
                     color: "Green–yellowish",
@@ -843,7 +843,7 @@ export const productsData: ProductCategory[] = [
                 name: "Red Chilli Whole",
                 slug: "chilli-whole-powder",
                 category: "spices",
-                image: "/images/red-chilli-paste-black.jpg",
+                image: "/images/red-chilli-whole.jpg",
                 description: "Red chilli whole is used worldwide for heat, flavor, and natural color. It is suitable for grinding, spice mixing, and food processing industries. We supply known varieties that meet international usage standards and offer steady quality for bulk buyers. Keywords: red chilli supplier, red chilli exporter, whole chilli export, Indian dry red chilli.",
                 specifications: {
                     qualities: "Varieties: S17 Teja Chilli, Sanam (334), Byadgi, Wonder Hot, Guntur, 273 Wrinkle, 341 - Uses: Culinary, spice blends, oleoresin extraction, food coloring",
@@ -869,7 +869,7 @@ export const productsData: ProductCategory[] = [
                 name: "Cinnamon Powder",
                 slug: "cinnamon",
                 category: "spices",
-                image: "/images/many-cinnamon-sticks-white-surface.jpg",
+                image: "/images/cinnamon.jpg",
                 description: "Cinnamon Powder is a fine powder made from ground cinnamon sticks (bark), available in True Cinnamon (Cinnamomum verum) or Cassia Cinnamon (Cinnamomum cassia) varieties.",
                 specifications: {
                     color: "Light brown to reddish-brown",
@@ -883,7 +883,7 @@ export const productsData: ProductCategory[] = [
                 name: "Cloves (Whole)",
                 slug: "cloves",
                 category: "spices",
-                image: "/images/pile-dried-natural-cloves-with-wooden-spoon-black-surface.jpg",
+                image: "/images/cloves-whole.jpeg",
                 description: "Whole cloves are used in daily cooking, tea blends, beverages, and spice mixes. They offer a natural aroma and warm taste that enhances food preparation. Our cloves are sorted for size and cleanliness, making them suitable for wholesale and retail markets. Keywords: cloves exporter, whole cloves supplier, Indian cloves export, spice wholesaler.",
                 specifications: {
                     qualities: "Botanical Name: Syzygium aromaticum - Form: Whole dried flower buds",
@@ -896,14 +896,14 @@ export const productsData: ProductCategory[] = [
                 name: "Black Pepper",
                 slug: "black-pepper",
                 category: "spices",
-                image: "/images/spices-profile.jpeg",
+                image: "/images/black-pepper.jpeg",
             },
             {
                 id: 1010,
                 name: "Green Cardamom",
                 slug: "cardamom",
                 category: "spices",
-                image: "/images/spices-profile.jpeg",
+                image: "/images/green-cardamom.jpeg",
                 description: "Green cardamom is used in tea, sweets, bakery items, and food flavoring. It is valued for its natural aroma and clean appearance. Our cardamom is sorted for size, making it suitable for both household packing and commercial use. Keywords: green cardamom supplier, cardamom exporter India, elaichi wholesaler, Indian spices exporter.",
                 specifications: {
                     color: "Bright green",
@@ -917,7 +917,7 @@ export const productsData: ProductCategory[] = [
                 name: "Yellow Mustard Seeds",
                 slug: "yellow-mustard-seeds",
                 category: "spices",
-                image: "/images/spices-profile.jpeg",
+                image: "/images/yellow-mustard-seeds.jpeg",
                 description: "Yellow mustard seeds are used in sauces, spreads, seasonings, and food products. They have a mild taste and natural color that fits many applications. Our yellow mustard is cleaned and packed safely for international shipments. Keywords: yellow mustard seeds exporter, mustard supplier India, food-grade mustard export.",
                 specifications: {
                     color: "Light yellow–golden",
