@@ -282,8 +282,8 @@ export const socialMedia = [
 // ============================================
 
 export const contactInfo = {
-    email: "business@pavanity.com",
-    phone: "+91 XXX XXX XXXX", // Update with actual phone
+    email: "info@pavanityglobal.com",
+    phone: "+91 98250 47586",
     address: "Jetpur - Rajkot 360-370, Gujarat, India",
     responseTime: "24-48 working hours"
 };
@@ -301,7 +301,7 @@ export const officeLocations = [
     {
         id: 2,
         country: "India",
-        address: "Amardham, Dhoraji Road, Jetpur, Rajkot, Gujarat 360 370"
+        address: "Dhoraji Road, Jetpur, Rajkot, Gujarat 360 370"
     },
     {
         id: 3,
