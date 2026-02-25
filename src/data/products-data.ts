@@ -417,60 +417,6 @@ export const productsData: ProductCategory[] = [
     },
     {
         id: 5,
-        name: "Value Added Dehydrated Products",
-        slug: "value-added-dehydrated-products",
-        icon: "onion",
-        image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
-        tagline: "Value Added Dehydrated Products",
-        description:
-            "Export-grade value-added dehydrated onion products including fried onion and toasted onion in various cut sizes. Processed with controlled fat levels for food service, manufacturing, and industrial applications.",
-        products: [
-            {
-                id: 501,
-                name: "Dehydrated Fried Onion",
-                slug: "dehydrated-fried-onion",
-                category: "value-added-dehydrated-products",
-                image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
-                description: "Dehydrated Fried Onion offers rich golden color, crispy texture, and concentrated onion flavor. Available in multiple fat levels and quality grades to suit diverse food manufacturing and culinary applications. Perfect for toppings, snacks, ready-to-eat meals, and industrial food processing.",
-                specifications: {
-                    size: "Flakes",
-                    origin: "India",
-                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize - Fat Level: 12%, 8%",
-                    packing: "14 kg strong poly bag covered with paper bag or 20 kg strong poly bag covered with 5 ply carton, Customize",
-                },
-            },
-            {
-                id: 502,
-                name: "Toasted Onion Kibbled",
-                slug: "toasted-onion-kibbled",
-                category: "value-added-dehydrated-products",
-                image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
-                description: "Toasted Onion Kibbled provides a distinct toasted flavor profile with controlled fat content. Available in flakes and chopped sizes with customizable quality grades. Ideal for seasoning blends, soup mixes, and savory food applications requiring enhanced onion character.",
-                specifications: {
-                    size: "Flakes, Chopped",
-                    origin: "India",
-                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize - Fat Level: 12%, 8%",
-                    packing: "14 kg strong poly bag covered with paper bag or 20 kg strong poly bag covered with 5 ply carton, Customize",
-                },
-            },
-            {
-                id: 503,
-                name: "Toasted Onion Chopped",
-                slug: "toasted-onion-chopped",
-                category: "value-added-dehydrated-products",
-                image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
-                description: "Toasted Onion Chopped delivers authentic toasted onion taste with uniform particle size. Processed in flakes and chopped formats with adjustable fat levels to meet specific buyer requirements. Suitable for instant foods, dry blends, and ready meal preparations.",
-                specifications: {
-                    size: "Flakes, Chopped",
-                    origin: "India",
-                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize - Fat Level: 12%, 8%",
-                    packing: "14 kg strong poly bag covered with paper bag or 20 kg strong poly bag covered with 5 ply carton, Customize",
-                },
-            },
-        ],
-    },
-    {
-        id: 6,
         name: "Oilseeds",
         slug: "oilseeds",
         icon: "seed",
@@ -582,7 +528,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 7,
+        id: 6,
         name: "Psyllium Husk",
         slug: "psyllium-husk",
         icon: "herb",
@@ -673,7 +619,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 8,
+        id: 7,
         name: "Jaggery",
         slug: "jaggery",
         icon: "sugar",
@@ -716,7 +662,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 9,
+        id: 8,
         name: "Agro and Allied Food Products",
         slug: "agro-allied-food-products",
         icon: "food",
