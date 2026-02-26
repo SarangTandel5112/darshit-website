@@ -282,8 +282,8 @@ export const socialMedia = [
 // ============================================
 
 export const contactInfo = {
-    email: "business@pavanity.com",
-    phone: "+91 XXX XXX XXXX", // Update with actual phone
+    email: "info@pavanityglobal.com",
+    phone: "+91 98250 47586",
     address: "Jetpur - Rajkot 360-370, Gujarat, India",
     responseTime: "24-48 working hours"
 };
@@ -307,5 +307,10 @@ export const officeLocations = [
         id: 3,
         country: "Kenya",
         address: "3rd Parkland, Near Diamond Plaza, Opposite Shree Vallabhdham Haveli, Nairobi 00100"
+    },
+    {
+        id: 4,
+        country: "Mozambique",
+        address: "E.I.CABO DELGADO, Cidade de Pemba NUIT, 147646887, Pemba, Mozambique, Africa"
     }
 ];

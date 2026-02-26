@@ -56,7 +56,7 @@ export const productsData: ProductCategory[] = [
                 description: "White Onion Powder provides a smooth, concentrated onion profile designed for flavour mixes, instant foods, sauces, and large-scale manufacturing. Pavanity Global emphasizes precise specifications, consistent supply cycles, and organized export processes to support reliable procurement. The powder blends easily into dry and liquid formulations, ensuring predictable performance in diverse production environments.",
                 specifications: {
                     size: "80 To 100 mesh",
-                    origin: "Gujarat - India",
+                    origin: "India",
                     color: "White",
                     aroma: "Strong Aroma Represents Indian Origin Products",
                     packing: "20 KG, strong poly bag inside cartoon",
@@ -73,7 +73,7 @@ export const productsData: ProductCategory[] = [
                 description: "White Onion Flakes deliver a consistent onion profile that aligns well with diverse food formulations across global markets. Pavanity Global focuses on providing clear product parameters, steady availability, and well-managed export coordination, ensuring a smooth and predictable sourcing experience. The flakes integrate easily into seasonings, dry blends, sauces, and processed preparations, offering a reliable ingredient that supports uniformity and efficiency in production workflows.",
                 specifications: {
                     size: "8 To 15 MM",
-                    origin: "Gujarat - India",
+                    origin: "India",
                     color: "White",
                     aroma: "Strong Aroma Represents Indian Origin Products",
                     packing: "14 KG, strong poly bag inside cartoon",
@@ -90,7 +90,7 @@ export const productsData: ProductCategory[] = [
                 description: "White Onion Granules offer a uniform particle size that fits smoothly into blends, seasoning mixes, and industrial food preparations across global markets. Pavanity Global provides well-defined specifications, steady availability, and organized export coordination to support consistent sourcing. The granules disperse evenly in dry and wet formulations, giving a reliable ingredient option for streamlined production workflows.",
                 specifications: {
                     size: "24 To 60 mesh",
-                    origin: "Gujarat - India",
+                    origin: "India",
                     color: "White",
                     aroma: "Strong Aroma Represents Indian Origin Products",
                     packing: "20 KG, strong poly bag inside cartoon",
@@ -107,7 +107,7 @@ export const productsData: ProductCategory[] = [
                 description: "White Onion Chopped provides a balanced texture and clean onion character suitable for ready mixes, dehydrated blends, and large-scale processing applications. Pavanity Global ensures clear product parameters, dependable supply, and structured export handling, making procurement predictable and efficient. The chopped format integrates easily into formulations requiring visible onion pieces and consistent performance.",
                 specifications: {
                     size: "3 To 5 MM",
-                    origin: "Gujarat - India",
+                    origin: "India",
                     color: "White",
                     aroma: "Strong Aroma Represents Indian Origin Products",
                     packing: "20 KG, strong poly bag inside cartoon",
@@ -124,7 +124,7 @@ export const productsData: ProductCategory[] = [
                 description: "White Onion Minced delivers fine, controlled sizing that works well in seasoning bases, dry blends, sauces, and prepared food systems. With defined specifications, stable availability, and smooth export coordination, Pavanity Global supports a seamless sourcing experience. The minced form offers uniform distribution in recipes and helps maintain consistency in production.",
                 specifications: {
                     size: "1 To 3 MM",
-                    origin: "Gujarat - India",
+                    origin: "India",
                     color: "White",
                     aroma: "Strong Aroma Represents Indian Origin Products",
                     packing: "20 KG, strong poly bag inside cartoon",
@@ -153,7 +153,7 @@ export const productsData: ProductCategory[] = [
                 description: "Red Onion Powder delivers a smooth, concentrated onion note formulated for sauces, dry mixes, instant foods, and large-scale manufacturing. Pavanity Global ensures accurate specifications, stable supply cycles, and streamlined export processes for dependable sourcing. The powder blends seamlessly into various systems, supporting controlled flavour delivery and uniform results across production lines.",
                 specifications: {
                     size: "80 To 100 mesh",
-                    origin: "Gujarat - India",
+                    origin: "India",
                     color: "Reddish",
                     aroma: "Strong Aroma Represents Indian Origin Products",
                     packing: "20 KG, strong poly bag inside cartoon",
@@ -170,7 +170,7 @@ export const productsData: ProductCategory[] = [
                 description: "Red Onion Flakes provide a defined cut size with a natural red tone that performs effectively in seasoning blends, dehydrated preparations, and processed formulations across international markets. Pavanity Global follows clear product parameters, ensures steady availability, and maintains organized export coordination to support reliable procurement. The flakes integrate evenly into dry and semi-moist systems, offering consistent behaviour and smooth handling across production workflows.",
             specifications: {
                 size: "8 To 15 MM",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Reddish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "14 KG, strong poly bag inside cartoon",
@@ -187,7 +187,7 @@ export const productsData: ProductCategory[] = [
                 description: "Red Onion Granules offer consistent particle uniformity suitable for flavour blends, spice applications, and industrial recipes across global markets. Pavanity Global supports sourcing through steady availability, rigorous parameter clarity, and organized export coordination. The granules disperse evenly in all types of formulations, enhancing operational efficiency and performance consistency during production.",
             specifications: {
                 size: "24 To 60 mesh",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Reddish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "20 KG, strong poly bag inside cartoon",
@@ -204,7 +204,7 @@ export const productsData: ProductCategory[] = [
                 description: "Red Onion Chopped features an even particle size suitable for applications that require both flavour contribution and visible onion presence. Pavanity Global offers structured specifications, predictable availability, and well-managed export logistics to enable uninterrupted sourcing. The chopped format fits cleanly into mixes, bases, and industrial preparations, supporting uniform dispersion and dependable processing performance.",
             specifications: {
                 size: "3 To 5 MM",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Reddish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "20 KG, strong poly bag inside cartoon",
@@ -221,7 +221,7 @@ export const productsData: ProductCategory[] = [
                 description: "Red Onion Minced provides fine, controlled sizing that distributes smoothly in seasoning bases, sauce formulations, and processed food systems. Pavanity Global maintains defined quality parameters, stable supply planning, and coordinated export handling to ensure consistency throughout the procurement process. The minced particles blend efficiently into dry and wet applications, supporting balanced flavour release and predictable production outcomes.",
             specifications: {
                 size: "1 To 3 MM",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Reddish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "20 KG, strong poly bag inside cartoon",
@@ -250,7 +250,7 @@ export const productsData: ProductCategory[] = [
                 description: "Pink Onion Powder offers a smooth, refined onion note that blends effectively into mixes, ready preparations, and industrial recipes. Pavanity Global provides well-structured parameters, predictable supply cycles, and organized export support to maintain consistent sourcing. The powder integrates easily into dry and wet systems, offering uniform flavour delivery and stable production performance.",
             specifications: {
                 size: "80 To 100 mesh",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Pinkish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "20 KG, strong poly bag inside cartoon",
@@ -267,7 +267,7 @@ export const productsData: ProductCategory[] = [
                 description: "Pink Onion Flakes feature a mild onion profile and a soft natural hue that aligns well with seasoning blends, dry mixes, and processed preparations across international markets. Pavanity Global provides defined specifications, consistent availability, and organized export coordination to maintain smooth sourcing experiences. The flakes disperse evenly in formulations, supporting steady performance and balanced product outcomes.",
             specifications: {
                 size: "8 To 15 MM",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Pinkish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "14 KG, strong poly bag inside cartoon",
@@ -284,7 +284,7 @@ export const productsData: ProductCategory[] = [
                 description: "Pink Onion Granules provide uniform particle distribution suited for seasoning blends, dry formulations, and large-scale processing applications. Pavanity Global ensures clarity in specifications, regular availability, and streamlined export coordination for reliable procurement. The granules incorporate cleanly into production workflows, supporting operational consistency and efficient blending.",
             specifications: {
                 size: "24 To 60 mesh",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Pinkish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "20 KG, strong poly bag inside cartoon",
@@ -301,7 +301,7 @@ export const productsData: ProductCategory[] = [
                 description: "Pink Onion Chopped offers a uniform particulate size designed for formulations requiring visible onion texture with controlled colour influence. Pavanity Global maintains structured specifications, dependable supply planning, and efficient export management to ensure consistent sourcing. The chopped format integrates cleanly into blends and food systems, delivering predictable distribution and stable functionality.",
             specifications: {
                 size: "3 To 5 MM",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Pinkish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "20 KG, strong poly bag inside cartoon",
@@ -318,7 +318,7 @@ export const productsData: ProductCategory[] = [
                 description: "Pink Onion Minced delivers fine, accurate sizing that works well in sauces, mixes, and industrial preparations where even flavour distribution is required. Pavanity Global supports consistent sourcing through clear parameters, steady availability, and organized export processes. The minced format disperses smoothly across dry and liquid applications, contributing to balanced formulation performance.",
             specifications: {
                 size: "1 To 3 MM",
-                origin: "Gujarat - India",
+                origin: "India",
                 color: "Pinkish",
                 aroma: "Strong Aroma Represents Indian Origin Products",
                 packing: "20 KG, strong poly bag inside cartoon",
@@ -426,56 +426,56 @@ export const productsData: ProductCategory[] = [
             "High-quality sesame seeds (black, hulled & natural), chia seeds, and premium peanuts (Java, TJ, Bold) sourced from certified Indian farms. Ideal for food manufacturers, bakeries, and health food brands across global markets.",
         products: [
             {
-                id: 501,
+                id: 601,
                 name: "Black Sesame Seeds",
                 slug: "black-sesame-seeds",
                 category: "oilseeds",
                 image: "/images/black-sesame-seeds.jpeg",
                 description: "Z Black Sesame Seeds have a natural dark colour and a clean seed appearance. They are commonly used in general food applications where uniform seed texture and visual appeal are preferred. The seeds are suitable for everyday usage and can be included in a variety of food preparations. Pavanity Global offers Z Black Sesame Seeds with clear specifications and structured supply options for regular buyer requirements.",
                 specifications: {
-                    origin: "Gujarat - India",
+                    origin: "India",
                     size: "Z Black Sortex",
                     qualities: "Purity: 99.50%, 99.99% - GMO Status: Not Genetically Modified - Oil Content: 42-48% Max",
                     packing: "1 kg, 5 kg, 25 kg, 40 kg - Loading: 19 Tons",
                 },
             },
             {
-                id: 502,
+                id: 602,
                 name: "Hulled Sesame Seeds",
                 slug: "hulled-sesame-seeds",
                 category: "oilseeds",
                 image: "/images/sesame.jpeg",
                 description: "Hulled Sesame Seeds offer a clean surface and uniform light tone. These seeds are suitable for multiple food uses where a soft texture and refined appearance are preferred. They integrate comfortably into various standard applications. Pavanity Global provides Hulled Sesame Seeds with clear specifications for straightforward procurement.",
                 specifications: {
-                    origin: "Gujarat - India",
+                    origin: "India",
                     size: "Machine Clean And Sortex",
                     qualities: "Purity: 99.50%, 99.99% - GMO Status: Not Genetically Modified - Oil Content: 42-48% Max",
                     packing: "1 kg, 5 kg, 25 kg, 40 kg - Loading: 19 Tons",
                 },
             },
             {
-                id: 503,
+                id: 603,
                 name: "Natural Sesame Seeds",
                 slug: "natural-sesame-seeds",
                 category: "oilseeds",
                 image: "/images/natural-sesame-seeds.jpeg",
                 description: "Natural White Sesame Seeds feature a light seed colour and smooth texture. They are commonly used in general food practices where neat seed appearance and simple functionality are important. Their balanced seed profile supports easy usage across different food categories. Pavanity Global presents Natural White Sesame Seeds with defined parameters suitable for regular sourcing needs.",
                 specifications: {
-                    origin: "Gujarat - India",
+                    origin: "India",
                     size: "Machine Clean And Sortex",
                     qualities: "Purity: 99.95%, 99.90% - GMO Status: Not Genetically Modified - Oil Content: 42-48% Max",
                     packing: "1 kg, 5 kg, 25 kg, 40 kg - Loading: 19 Tons",
                 },
             },
             {
-                id: 504,
+                id: 604,
                 name: "Chia Seeds",
                 slug: "chia-seeds",
                 category: "oilseeds",
                 image: "/images/chia-seeds.jpeg",
                 description: "Chia Seeds from Pavanity Global are small, naturally shaped seeds with a smooth texture and neutral taste, making them easy to add to a variety of everyday food preparations. They blend well into drinks, bakery items, cereals, and general mixes, while their natural seed composition supports versatile use across different applications. Chia seeds are commonly appreciated for containing naturally occurring nutrients such as fiber, plant-based protein, and essential fatty acids, which contribute to general dietary balance. Their simple handling, clean appearance, and ability to mix smoothly into recipes make them a practical ingredient for multiple food categories.",
                 specifications: {
-                    origin: "Gujarat - India",
+                    origin: "India",
                     size: "1mm to 2mm - Small, oval-shaped seeds with a shiny surface",
                     color: "Black, white, or a mix of both",
                     qualities: "Purity: 99-99.5% - Foreign Matter: 0.5% max - Admixture: 0.5% max - Moisture: 6-8% max - Omega-3: 18-22% - Protein: 16-23% - Fiber: 30-36% - Total Fat: 30-35% - Broken Seeds: 1% max",
@@ -484,42 +484,42 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 505,
+                id: 605,
                 name: "Java Peanuts",
                 slug: "java-peanuts",
                 category: "oilseeds",
                 image: "/images/java-peanut.png",
                 description: "Java Peanuts are known for their naturally mild aroma, smooth taste, and uniform round kernel shape. They are appreciated for their balanced composition, offering a dependable combination of protein, healthy fats, and essential nutrients. Java peanuts are commonly used in snacks, roasted mixes, and general food applications due to their clean flavour and steady performance. Pavanity Global maintains consistent quality parameters, reliable availability, and organized export support, ensuring smooth sourcing for buyers. Their natural sweetness, uniform kernel appearance, and stable handling characteristics make Java peanuts a preferred choice across multiple market segments.",
                 specifications: {
-                    origin: "Gujarat - India",
+                    origin: "India",
                     size: "50/60 Count, 80/90 Count",
                     qualities: "Moisture: 7-8% Max, Admixture: 1-2% Max, Foreign Material: 1% Max, Oil Content: 42-48% Max",
                     packing: "1 to 50 kg Jute Bag, PP Bag - Loading: 19 to 27 tons",
                 },
             },
             {
-                id: 506,
+                id: 606,
                 name: "TJ Peanuts",
                 slug: "tj-peanuts",
                 category: "oilseeds",
                 image: "/images/tj-peanuts.png",
                 description: "TJ Peanuts feature a neat and uniform kernel profile that supports a wide range of culinary and food-related uses. They carry a balanced taste and natural richness, offering suitability for snacks, roasted applications, blending, and everyday consumption. Their structure allows for dependable behaviour during use, supporting both flavour and texture needs. Pavanity Global focuses on steady supply, clear specifications, and well-coordinated export operations, helping buyers receive a consistent and predictable product. This combination of reliability and natural peanut quality makes TJ peanuts a solid fit for varied markets.",
                 specifications: {
-                    origin: "Gujarat - India",
+                    origin: "India",
                     size: "50/60 Count, 80/90 Count",
                     qualities: "Moisture: 7-8% Max, Admixture: 1-2% Max, Foreign Material: 1% Max, Oil Content: 42-48% Max",
                     packing: "1 to 50 kg Jute Bag, PP Bag - Loading: 19 to 27 tons",
                 },
             },
             {
-                id: 507,
+                id: 607,
                 name: "Bold Peanuts",
                 slug: "bold-peanuts",
                 category: "oilseeds",
                 image: "/images/bold-peanut.png",
                 description: "Bold Peanuts are recognized for their larger kernel size, firm texture, and fuller peanut character. They provide a naturally rich taste and are suitable for a variety of uses including direct consumption, snacks, confectionery, and general food preparation. Their strength, shape retention, and natural oil balance make them favourable in applications requiring a noticeable peanut presence. Pavanity Global ensures defined quality parameters, consistent supply cycles, and structured export coordination to support smooth sourcing. Bold peanuts offer dependable performance and a stable profile, making them a popular and versatile choice for buyers.",
                 specifications: {
-                    origin: "Gujarat - India",
+                    origin: "India",
                     size: "38/42 Count, 50/60 Count",
                     qualities: "Moisture: 7-8% Max, Admixture: 1-2% Max, Foreign Material: 1% Max, Oil Content: 42-48% Max",
                     packing: "1 to 50 kg Jute Bag, PP Bag - Loading: 19 to 27 tons",
@@ -547,27 +547,27 @@ export const productsData: ProductCategory[] = [
         },
         products: [
             {
-                id: 601,
+                id: 701,
                 name: "Psyllium Seeds",
                 slug: "psyllium-seeds",
                 category: "psyllium-husk",
                 image: "/images/psyllium-seeds.jpeg",
                 description: "Psyllium Seeds come from the Plantago ovata plant and are valued worldwide for their exceptionally high soluble fiber content. Pavanity Global sources premium psyllium seeds from India's leading growing regions including Gujarat and Rajasthan—areas known for the ideal dry, sandy climate required for high-quality cultivation. Our psyllium seeds meet international standards for purity, safety, and performance across food, pharmaceutical, nutraceutical, and animal feed industries.",
                 specifications: {
-                    origin: "Gujarat and Rajasthan - India",
+                    origin: "India",
                     qualities: "High soluble fiber content - Supports healthy digestion - Helps regulate blood sugar - Aids in lowering cholesterol - Natural prebiotic",
                     standard: "Applications: Pharmaceuticals, Food Industry, Nutraceuticals, Animal Feed, Cosmetics - International quality standards",
                 },
             },
             {
-                id: 602,
+                id: 702,
                 name: "Psyllium Husk",
                 slug: "psyllium-husk",
                 category: "psyllium-husk",
                 image: "/images/psyllium-husk.jpeg",
                 description: "Psyllium Husk is the outer layer of Plantago ovata seeds, known for its powerful water-absorption capability and rich soluble fiber profile. India produces over 80% of the global supply, with the highest quality grown in Gujarat and Rajasthan. Pavanity Global provides high-purity, export-grade psyllium husk suitable for pharmaceutical, food, nutraceutical, and animal nutrition sectors.",
                 specifications: {
-                    origin: "Gujarat and Rajasthan - India",
+                    origin: "India",
                     color: "Natural cream",
                     qualities: "Purity: 85%, 95%, 98%, 99% - Moisture: Maximum 10% - Swell Volume: 35-70 ml/g (varies by grade) - GMO Status: Non-GMO",
                     packing: "25 kg / 50 kg - Shelf Life: 1 year",
@@ -575,14 +575,14 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 603,
+                id: 703,
                 name: "Psyllium Husk Powder",
                 slug: "psyllium-husk-powder",
                 category: "psyllium-husk",
                 image: "/images/psyllium-husk-powder.jpeg",
                 description: "Psyllium Husk Powder is a finely milled form of psyllium husk, widely used for its gel-forming and water-binding properties. It is a key ingredient in digestive supplements, gluten-free foods, and pharmaceutical formulations. India remains the global leader in psyllium husk powder production, and Pavanity Global ensures consistent, clean, export-compliant quality across all mesh sizes and purity grades.",
                 specifications: {
-                    origin: "Gujarat and Rajasthan - India",
+                    origin: "India",
                     size: "80 to 100 mesh, 100 to 120 mesh",
                     color: "Natural cream to white",
                     qualities: "100% gluten-free - Supports digestive regularity - Helps lower cholesterol - Natural prebiotic - High purity grades available",
@@ -591,27 +591,27 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 604,
+                id: 704,
                 name: "Psyllium Khakha Powder",
                 slug: "psyllium-khakha-powder",
                 category: "psyllium-husk",
                 image: "/images/psyllium-khakha.jpeg",
                 description: "Psyllium Khakha Powder is a fiber-rich byproduct of psyllium husk processing. It contains husk flakes, seed fragments, and natural roughage components. Known for its strong absorption and eco-friendly properties, it is widely used in animal feed, agriculture, biodegradable manufacturing, and industrial absorbents. Pavanity Global supplies uniform, clean Khakha Powder ideal for bulk applications.",
                 specifications: {
-                    origin: "Gujarat and Rajasthan - India",
+                    origin: "India",
                     qualities: "High natural fiber - Excellent absorption capability - Eco-friendly & biodegradable - Cost-effective raw material - Versatile industrial applications",
                     standard: "Applications: Animal Feed, Agriculture (soil conditioning), Biodegradable Products, Industrial Absorbents, Pharmaceuticals",
                 },
             },
             {
-                id: 605,
+                id: 705,
                 name: "Psyllium Cattle Feed Fiber",
                 slug: "psyllium-cattle-feed-fiber",
                 category: "psyllium-husk",
                 image: "/images/psyllium-cattle-feed.jpeg",
                 description: "Psyllium-based cattle feed is a natural fiber supplement that promotes digestion, hydration, and rumen health in dairy and farm animals. Pavanity Global's psyllium cattle feed fiber improves nutrient absorption, helps prevent bloating and acidosis, and supports milk productivity. 100% natural and chemical-free formulation, cost-effective for farmers.",
                 specifications: {
-                    origin: "Gujarat and Rajasthan - India",
+                    origin: "India",
                     qualities: "100% natural & chemical-free - Enhances digestion & immunity - Boosts milk yield & quality - Maintains hydration during heat stress - Prevents acidity & bloating - Cost-effective for farmers",
                     standard: "Applications: Dairy cattle, Farm animals, Livestock nutrition - Supports rumen health and nutrient absorption",
                 },
@@ -629,7 +629,7 @@ export const productsData: ProductCategory[] = [
             "Traditional Indian jaggery in cubes and powder form. Unrefined natural sweetener ideal for health-conscious food manufacturers, confectionery, and beverage industries worldwide.",
         products: [
             {
-                id: 701,
+                id: 801,
                 name: "Jaggery Cubes",
                 slug: "jaggery-cubes",
                 category: "jaggery",
@@ -645,7 +645,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 702,
+                id: 802,
                 name: "Jaggery Powder",
                 slug: "jaggery-powder",
                 category: "jaggery",
@@ -672,7 +672,7 @@ export const productsData: ProductCategory[] = [
             "Moringa powder and peanut butter for health food and nutraceutical industries. Processed to preserve nutritional value and meet international food safety standards.",
         products: [
             {
-                id: 801,
+                id: 901,
                 name: "Moringa Leaf Powder",
                 slug: "moringa-powder",
                 category: "agro-allied-food-products",
@@ -688,7 +688,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 802,
+                id: 902,
                 name: "Peanut Butter",
                 slug: "peanut-butter",
                 category: "agro-allied-food-products",
@@ -704,7 +704,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 804,
+                id: 904,
                 name: "Indian Groundnut Extraction Meal",
                 slug: "indian-groundnut-extraction-meal",
                 category: "agro-allied-food-products",
@@ -719,7 +719,7 @@ export const productsData: ProductCategory[] = [
         ],
     },
     {
-        id: 9,
+        id: 10,
         name: "Spices",
         slug: "spices",
         icon: "spice",
@@ -729,7 +729,7 @@ export const productsData: ProductCategory[] = [
             "Pavanity Global supplies a wide range of Indian spices used in cooking, seasoning, and food processing. Our focus is on clean sourcing, proper grading, and safe packing so that buyers receive steady quality for international requirements. We deal in red chilli, cloves, turmeric fingers, green cardamom, cumin seeds, fenugreek seeds, fennel seeds, black mustard seeds, and yellow mustard seeds.",
         products: [
             {
-                id: 901,
+                id: 1001,
                 name: "Cumin Seeds",
                 slug: "cumin-seeds",
                 category: "spices",
@@ -743,7 +743,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 902,
+                id: 1002,
                 name: "Fenugreek Seeds",
                 slug: "fenugreek-seeds",
                 category: "spices",
@@ -757,7 +757,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 903,
+                id: 1003,
                 name: "Black Mustard Seeds",
                 slug: "mustard-seeds",
                 category: "spices",
@@ -771,7 +771,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 904,
+                id: 1004,
                 name: "Fennel Seeds",
                 slug: "fennel-seeds",
                 category: "spices",
@@ -825,7 +825,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 908,
+                id: 1008,
                 name: "Cloves (Whole)",
                 slug: "cloves",
                 category: "spices",
@@ -838,14 +838,14 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 909,
+                id: 1009,
                 name: "Black Pepper",
                 slug: "black-pepper",
                 category: "spices",
                 image: "/images/black-pepper.jpeg",
             },
             {
-                id: 910,
+                id: 1010,
                 name: "Green Cardamom",
                 slug: "cardamom",
                 category: "spices",
@@ -859,7 +859,7 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 911,
+                id: 1011,
                 name: "Yellow Mustard Seeds",
                 slug: "yellow-mustard-seeds",
                 category: "spices",

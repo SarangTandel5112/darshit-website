@@ -11,8 +11,8 @@ export default function HeroSection() {
                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-title dark:text-white leading-none max-w-4xl">
                             {heroContent.h1}
                         </h1>
-                        H2 - Sub Headline
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-title dark:text-white mt-6 max-w-3xl leading-none">
+                        {/* H2 - Sub Headline */}
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-title dark:text-white mt-6 max-w-3xl leading-none">
                             {heroContent.h2}
                         </h2>
                         {/* Description */}

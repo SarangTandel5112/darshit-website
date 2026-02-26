@@ -171,7 +171,7 @@ export default function FooterPavanity() {
                         <h4 className="text-lg font-semibold text-white mb-6 text-center">
                             Our Presence
                         </h4>
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                             {officeLocations.map((location) => (
                                 <div
                                     key={location.id}

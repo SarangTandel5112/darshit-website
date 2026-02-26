@@ -88,10 +88,10 @@ export default function PavanityHomeV4() {
 
                         {/* Sub Headline */}
                         <h3
-                            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug mt-3 md:mt-4 font-secondary text-white font-medium"
+                            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug mt-3 md:mt-4 text-white font-extrabold"
                             style={{
                                 textShadow:
-                                    "2px 2px 6px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.6)",
+                                    "3px 3px 10px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 0, 0, 0.85), 1px 1px 5px rgba(0, 0, 0, 1)",
                             }}
                         >
                             {heroContent.h2}
@@ -112,22 +112,22 @@ export default function PavanityHomeV4() {
                         <div>
                             <Link
                                 to="/products"
-                                className="group md:text-lg font-medium leading-none text-white flex items-center gap-3 mt-3"
+                                className="group text-lg md:text-xl font-bold leading-none text-white flex items-center gap-3 mt-5 md:mt-6"
                                 style={{
                                     textShadow:
-                                        "1px 1px 4px rgba(0, 0, 0, 0.8)",
+                                        "2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 0, 0, 0.8)",
                                 }}
                             >
                                 <span className="text-underline leading-none">
                                     View Products
                                 </span>
                                 <svg
-                                    className="fill-current text-white w-5 md:w-7"
+                                    className="fill-current text-white w-6 md:w-8"
                                     viewBox="0 0 31 12"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                     style={{
-                                        filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8))",
+                                        filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.9))",
                                     }}
                                 >
                                     <path d="M30.2303 6.58892C30.5232 6.29603 30.5232 5.82116 30.2303 5.52826L25.4574 0.755293C25.1645 0.462399 24.6896 0.462399 24.3967 0.755293C24.1038 1.04819 24.1038 1.52306 24.3967 1.81595L28.6393 6.05859L24.3967 10.3012C24.1038 10.5941 24.1038 11.069 24.3967 11.3619C24.6896 11.6548 25.1645 11.6548 25.4574 11.3619L30.2303 6.58892ZM0 6.80859L29.7 6.80859V5.30859L0 5.30859L0 6.80859Z" />
