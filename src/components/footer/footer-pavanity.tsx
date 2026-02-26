@@ -169,7 +169,7 @@ export default function FooterPavanity() {
                     {/* Office Locations Section */}
                     <div className="py-8 border-b border-white/10">
                         <h4 className="text-lg font-semibold text-white mb-6 text-center">
-                            Our Global Presence
+                            Our Presence
                         </h4>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {officeLocations.map((location) => (

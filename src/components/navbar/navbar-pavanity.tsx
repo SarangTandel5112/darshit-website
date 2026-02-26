@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/img/svg/logo.png";
-import logoLight from "../../assets/img/svg/logo-light.svg";
+import logoLight from "../../assets/img/svg/logo-light.png";
 import { Link } from "react-router-dom";
 import NavMenu from "./nav-menu";
 import { productsData } from "../../data/products-data";

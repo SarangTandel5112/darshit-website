@@ -301,7 +301,7 @@ export const officeLocations = [
     {
         id: 2,
         country: "India",
-        address: "Amardham, Dhoraji Road, Jetpur, Rajkot, Gujarat 360 370"
+        address: "Dhoraji Road, Jetpur, Rajkot, Gujarat 360 370"
     },
     {
         id: 3,
