@@ -42,7 +42,7 @@ export const productsData: ProductCategory[] = [
         name: "Dehydrated White Onion",
         slug: "white-onion",
         icon: "onion",
-        image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+        image: "/images/main-white-onion.jpeg",
         tagline: "Dehydrated White Onion",
         description:
             "Export-grade dehydrated white onion products in powder, flakes, granules, chopped, and minced form. Sourced from Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
@@ -139,7 +139,7 @@ export const productsData: ProductCategory[] = [
         name: "Dehydrated Red Onion",
         slug: "red-onion",
         icon: "onion",
-        image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+        image: "/images/main_red_onion.jpeg",
         tagline: "Dehydrated Red Onion",
         description:
             "Export-grade dehydrated red onion products in powder, flakes, granules, chopped, and minced form. Sourced from Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
@@ -236,7 +236,7 @@ export const productsData: ProductCategory[] = [
         name: "Dehydrated Pink Onion",
         slug: "pink-onion",
         icon: "onion",
-        image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+        image: "/images/main_pink_onion.jpeg",
         tagline: "Dehydrated Pink Onion",
         description:
             "Export-grade dehydrated pink onion products in powder, flakes, granules, chopped, and minced form. Sourced from Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
@@ -263,7 +263,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Flakes",
                 slug: "pink-onion-flakes",
                 category: "pink-onion",
-                image: "/images/pink-flakes.jpg",
+                image: "/images/pink-onion-flakes.jpeg",
                 description: "Pink Onion Flakes feature a mild onion profile and a soft natural hue that aligns well with seasoning blends, dry mixes, and processed preparations across international markets. Pavanity Global provides defined specifications, consistent availability, and organized export coordination to maintain smooth sourcing experiences. The flakes disperse evenly in formulations, supporting steady performance and balanced product outcomes.",
             specifications: {
                 size: "8 To 15 MM",
@@ -280,7 +280,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Granules",
                 slug: "pink-onion-granules",
                 category: "pink-onion",
-                image: "/images/pink-granuels.jpg",
+                image: "/images/pink-onion-granueks.jpeg",
                 description: "Pink Onion Granules provide uniform particle distribution suited for seasoning blends, dry formulations, and large-scale processing applications. Pavanity Global ensures clarity in specifications, regular availability, and streamlined export coordination for reliable procurement. The granules incorporate cleanly into production workflows, supporting operational consistency and efficient blending.",
             specifications: {
                 size: "24 To 60 mesh",
@@ -297,7 +297,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Chopped",
                 slug: "pink-onion-chopped",
                 category: "pink-onion",
-                image: "/images/pink-chopped.jpg",
+                image: "/images/pink-onion-chopped.jpeg",
                 description: "Pink Onion Chopped offers a uniform particulate size designed for formulations requiring visible onion texture with controlled colour influence. Pavanity Global maintains structured specifications, dependable supply planning, and efficient export management to ensure consistent sourcing. The chopped format integrates cleanly into blends and food systems, delivering predictable distribution and stable functionality.",
             specifications: {
                 size: "3 To 5 MM",
@@ -314,7 +314,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Pink Onion Minced",
                 slug: "pink-onion-minced",
                 category: "pink-onion",
-                image: "/images/pink-minced.jpg",
+                image: "/images/pink-onionminced.jpeg",
                 description: "Pink Onion Minced delivers fine, accurate sizing that works well in sauces, mixes, and industrial preparations where even flavour distribution is required. Pavanity Global supports consistent sourcing through clear parameters, steady availability, and organized export processes. The minced format disperses smoothly across dry and liquid applications, contributing to balanced formulation performance.",
             specifications: {
                 size: "1 To 3 MM",
@@ -333,7 +333,7 @@ export const productsData: ProductCategory[] = [
         name: "Dehydrated Garlic",
         slug: "garlic",
         icon: "onion",
-        image: "/images/DEHYYDRATED-ONION-GARLIC-MAIN.jpeg",
+        image: "/images/main_garlic.jpeg",
         tagline: "Dehydrated Garlic",
         description:
             "Export-grade dehydrated garlic products in powder, granules, chopped, minced, and cloves form. Sourced from Indian farms and processed to retain natural flavor and aroma for global food manufacturers.",
@@ -444,7 +444,7 @@ export const productsData: ProductCategory[] = [
                 name: "Hulled Sesame Seeds",
                 slug: "hulled-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/hulled-sesame-seeds.jpg",
+                image: "/images/sesame.jpeg",
                 description: "Hulled Sesame Seeds offer a clean surface and uniform light tone. These seeds are suitable for multiple food uses where a soft texture and refined appearance are preferred. They integrate comfortably into various standard applications. Pavanity Global provides Hulled Sesame Seeds with clear specifications for straightforward procurement.",
                 specifications: {
                     origin: "India",
@@ -472,7 +472,7 @@ export const productsData: ProductCategory[] = [
                 name: "Chia Seeds",
                 slug: "chia-seeds",
                 category: "oilseeds",
-                image: "/images/chia-seed.jpg",
+                image: "/images/chia-seeds.jpeg",
                 description: "Chia Seeds from Pavanity Global are small, naturally shaped seeds with a smooth texture and neutral taste, making them easy to add to a variety of everyday food preparations. They blend well into drinks, bakery items, cereals, and general mixes, while their natural seed composition supports versatile use across different applications. Chia seeds are commonly appreciated for containing naturally occurring nutrients such as fiber, plant-based protein, and essential fatty acids, which contribute to general dietary balance. Their simple handling, clean appearance, and ability to mix smoothly into recipes make them a practical ingredient for multiple food categories.",
                 specifications: {
                     origin: "India",
@@ -551,7 +551,7 @@ export const productsData: ProductCategory[] = [
                 name: "Psyllium Seeds",
                 slug: "psyllium-seeds",
                 category: "psyllium-husk",
-                image: "/images/psyllium-husk.jpg",
+                image: "/images/psyllium-seeds.jpeg",
                 description: "Psyllium Seeds come from the Plantago ovata plant and are valued worldwide for their exceptionally high soluble fiber content. Pavanity Global sources premium psyllium seeds from India's leading growing regions including Gujarat and Rajasthan—areas known for the ideal dry, sandy climate required for high-quality cultivation. Our psyllium seeds meet international standards for purity, safety, and performance across food, pharmaceutical, nutraceutical, and animal feed industries.",
                 specifications: {
                     origin: "India",
@@ -564,7 +564,7 @@ export const productsData: ProductCategory[] = [
                 name: "Psyllium Husk",
                 slug: "psyllium-husk",
                 category: "psyllium-husk",
-                image: "/images/psyllium-husk.jpg",
+                image: "/images/psyllium-husk.jpeg",
                 description: "Psyllium Husk is the outer layer of Plantago ovata seeds, known for its powerful water-absorption capability and rich soluble fiber profile. India produces over 80% of the global supply, with the highest quality grown in Gujarat and Rajasthan. Pavanity Global provides high-purity, export-grade psyllium husk suitable for pharmaceutical, food, nutraceutical, and animal nutrition sectors.",
                 specifications: {
                     origin: "India",
@@ -579,7 +579,7 @@ export const productsData: ProductCategory[] = [
                 name: "Psyllium Husk Powder",
                 slug: "psyllium-husk-powder",
                 category: "psyllium-husk",
-                image: "/images/psyllium-husk-1.jpg",
+                image: "/images/psyllium-husk-powder.jpeg",
                 description: "Psyllium Husk Powder is a finely milled form of psyllium husk, widely used for its gel-forming and water-binding properties. It is a key ingredient in digestive supplements, gluten-free foods, and pharmaceutical formulations. India remains the global leader in psyllium husk powder production, and Pavanity Global ensures consistent, clean, export-compliant quality across all mesh sizes and purity grades.",
                 specifications: {
                     origin: "India",
@@ -595,7 +595,7 @@ export const productsData: ProductCategory[] = [
                 name: "Psyllium Khakha Powder",
                 slug: "psyllium-khakha-powder",
                 category: "psyllium-husk",
-                image: "/images/psyllium-husk.jpg",
+                image: "/images/psyllium-khakha.jpeg",
                 description: "Psyllium Khakha Powder is a fiber-rich byproduct of psyllium husk processing. It contains husk flakes, seed fragments, and natural roughage components. Known for its strong absorption and eco-friendly properties, it is widely used in animal feed, agriculture, biodegradable manufacturing, and industrial absorbents. Pavanity Global supplies uniform, clean Khakha Powder ideal for bulk applications.",
                 specifications: {
                     origin: "India",
@@ -608,7 +608,7 @@ export const productsData: ProductCategory[] = [
                 name: "Psyllium Cattle Feed Fiber",
                 slug: "psyllium-cattle-feed-fiber",
                 category: "psyllium-husk",
-                image: "/images/psyllium-husk.jpg",
+                image: "/images/psyllium-cattle-feed.jpeg",
                 description: "Psyllium-based cattle feed is a natural fiber supplement that promotes digestion, hydration, and rumen health in dairy and farm animals. Pavanity Global's psyllium cattle feed fiber improves nutrient absorption, helps prevent bloating and acidosis, and supports milk productivity. 100% natural and chemical-free formulation, cost-effective for farmers.",
                 specifications: {
                     origin: "India",
@@ -623,7 +623,7 @@ export const productsData: ProductCategory[] = [
         name: "Jaggery",
         slug: "jaggery",
         icon: "sugar",
-        image: "/images/jaggery-cubes.jpg",
+        image: "/images/jaggery-cubes-new.jpeg",
         tagline: "Natural Cane Sugar Alternative",
         description:
             "Traditional Indian jaggery in cubes and powder form. Unrefined natural sweetener ideal for health-conscious food manufacturers, confectionery, and beverage industries worldwide.",
@@ -633,7 +633,7 @@ export const productsData: ProductCategory[] = [
                 name: "Jaggery Cubes",
                 slug: "jaggery-cubes",
                 category: "jaggery",
-                image: "/images/jaggery-cubes.jpeg",
+                image: "/images/jaggery-cubes-new.jpeg",
                 description: "Jaggery from Pavanity Global is known for its natural sweetness, clean appearance, and smooth texture, making it suitable for a wide range of food applications. Its golden to brown color and naturally formed structure reflect traditional methods, offering a simple and authentic sweetening option. Jaggery is valued for its mild flavour and suitability for varied culinary preferences across global markets.",
                 specifications: {
                     origin: "India",
@@ -747,7 +747,7 @@ export const productsData: ProductCategory[] = [
                 name: "Fenugreek Seeds",
                 slug: "fenugreek-seeds",
                 category: "spices",
-                image: "/images/spices-profile.jpeg",
+                image: "/images/fenugreek-seeds.jpeg",
                 description: "Fenugreek seeds are used in spices, pickles, seasonings, and everyday cooking. They are known for their natural taste and stable quality. We supply fenugreek seeds that are properly cleaned and suitable for bulk buyers. Keywords: fenugreek seeds exporter, methi seeds supplier, Indian fenugreek wholesale.",
                 specifications: {
                     color: "Golden yellow",
@@ -785,8 +785,8 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 1005,
-                name: "Red Chilli Whole",
+                id: 905,
+                name: "Red Chilli Whole And Powder",
                 slug: "chilli-whole-powder",
                 category: "spices",
                 image: "/images/red-chilli-whole.jpg",
@@ -798,11 +798,11 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 1006,
-                name: "Turmeric Fingers",
+                id: 906,
+                name: "Turmeric Fingers And Powder",
                 slug: "turmeric-whole-powder",
                 category: "spices",
-                image: "/images/blended-curcumin-powder-wooden-spoon.jpg",
+                image: "/images/turmeric.jpeg",
                 description: "Turmeric fingers are widely used for grinding into powder and for general food use. They provide natural color and aroma, making them important for spice processors and wholesalers. We supply clean, properly dried turmeric suitable for various applications. Keywords: turmeric fingers exporter, turmeric supplier India, whole turmeric export, Indian spices.",
                 specifications: {
                     qualities: "Varieties: Maharashtra, Salem, Kaddapa, Nizamabad",
@@ -811,8 +811,8 @@ export const productsData: ProductCategory[] = [
                 },
             },
             {
-                id: 1007,
-                name: "Cinnamon Powder",
+                id: 907,
+                name: "Cinnamon Stick And Powder",
                 slug: "cinnamon",
                 category: "spices",
                 image: "/images/cinnamon.jpg",

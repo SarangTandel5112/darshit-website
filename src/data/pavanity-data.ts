@@ -191,7 +191,7 @@ export const heroContent = {
 
 export const businessEnquiries = {
     heading: "For export supply discussions and commercial enquiries.",
-    email: "business@pavanity.com",
+    email: "info@pavanityglobal.com",
     response: "Response within 24–48 working hours.",
     ctaText: "Request RFQ"
 };

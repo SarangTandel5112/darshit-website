@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/img/svg/logo.png"; // TODO: Replace with Pavanity logo
-import logoLight from "../../assets/img/svg/logo-light.svg"; // TODO: Replace with Pavanity logo
+import logoLight from "../../assets/img/svg/logo-light.png"; // TODO: Replace with Pavanity logo
 import { Link } from "react-router-dom";
 import NavMenu from "./nav-menu";
 import { divisions } from "../../data/pavanity-data";
