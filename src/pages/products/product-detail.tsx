@@ -398,6 +398,35 @@ const divisionDetails: { [key: string]: any } = {
         quality:
             "Steam sterilization available. Purity testing. Microbiological analysis. Full traceability and export documentation.",
     },
+    "value-added-dehydrated-products": {
+        overview:
+            "Premium value-added dehydrated onion products including toasted onion chopped, toasted onion kibbled, and dehydrated fried onion. Processed in India with controlled fat levels and multiple grade options for food manufacturers, snack producers, and ready-to-eat meal applications.",
+        categories: [
+            {
+                name: "Toasted Onion",
+                examples: "Toasted Onion Chopped, Toasted Onion Kibbled",
+            },
+            {
+                name: "Fried Onion",
+                examples: "Dehydrated Fried Onion (Flakes)",
+            },
+            {
+                name: "Grades & Cuts",
+                examples: "A Grade, B Grade, Commercial Grade – Flakes, Chopped – 12% or 8% Fat",
+            },
+        ],
+        applications: [
+            "Snack Flavouring & Coated Snacks",
+            "Ready-to-Fry Mixes & Meal Kits",
+            "Sauce Bases & Industrial Gravy",
+            "Plant-Based & Instant Foods",
+            "Seasoning Blends & Dry Rubs",
+        ],
+        packaging:
+            "Flakes: 14kg strong poly bag in paper bag or 20kg strong poly bag in 5-ply carton. Custom packing available.",
+        quality:
+            "Food-grade value-added processing. Fat levels 12% or 8%. A Grade, B Grade, Commercial Grade and custom grades. Origin India. Export documentation and certificates of analysis provided.",
+    },
 };
 
 export default function DivisionDetail() {

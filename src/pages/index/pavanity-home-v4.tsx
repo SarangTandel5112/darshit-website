@@ -74,21 +74,30 @@ export default function PavanityHomeV4() {
                     data-aos="fade-up"
                     data-aos-delay="100"
                 >
-                    <div className="max-w-[751px] mx-auto">
+                    <div className="max-w-[751px] mx-auto text-center">
                         {/* Main Headline */}
                         <h2
-                            className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug font-bold"
+                            className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug font-bold text-center"
                             style={{
                                 textShadow:
                                     "2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6)",
                             }}
                         >
-                            {heroContent.h1}
+                            {Array.isArray(heroContent.h1)
+                                ? heroContent.h1.map((line, i) => (
+                                      <span
+                                          key={i}
+                                          className={i === 1 ? "block text-center" : "block"}
+                                      >
+                                          {line}
+                                      </span>
+                                  ))
+                                : heroContent.h1}
                         </h2>
 
                         {/* Sub Headline */}
                         <h3
-                            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug mt-3 md:mt-4 text-white font-extrabold"
+                            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug mt-3 md:mt-4 text-white font-extrabold text-center"
                             style={{
                                 textShadow:
                                     "3px 3px 10px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 0, 0, 0.85), 1px 1px 5px rgba(0, 0, 0, 1)",
@@ -99,7 +108,7 @@ export default function PavanityHomeV4() {
 
                         {/* Description */}
                         <p
-                            className="mt-3 md:mt-4 text-base md:text-lg text-white"
+                            className="mt-3 md:mt-4 text-base md:text-lg text-white text-center"
                             style={{
                                 textShadow:
                                     "1px 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.6)",
@@ -109,10 +118,10 @@ export default function PavanityHomeV4() {
                         </p>
 
                         {/* CTA Button - View Products Only */}
-                        <div>
+                        <div className="flex justify-center">
                             <Link
                                 to="/products"
-                                className="group text-lg md:text-xl font-bold leading-none text-white flex items-center gap-3 mt-5 md:mt-6"
+                                className="group text-lg md:text-xl font-bold leading-none text-white inline-flex items-center gap-3 mt-5 md:mt-6"
                                 style={{
                                     textShadow:
                                         "2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 0, 0, 0.8)",

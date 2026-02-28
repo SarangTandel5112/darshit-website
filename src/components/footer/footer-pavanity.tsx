@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoLight from "../../assets/img/svg/logo-light.svg";
+import logoLight from "../../assets/img/svg/logo-light.png";
 import {
     FaFacebookF,
     FaLinkedinIn,
@@ -70,7 +70,10 @@ export default function FooterPavanity() {
                             {/* Social Media Icons */}
                             <div className="flex items-center gap-3">
                                 {socialMedia.map(
-                                    (social: SocialMediaData, index: number) => (
+                                    (
+                                        social: SocialMediaData,
+                                        index: number,
+                                    ) => (
                                         <a
                                             key={index}
                                             href={social.url}
@@ -81,7 +84,7 @@ export default function FooterPavanity() {
                                         >
                                             {getSocialIcon(social.icon)}
                                         </a>
-                                    )
+                                    ),
                                 )}
                             </div>
                         </div>
@@ -103,7 +106,7 @@ export default function FooterPavanity() {
                                                 {link.name}
                                             </Link>
                                         </li>
-                                    )
+                                    ),
                                 )}
                             </ul>
                         </div>
@@ -125,7 +128,7 @@ export default function FooterPavanity() {
                                                 {link.name}
                                             </Link>
                                         </li>
-                                    )
+                                    ),
                                 )}
                             </ul>
                         </div>
@@ -212,7 +215,7 @@ export default function FooterPavanity() {
                                         >
                                             {link.name}
                                         </Link>
-                                    )
+                                    ),
                                 )}
                             </div>
                         </div>

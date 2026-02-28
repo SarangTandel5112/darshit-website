@@ -8,8 +8,17 @@ export default function HeroSection() {
                 <div className="max-w-[1720px] mx-auto">
                     <div className="flex flex-col items-center justify-center text-center py-20 sm:py-28 md:py-36 lg:py-44 px-4">
                         {/* H1 - Main Headline */}
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-title dark:text-white leading-none max-w-4xl">
-                            {heroContent.h1}
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-title dark:text-white leading-none max-w-4xl text-center">
+                            {Array.isArray(heroContent.h1)
+                                ? heroContent.h1.map((line, i) => (
+                                      <span
+                                          key={i}
+                                          className={i === 1 ? "block text-center" : "block"}
+                                      >
+                                          {line}
+                                      </span>
+                                  ))
+                                : heroContent.h1}
                         </h1>
                         {/* H2 - Sub Headline */}
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-title dark:text-white mt-6 max-w-3xl leading-none">

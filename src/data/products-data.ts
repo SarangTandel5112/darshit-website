@@ -11,6 +11,7 @@ export interface ProductSpecifications {
     moq?: string;
     ingredients?: string;
     packingType?: string;
+    fatLevel?: string;
 }
 
 export interface Product {
@@ -870,6 +871,69 @@ export const productsData: ProductCategory[] = [
                     qualities: "Botanical: Sinapis alba - Form: Whole dried seeds",
                     packing: "PP / Jute / Paper Bags - 10kg / 25kg / 50kg",
                     moq: "20FT: 22 MT, 40FT: 27 MT",
+                },
+            },
+        ],
+    },
+    {
+        id: 11,
+        name: "Value Added Dehydrated Products",
+        slug: "value-added-dehydrated-products",
+        icon: "onion",
+        image: "/images/value-added-dehydrated.jpeg",
+        tagline: "Value Added Dehydrated Products",
+        description:
+            "Premium value-added dehydrated onion products including toasted onion chopped, toasted onion kibbled, and dehydrated fried onion. Processed in India with controlled fat levels and multiple grade options for food manufacturers, snack producers, and ready-to-eat meal applications.",
+        products: [
+            {
+                id: 1101,
+                name: "Dehydrated Fried Onion",
+                slug: "dehydrated-fried-onion",
+                category: "value-added-dehydrated-products",
+                image: "/images/dehydrated-fried-onion.jpg",
+                description:
+                    "Dehydrated Fried Onion is prepared from fried onion slices that are dehydrated to preserve crispiness and flavour. It provides a rich fried-onion taste that supports fast preparation and standardised production in large-scale food operations. It is used in snack flavouring, ready-to-fry mixes, garnish sachets for meal kits, onion-flavoured oil preparation, and industrial gravy bases where fried notes are required without additional cooking steps. Its stable texture and concentrated flavour make it suitable for a wide range of packaged and ready-to-eat foods.",
+                specifications: {
+                    size: "Flakes",
+                    fatLevel: "12%, 8%",
+                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize",
+                    origin: "India",
+                    packing:
+                        "Flakes 14kg Strong Poly bag in covered with paper bag or 20kg strong poly bag covered with 5 ply carton, Customize",
+                },
+            },
+            {
+                id: 1102,
+                name: "Toasted Onion Kibbled",
+                slug: "toasted-onion-kibbled",
+                category: "value-added-dehydrated-products",
+                image: "/images/toasted-onion-kibbled.jpg",
+                description:
+                    "Toasted Onion Kibbled is made from dehydrated onions that are lightly toasted to give a warm, balanced flavour and natural aroma. The medium-sized pieces blend easily into food applications and offer long shelf life without moisture issues. It is used in several unique ways such as adding a natural crunch to coated snacks, enhancing savoury bakery items, and topping instant meal bowls. It also fits well in dehydrated meal kits and herb-spice grinder blends where stable texture and clean flavour are required.",
+                specifications: {
+                    size: "Flakes, Chopped",
+                    fatLevel: "12%, 8%",
+                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize",
+                    origin: "India",
+                    packing:
+                        "Flakes 14kg Strong Poly bag in covered with paper bag or 20kg strong poly bag covered with 5 ply carton, Customize",
+                },
+            },
+            {
+                id: 1103,
+                name: "Toasted Onion Chopped",
+                slug: "toasted-onion-chopped",
+                category: "value-added-dehydrated-products",
+                image: "/images/toasted-onion-chopped.jpg",
+                description:
+                    "Toasted Onion Chopped consists of evenly cut toasted onion pieces that deliver a controlled roasted taste suitable for food manufacturing. It helps achieve uniform flavour without the need for sautéing fresh onions. Its applications include use as a sauce base in industrial kitchens, flavour enhancement in plant-based food products, dry rub marinades, instant curry mixes, and ethnic seasoning blends across Middle Eastern, Asian, and Latin cuisines. This makes it reliable for consistent processing and long-term storage.",
+                specifications: {
+                    size: "Flakes, Chopped",
+                    fatLevel: "12%, 8%",
+                    qualities: "Available in A Grade, B Grade, Commercial Grade & Customize",
+                    origin: "India",
+                    packing:
+                        "Flakes 14kg Strong Poly bag in covered with paper bag or 20kg strong poly bag covered with 5 ply carton, Customize",
                 },
             },
         ],

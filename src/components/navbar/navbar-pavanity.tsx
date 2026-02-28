@@ -44,14 +44,14 @@ export default function NavbarPavanity() {
                         <img
                             src={logoLight}
                             alt="Pavanity Global"
-                            className="dark:block hidden w-[300px] h-auto"
+                            className="dark:block hidden w-[120px] sm:w-[200px] h-auto"
                         />
                     </Link>
                     <div className="flex items-center gap-6 lg:gap-8 2xl:gap-12">
                         <div
                             className={`main-menu absolute z-50 w-full lg:w-auto top-full left-0 lg:static bg-white dark:bg-title lg:bg-transparent lg:dark:bg-transparent px-5 sm:px-[30px] py-[10px] sm:py-5 lg:px-0 lg:py-0 ${toggle ? "active" : ""}`}
                         >
-                            <ul className="text-base lg:text-lg leading-none text-title dark:text-white lg:flex lg:gap-[20px] xl:gap-[30px]">
+                            <ul className="text-base lg:text-lg leading-none text-title dark:text-white lg:flex lg:gap-6 xl:gap-8 [&>li>a]:whitespace-nowrap">
                                 {/* Products Dropdown */}
                                 <li
                                     className={`relative ${["/products"].includes(current) || current.startsWith("/products/") ? "active" : ""}`}
