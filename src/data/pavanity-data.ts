@@ -173,7 +173,7 @@ export const globalMarkets: GlobalMarket[] = [
 // ============================================
 
 export const heroContent = {
-    h1: "International Food & Ingredient Supplier",
+    h1: ["International Food", "&", "Ingredient Supplier"],
     h2: "Export Supply for Global Food Businesses",
     description: "Export-ready supply supporting structured B2B and HoReCa requirements across international markets.",
     primaryCTA: "Request RFQ",
