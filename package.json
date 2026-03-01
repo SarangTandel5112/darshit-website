@@ -6,9 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run seo:generate && tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seo:generate": "node scripts/generate-seo-files.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@eslint/js": "^9.35.0",
     "@types/aos": "^3.0.7",
+    "@types/node": "^25.3.3",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@types/tiny-slider-react": "^0.3.8",

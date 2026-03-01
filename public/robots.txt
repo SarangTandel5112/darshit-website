@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-# Sitemap location (use your live domain when deployed)
+# Sitemap (generated from scripts/site-url.js)
 Sitemap: https://www.pavanityglobal.com/sitemap.xml

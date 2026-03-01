@@ -1,51 +1,56 @@
 # Getting "Pavanity Global" on Google
 
-This project includes technical SEO so Google can discover and index your site. To get your site to show up when people search **"Pavanity Global"** (and to aim for the first result), do the following.
-
-## What’s already in the project
-
-- **Title & meta description** – Brand and description in `index.html`
-- **Structured data (JSON-LD)** – Organization and WebSite schema for Google
-- **robots.txt** – Allows crawling and points to your sitemap
-- **sitemap.xml** – List of main pages and product categories for Google to crawl
-- **Open Graph & Twitter meta** – Better previews when the site is shared
-
-## Steps to get indexed and improve ranking
-
-### 1. Use your real domain everywhere
-
-When you have your live domain (e.g. `https://www.pavanityglobal.com` or `https://pavanityglobal.com`):
-
-- In **index.html**: replace `https://www.pavanityglobal.com` in:
-  - `<link rel="canonical" ...>`
-  - Both JSON-LD scripts (Organization and WebSite `url` and `@id`)
-- In **public/robots.txt**: set `Sitemap:` to  
-  `https://YOUR-DOMAIN.com/sitemap.xml`
-- In **public/sitemap.xml**: replace `https://www.pavanityglobal.com` with your full domain in every `<loc>` URL.
-
-### 2. Submit the site to Google Search Console
-
-1. Go to [Google Search Console](https://search.google.com/search-console).
-2. Add a property with your **live** site URL (e.g. `https://www.pavanityglobal.com`).
-3. Verify ownership (HTML file upload, DNS record, or meta tag – use the option that fits your hosting).
-4. After verification, open **Sitemaps** and submit:  
-   `https://www.pavanityglobal.com/sitemap.xml`  
-   (again, use your real domain).
-5. Use **URL Inspection** and “Request indexing” for your homepage and a few important pages (e.g. `/`, `/products`, `/contact`).
-
-This tells Google your site exists and helps it crawl your pages faster.
-
-### 3. Let Google (and time) do the rest
-
-- It can take from a few days to a few weeks for new or updated sites to show in search.
-- For the exact query **“Pavanity Global”**, your site has a strong chance to appear at or near the top once it’s indexed, because you’re the official brand.
-- Keep the site live, with a clear title and description, and avoid blocking Google in `robots.txt` or with `noindex` on the main pages.
-
-### 4. Optional: speed up indexing
-
-- Share your homepage and key pages on LinkedIn, Twitter, or other channels – links and traffic can help discovery.
-- If you use other Google tools (e.g. Google Business Profile, Analytics), link them to the same domain for consistency.
+No .env needed. The site URL is set in **one place**: `scripts/site-url.js`.
 
 ---
 
-**Summary:** Update all URLs to your live domain, verify the site in Google Search Console, submit `sitemap.xml`, and request indexing for the main URLs. After that, Google will crawl your site and “Pavanity Global” can start appearing in search results.
+## Set your live URL (one place)
+
+1. Open **`scripts/site-url.js`** and set `SITE_URL` to your real live site URL (no trailing slash), e.g.:
+   ```js
+   export const SITE_URL = 'https://www.pavanityglobal.com';
+   ```
+   If you use a different domain (e.g. Vercel/Netlify), use that URL.
+
+2. Run **`npm run build`**. That will:
+   - Generate `robots.txt` and `sitemap.xml` with your URL
+   - Inject your URL into `index.html` (canonical, Open Graph, Twitter, JSON-LD)
+
+You can also run **`npm run seo:generate`** anytime to regenerate `robots.txt` and `sitemap.xml` after changing `scripts/site-url.js`.
+
+---
+
+## Still not showing on Google? Checklist
+
+| Step | Action |
+|------|--------|
+| 1 | Site is **live** at the URL in `scripts/site-url.js` |
+| 2 | You’ve run **`npm run build`** (or at least **`npm run seo:generate`**) after setting the URL |
+| 3 | [Google Search Console](https://search.google.com/search-console): **Add property** with that exact URL and **verify** (HTML tag, file, or DNS) |
+| 4 | In Search Console, **Sitemaps** → submit: `https://your-url/sitemap.xml` |
+| 5 | **URL Inspection** → enter your homepage → **Request indexing**. Repeat for `/products` and `/contact` |
+| 6 | **Wait 3–14 days**, then search: `site:your-url` to see if pages are indexed |
+
+---
+
+## What’s in the project
+
+- **One URL** – `scripts/site-url.js` is used by the build to generate `robots.txt`, `sitemap.xml`, and to inject the URL into `index.html` (canonical, OG, Twitter, JSON-LD).
+- **Title, description, keywords** – In `index.html` for search and social.
+- **Structured data (JSON-LD)** – Organization, WebSite, BreadcrumbList for Google.
+- **Dynamic canonical** – A small script in `index.html` sets the canonical link to the current domain at runtime.
+- **Crawlable content** – `<noscript>` block with brand and links for crawlers.
+- **theme-color, author** – Extra meta for browsers and SEO.
+- **Sitemap** – Main pages and product category URLs; `lastmod` set at build time.
+
+---
+
+## Optional: speed up indexing
+
+- Share your homepage and key pages (e.g. LinkedIn, Twitter).
+- If you use **Google Business Profile**, link it to the same domain.
+- After deploying, run **`npm run seo:generate`** (or build again) so `sitemap.xml` has today’s date.
+
+---
+
+**Summary:** Set your live URL in `scripts/site-url.js`, run `npm run build`, then verify in Google Search Console, submit the sitemap, and request indexing. No .env required.

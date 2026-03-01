@@ -12,17 +12,19 @@
     <meta property="og:site_name" content="Pavanity Global" />
     <meta property="og:title" content="Pavanity Global | International Food & Ingredient Supplier" />
     <meta property="og:description" content="Export-ready supply supporting structured B2B and HoReCa requirements across international markets. Dehydrated onions, garlic, spices, oilseeds & more from India." />
-    <meta property="og:image" content="/favicon.png" />
+    <meta property="og:image" content="__SITE_URL__/favicon.png" />
     <meta property="og:image:alt" content="Pavanity Global - International Food & Ingredient Supplier" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Pavanity Global | International Food & Ingredient Supplier" />
     <meta name="twitter:description" content="Export-ready supply supporting structured B2B and HoReCa requirements across international markets." />
-    <meta name="twitter:image" content="/favicon.png" />
-    <!-- SEO: Keywords (replace with your live domain in production) -->
+    <meta name="twitter:image" content="__SITE_URL__/favicon.png" />
+    <meta name="author" content="Pavanity Global" />
+    <meta name="theme-color" content="#20a839" />
+    <!-- SEO: Site URL is injected at build from VITE_APP_SITE_URL (.env) -->
     <meta name="keywords" content="Pavanity Global, Pavanity, international food supplier, ingredient exporter, dehydrated onion, dehydrated garlic, spices exporter India, B2B food ingredients, HoReCa supplier, export ready ingredients" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.pavanityglobal.com/" />
+    <link rel="canonical" id="canonical-url" href="__SITE_URL__/" />
     <!-- Structured Data (JSON-LD) for Google -->
     <script type="application/ld+json">
     {
@@ -30,12 +32,12 @@
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://www.pavanityglobal.com/#organization",
+          "@id": "__SITE_URL__/#organization",
           "name": "Pavanity Global",
-          "url": "https://www.pavanityglobal.com",
+          "url": "__SITE_URL__",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.pavanityglobal.com/favicon.png"
+            "url": "__SITE_URL__/favicon.png"
           },
           "description": "International Food & Ingredient Supplier. Export-ready supply for global food businesses – dehydrated onions, garlic, spices, oilseeds, psyllium husk, jaggery and value-added ingredients from India.",
           "email": "info@pavanityglobal.com",
@@ -43,16 +45,20 @@
         },
         {
           "@type": "WebSite",
-          "@id": "https://www.pavanityglobal.com/#website",
-          "url": "https://www.pavanityglobal.com",
+          "@id": "__SITE_URL__/#website",
+          "url": "__SITE_URL__",
           "name": "Pavanity Global",
           "description": "International Food & Ingredient Supplier – Export supply for B2B and HoReCa.",
-          "publisher": { "@id": "https://www.pavanityglobal.com/#organization" },
+          "publisher": { "@id": "__SITE_URL__/#organization" },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": { "@type": "EntryPoint", "urlTemplate": "https://www.pavanityglobal.com/products?q={search_term_string}" },
+            "target": { "@type": "EntryPoint", "urlTemplate": "__SITE_URL__/products?q={search_term_string}" },
             "query-input": "required name=search_term_string"
           }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "__SITE_URL__/" }]
         }
       ]
     }
@@ -64,6 +70,21 @@
   </head>
   <body class="dark:bg-title">
     <div id="root"></div>
+    <!-- SEO: Canonical URL uses actual site domain (important for correct indexing) -->
+    <script>
+      (function() {
+        var link = document.getElementById('canonical-url');
+        if (link) link.href = window.location.origin + (window.location.pathname || '/');
+      })();
+    </script>
+    <!-- SEO: Crawlable content when JS is off or for crawlers that read HTML first -->
+    <noscript>
+      <div style="max-width:800px;margin:2rem auto;padding:1rem;font-family:system-ui,sans-serif;">
+        <h1 style="font-size:2rem;margin-bottom:0.5rem;">Pavanity Global</h1>
+        <p style="font-size:1.125rem;color:#333;">International Food &amp; Ingredient Supplier. Export-ready supply for global food businesses – dehydrated onions, garlic, spices, oilseeds, psyllium husk, jaggery and value-added ingredients from India.</p>
+        <p><a href="/">Enter site</a> | <a href="/products">Products</a> | <a href="/contact">Contact</a></p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
