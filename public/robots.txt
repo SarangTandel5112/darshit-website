@@ -1,0 +1,6 @@
+# Pavanity Global - Allow search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location (use your live domain when deployed)
+Sitemap: https://www.pavanityglobal.com/sitemap.xml
