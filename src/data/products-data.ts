@@ -533,7 +533,7 @@ export const productsData: ProductCategory[] = [
         name: "Psyllium Husk",
         slug: "psyllium-husk",
         icon: "herb",
-        image: "/images/psyllium-husk.jpg",
+        image: "/images/psyllium-main.jpeg",
         tagline: "Natural Dietary Fiber",
         description:
             "Complete range of psyllium products including seeds, husk, powder, khakha powder, and cattle feed fiber. Sourced from Gujarat and Rajasthan for pharmaceutical, nutraceutical, food, and agricultural industries with consistent quality and compliance documentation.",
@@ -624,7 +624,7 @@ export const productsData: ProductCategory[] = [
         name: "Jaggery",
         slug: "jaggery",
         icon: "sugar",
-        image: "/images/jaggery-cubes-new.jpeg",
+        image: "/images/jaggery-mIn.jpeg",
         tagline: "Natural Cane Sugar Alternative",
         description:
             "Traditional Indian jaggery in cubes and powder form. Unrefined natural sweetener ideal for health-conscious food manufacturers, confectionery, and beverage industries worldwide.",
@@ -724,7 +724,7 @@ export const productsData: ProductCategory[] = [
         name: "Spices",
         slug: "spices",
         icon: "spice",
-        image: "/images/spices-profile.jpeg",
+        image: "/images/spices-main-img.jpeg",
         tagline: "Authentic Indian Spices",
         description:
             "Pavanity Global supplies a wide range of Indian spices used in cooking, seasoning, and food processing. Our focus is on clean sourcing, proper grading, and safe packing so that buyers receive steady quality for international requirements. We deal in red chilli, cloves, turmeric fingers, green cardamom, cumin seeds, fenugreek seeds, fennel seeds, black mustard seeds, and yellow mustard seeds.",
@@ -762,7 +762,7 @@ export const productsData: ProductCategory[] = [
                 name: "Black Mustard Seeds",
                 slug: "mustard-seeds",
                 category: "spices",
-                image: "/images/black-mustard-seeds.jpeg",
+                image: "/images/mustard-seeds.jpeg",
                 description: "Black mustard seeds are used in oil extraction, seasoning, and tempering. They offer a natural pungent taste and are widely used in food industries. We provide clean, uniform seeds suitable for bulk export. Keywords: black mustard seeds exporter, Indian mustard supplier, rai exporter.",
                 specifications: {
                     color: "Black–dark brown",
