@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Images
-import bg from '../../assets/img/private-label-top-header.jpeg'
+import bg from '../../assets/img/private_label.jpg'
 
 // Icons
 import { FaTag, FaCog, FaFileContract, FaShippingFast } from 'react-icons/fa'

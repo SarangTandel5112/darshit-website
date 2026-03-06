@@ -445,7 +445,7 @@ export const productsData: ProductCategory[] = [
                 name: "Hulled Sesame Seeds",
                 slug: "hulled-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/sesame.jpeg",
+                image: "/images/natural-sesame-seeds.jpeg",
                 description: "Hulled Sesame Seeds offer a clean surface and uniform light tone. These seeds are suitable for multiple food uses where a soft texture and refined appearance are preferred. They integrate comfortably into various standard applications. Pavanity Global provides Hulled Sesame Seeds with clear specifications for straightforward procurement.",
                 specifications: {
                     origin: "India",
@@ -459,7 +459,7 @@ export const productsData: ProductCategory[] = [
                 name: "Natural Sesame Seeds",
                 slug: "natural-sesame-seeds",
                 category: "oilseeds",
-                image: "/images/natural-sesame-seeds.jpeg",
+                image: "/images/sesame.jpeg",
                 description: "Natural White Sesame Seeds feature a light seed colour and smooth texture. They are commonly used in general food practices where neat seed appearance and simple functionality are important. Their balanced seed profile supports easy usage across different food categories. Pavanity Global presents Natural White Sesame Seeds with defined parameters suitable for regular sourcing needs.",
                 specifications: {
                     origin: "India",

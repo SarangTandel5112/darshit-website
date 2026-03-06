@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Images
-import bg from '../../assets/img/product_breadcrumb_image.jpg' 
+import bg from '../../assets/img/main_product_bc1.png' 
 
 // Data
 import { productsData } from "../../data/products-data";
