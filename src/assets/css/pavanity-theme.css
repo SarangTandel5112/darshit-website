@@ -329,3 +329,28 @@
 .pavanity-animate-in {
     animation: fadeInUp 0.6s ease-out;
 }
+
+/* HubSpot embedded form on Contact page - match theme */
+/* Hide "Create your own free forms" virality branding (free HubSpot accounts) */
+#hs-form-virality-container,
+#hs-form-virality-iframe,
+.hubspot-form-wrapper #hs-form-virality-iframe,
+.hubspot-form-wrapper .hs-form__virality-link,
+.hubspot-form-wrapper .hs-form__virality-link-wrapper,
+.hubspot-form-wrapper a[href*="signup-hubspot"] {
+    display: none !important;
+    height: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+.hubspot-form-wrapper .hs-button.primary,
+.hubspot-form-wrapper input[type="submit"],
+.hubspot-form-wrapper .hs-form input[type="submit"] {
+    background-color: var(--pavanity-accent-blue) !important;
+    border-color: var(--pavanity-accent-blue) !important;
+}
+.hubspot-form-wrapper .hs-button.primary:hover,
+.hubspot-form-wrapper input[type="submit"]:hover {
+    filter: brightness(0.95);
+}

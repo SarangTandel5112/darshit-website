@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 // Components
@@ -13,16 +13,97 @@ import contactImg from '../../assets/img/contact-us.jpg'
 // Icons
 import { FaEnvelope } from 'react-icons/fa'
 
-// Data
-import { productsData } from "../../data/products-data";
-
 import Aos from "aos";
 
+const HUBSPOT_PORTAL_ID = '245281281';
+const HUBSPOT_FORM_ID = '38ae65c9-9cf2-4a7a-b63b-f5cd65ffd5de';
+const HUBSPOT_SCRIPT_ID = 'hs-forms-v2';
+const HUBSPOT_SCRIPT_URL = 'https://js-na2.hsforms.net/forms/v2.js';
+
 export default function ContactPavanity() {
-    useEffect(()=>{
-        Aos.init()
-        window.scrollTo(0,0)
-    },[])
+    const formContainerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        Aos.init();
+        window.scrollTo(0, 0);
+    }, []);
+
+    // Remove HubSpot virality container/iframe (free account shows "Create your own free forms")
+    useEffect(() => {
+        const removeVirality = () => {
+            const container = document.getElementById('hs-form-virality-container');
+            const iframe = document.getElementById('hs-form-virality-iframe')
+                ?? document.querySelector('iframe[src*="embedded-viral-link"], iframe[title="HubSpot Virality"]');
+            if (container) container.remove();
+            if (iframe) {
+                const p = iframe.parentElement;
+                iframe.remove();
+                if (p?.childElementCount === 0) p.remove();
+            }
+        };
+        removeVirality();
+        const t1 = setTimeout(removeVirality, 1000);
+        const t2 = setTimeout(removeVirality, 2000);
+        const t3 = setTimeout(removeVirality, 3000);
+        const obs = new MutationObserver(removeVirality);
+        obs.observe(document.body, { childList: true, subtree: true });
+        const poll = setInterval(removeVirality, 500);
+        const stop = setTimeout(() => clearInterval(poll), 10000);
+        return () => {
+            obs.disconnect();
+            clearInterval(poll);
+            clearTimeout(stop);
+            clearTimeout(t1);
+            clearTimeout(t2);
+            clearTimeout(t3);
+        };
+    }, []);
+
+    // Load HubSpot forms script and render form via legacy API
+    useEffect(() => {
+        const container = formContainerRef.current;
+        if (!container) return;
+
+        const removeVirality = () => {
+            const container = document.getElementById('hs-form-virality-container');
+            if (container) container.remove();
+            let el = document.getElementById('hs-form-virality-iframe');
+            if (!el) el = document.querySelector('iframe[src*="embedded-viral-link"], iframe[title="HubSpot Virality"]');
+            if (el) {
+                const p = el.parentElement;
+                el.remove();
+                if (p?.childElementCount === 0) p.remove();
+            }
+        };
+
+        const renderForm = () => {
+            if (typeof (window as unknown as { hbspt?: { forms: { create: (opts: object) => void } } }).hbspt?.forms?.create !== 'function') return;
+            container.innerHTML = '';
+            (window as unknown as { hbspt: { forms: { create: (opts: object) => void } } }).hbspt.forms.create({
+                region: 'na1',
+                portalId: HUBSPOT_PORTAL_ID,
+                formId: HUBSPOT_FORM_ID,
+                target: '#hubspot-form-container',
+                onFormReady: () => {
+                    removeVirality();
+                    setTimeout(removeVirality, 100);
+                    setTimeout(removeVirality, 500);
+                },
+            });
+        };
+
+        if (document.getElementById(HUBSPOT_SCRIPT_ID)) {
+            renderForm();
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.id = HUBSPOT_SCRIPT_ID;
+        script.src = HUBSPOT_SCRIPT_URL;
+        script.async = true;
+        script.onload = renderForm;
+        document.body.appendChild(script);
+    }, []);
 
   return (
     <>
@@ -62,64 +143,10 @@ export default function ContactPavanity() {
                             </p>
                         </div>
                         <div className="mt-8" data-aos="fade-up" data-aos-delay="100">
-                            <div>
-                                <div className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-5 sm:gap-6">
-                                    {/* Full Name */}
-                                    <div>
-                                        <label className="text-base md:text-lg text-title dark:text-white leading-none mb-2.5 block">Full Name *</label>
-                                        <input className="w-full h-12 md:h-14 bg-snow dark:bg-dark-secondary border border-[#E3E5E6] text-title dark:text-white focus:border-primary p-4 outline-none duration-300" type="text" placeholder="Enter your full name" required/>
-                                    </div>
-
-                                    {/* Company Name */}
-                                    <div>
-                                        <label className="text-base md:text-lg text-title dark:text-white leading-none mb-2.5 block">Company Name *</label>
-                                        <input className="w-full h-12 md:h-14 bg-snow dark:bg-dark-secondary border border-[#E3E5E6] text-title dark:text-white focus:border-primary p-4 outline-none duration-300" type="text" placeholder="Enter your company name" required/>
-                                    </div>
-
-                                    {/* Country */}
-                                    <div>
-                                        <label className="text-base md:text-lg text-title dark:text-white leading-none mb-2.5 block">Country *</label>
-                                        <input className="w-full h-12 md:h-14 bg-snow dark:bg-dark-secondary border border-[#E3E5E6] text-title dark:text-white focus:border-primary p-4 outline-none duration-300" type="text" placeholder="Enter your country" required/>
-                                    </div>
-
-                                    {/* Business Email */}
-                                    <div>
-                                        <label className="text-base md:text-lg text-title dark:text-white leading-none mb-2.5 block">Business Email *</label>
-                                        <input className="w-full h-12 md:h-14 bg-snow dark:bg-dark-secondary border border-[#E3E5E6] text-title dark:text-white focus:border-primary p-4 outline-none duration-300" type="email" placeholder="Enter your business email" required/>
-                                    </div>
-                                </div>
-
-                                {/* Product of Interest - Full Width */}
-                                <div className="mt-5 sm:gap-6">
-                                    <label className="text-base md:text-lg text-title dark:text-white leading-none mb-2.5 block">Product of Interest *</label>
-                                    <select className="w-full h-12 md:h-14 bg-snow dark:bg-dark-secondary border border-[#E3E5E6] text-slate-400 focus:border-primary p-4 outline-none duration-300" required>
-                                        <option value="">Select product category</option>
-                                        {productsData.map((category) => (
-                                            <option key={category.id} value={category.slug}>{category.name}</option>
-                                        ))}
-                                        <option value="private-label">Private Label & Custom Sourcing</option>
-                                        <option value="general">General Enquiry</option>
-                                    </select>
-                                </div>
-
-                                {/* Requirement Details */}
-                                <div className="mt-5 sm:gap-6">
-                                    <label className="text-base md:text-lg text-title dark:text-white leading-none mb-2.5 block">Requirement Details *</label>
-                                    <textarea className="w-full h-28 md:h-[170px] bg-snow dark:bg-dark-secondary border border-[#E3E5E6] text-title dark:text-white focus:border-primary p-4 outline-none duration-300" name="requirements" placeholder="Provide details about your requirements (product specifications, volumes, destination market, etc.)" required></textarea>
-                                </div>
-
-                                {/* Response Time Message */}
-                                <div className="mt-4 text-sm md:text-base text-title/70 dark:text-white/70">
-                                    <p>* Response within 24-48 working hours</p>
-                                </div>
-
-                                {/* Submit Button */}
-                                <div className="mt-5">
-                                    <button type="submit" className="btn btn-solid" data-text="Send Enquiry">
-                                        <span>Send Enquiry</span>
-                                    </button>
-                                </div>
-                            </div>
+                            <p className="text-sm text-title/70 dark:text-white/70 mb-4">
+                                * Response within 24-48 working hours
+                            </p>
+                            <div ref={formContainerRef} id="hubspot-form-container" className="hubspot-form-wrapper min-h-[400px]" />
                         </div>
                     </div>
                 </div>

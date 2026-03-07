@@ -45,6 +45,15 @@ You can also run **`npm run seo:generate`** anytime to regenerate `robots.txt` a
 
 ---
 
+## Favicon on the site and in Google
+
+- The favicon is linked with an **absolute URL** (`SITE_URL`/favicon.png and favicon.ico) so it works on Vercel and so Google can use it in search results.
+- **favicon.ico** – Browsers often request `/favicon.ico` by default. Add a file named `favicon.ico` in the `public/` folder (e.g. convert your logo to .ico using [favicon.io](https://favicon.io) or [realfavicongenerator.net](https://realfavicongenerator.net)). If you don’t add it, the PNG is still used via the other link tags.
+- **In the browser:** After you deploy, the tab should show your favicon. If it doesn’t, do a hard refresh (Ctrl+Shift+R or Cmd+Shift+R) or clear cache.
+- **In Google search results:** Google can take days or weeks to show your favicon after indexing. For best results use a **square** image and at least **48×48 px**.
+
+---
+
 ## Optional: speed up indexing
 
 - Share your homepage and key pages (e.g. LinkedIn, Twitter).

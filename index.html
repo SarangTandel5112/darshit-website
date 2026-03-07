@@ -2,8 +2,11 @@
 <html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <!-- Favicon: PNG first for modern browsers, .ico fallback. Use relative path + cache buster. -->
+    <link rel="icon" type="image/png" href="/favicon.png?v=3" sizes="48x48" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" />
+    <link rel="shortcut icon" href="/favicon.ico?v=3" />
+    <link rel="apple-touch-icon" href="/favicon.png?v=3" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pavanity Global | International Food & Ingredient Supplier</title>
     <meta name="description" content="Export-ready supply supporting structured B2B and HoReCa requirements across international markets. Dehydrated onions, garlic, spices, oilseeds, psyllium husk, jaggery & value-added ingredients from India." />
@@ -67,6 +70,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Hide HubSpot virality (free account "Create your own free forms" branding) -->
+    <style>#hs-form-virality-container,#hs-form-virality-iframe{display:none!important;height:0!important;visibility:hidden!important}</style>
   </head>
   <body class="dark:bg-title">
     <div id="root"></div>
@@ -75,6 +80,26 @@
       (function() {
         var link = document.getElementById('canonical-url');
         if (link) link.href = window.location.origin + (window.location.pathname || '/');
+      })();
+    </script>
+    <!-- Remove HubSpot virality container (runs globally, before React) -->
+    <script>
+      (function() {
+        function removeVirality() {
+          var c = document.getElementById('hs-form-virality-container');
+          var i = document.getElementById('hs-form-virality-iframe') || document.querySelector('iframe[src*="embedded-viral"], iframe[title="HubSpot Virality"]');
+          if (c) c.remove();
+          if (i) { var p = i.parentElement; i.remove(); if (p && p.childElementCount === 0) p.remove(); }
+        }
+        removeVirality();
+        setTimeout(removeVirality, 1000);
+        setTimeout(removeVirality, 2000);
+        setTimeout(removeVirality, 4000);
+        var obs = new MutationObserver(removeVirality);
+        if (document.body) obs.observe(document.body, { childList: true, subtree: true });
+        else document.addEventListener('DOMContentLoaded', function() { obs.observe(document.body, { childList: true, subtree: true }); });
+        var iv = setInterval(removeVirality, 500);
+        setTimeout(function() { clearInterval(iv); }, 15000);
       })();
     </script>
     <!-- SEO: Crawlable content when JS is off or for crawlers that read HTML first -->
