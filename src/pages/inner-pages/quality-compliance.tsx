@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Images
-import bg from '../../assets/img/quality-compliance-top-header.jpeg'
-import qualityImage from '../../assets/img/quality-compliance.jpeg' // Placeholder
+import bg from '../../assets/img/quality.jpg'
+import qualityImage from '../../assets/img/quality_full.jpg' // Placeholder
 
 // Icons 
 import { FaShieldAlt, FaClipboardCheck, FaSeedling, FaBoxOpen, FaTags, FaShippingFast, FaListAlt } from 'react-icons/fa'

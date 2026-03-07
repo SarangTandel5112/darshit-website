@@ -139,7 +139,7 @@ export default function ContactPavanity() {
                                 <FaEnvelope className="size-10 text-white" />
                             </div>
                             <h4 className="text-xl font-semibold mb-2">Email</h4>
-                            <p className="text-base">business@pavanity.com</p>
+                            <p className="text-base">info@pavanityglobal.com</p>
                         </div>
 
                         {/* Response Time */}

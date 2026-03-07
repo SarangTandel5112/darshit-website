@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
 // Images
-import bg from "../../assets/img/shortcode/breadcumb.jpg";
+import bg from "../../assets/img/main_product_bc1.png";
 import placeholderImage from "../../assets/img/about/about-banner-01.jpg"; 
 
 // Icons
