@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import SeoHead from './components/SeoHead'
 
 // Pavanity Pages
 import PavanityHomeV4 from './pages/index/pavanity-home-v4'
@@ -14,7 +15,8 @@ import ContactPavanity from './pages/inner-pages/contact-pavanity'
 function App() {
   return (
     <>
-     <Routes>
+      <SeoHead />
+      <Routes>
           {/* Pavanity Global Website Routes */}
           <Route path="/" element={<PavanityHomeV4/>} />
           <Route path="/about-us" element={<AboutPavanity/>} />

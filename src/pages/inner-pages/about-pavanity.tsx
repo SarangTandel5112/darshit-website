@@ -6,7 +6,7 @@ import bg from '../../assets/img/about_us.jpg'
 import aboutImage from '../../assets/img/aboutus-full.png'
 
 // Icons 
-import { FaIndustry, FaShieldAlt, FaCheckCircle, FaAward, FaUsers, FaFlask } from 'react-icons/fa'
+import { FaIndustry, FaShieldAlt, FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa'
 
 // Components
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";

@@ -18,6 +18,7 @@ import { getCategoryBySlug } from "../../data/products-data";
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
 import FooterPavanity from "../../components/footer/footer-pavanity";
 import ScrollToTop from "../../components/scroll-to-top";
+import SeoHead from "../../components/SeoHead";
 
 import Aos from "aos";
 
@@ -456,8 +457,16 @@ export default function DivisionDetail() {
         );
     }
 
+    const overview = details?.overview ?? category.description;
+    const metaDesc = (overview ?? '').slice(0, 155) + (overview && overview.length > 155 ? '...' : '');
+
     return (
         <>
+            <SeoHead
+                title={category.name}
+                description={metaDesc || `${category.name} – Export-grade from Pavanity Global. ${category.tagline}.`}
+                path={`/products/${slug}`}
+            />
             {/* Navbar */}
             <NavbarPavanity />
 

@@ -39,6 +39,25 @@ const urls = [
   { loc: '/products/agro-allied-food-products', changefreq: 'monthly', priority: '0.7' },
   { loc: '/products/spices', changefreq: 'monthly', priority: '0.7' },
   { loc: '/products/value-added-dehydrated-products', changefreq: 'monthly', priority: '0.7' },
+  // Individual product pages (category/product)
+  ...[
+    'white-onion', 'red-onion', 'pink-onion', 'garlic', 'oilseeds', 'psyllium-husk',
+    'jaggery', 'agro-allied-food-products', 'spices', 'value-added-dehydrated-products',
+  ].flatMap((cat) => {
+    const products = {
+      'white-onion': ['white-onion-powder', 'white-onion-flakes', 'white-onion-granules', 'white-onion-chopped', 'white-onion-minced'],
+      'red-onion': ['red-onion-powder', 'red-onion-flakes', 'red-onion-granules', 'red-onion-chopped', 'red-onion-minced'],
+      'pink-onion': ['pink-onion-powder', 'pink-onion-flakes', 'pink-onion-granules', 'pink-onion-chopped', 'pink-onion-minced'],
+      'garlic': ['garlic-powder', 'garlic-granules', 'garlic-chopped', 'garlic-minced', 'garlic-cloves'],
+      'oilseeds': ['black-sesame-seeds', 'hulled-sesame-seeds', 'natural-sesame-seeds', 'chia-seeds', 'java-peanuts', 'tj-peanuts', 'bold-peanuts'],
+      'psyllium-husk': ['psyllium-seeds', 'psyllium-husk', 'psyllium-husk-powder', 'psyllium-khakha-powder', 'psyllium-cattle-feed-fiber'],
+      'jaggery': ['jaggery-cubes', 'jaggery-powder'],
+      'agro-allied-food-products': ['moringa-powder', 'peanut-butter', 'indian-groundnut-extraction-meal'],
+      'spices': ['cumin-seeds', 'fenugreek-seeds', 'mustard-seeds', 'fennel-seeds', 'chilli-whole-powder', 'turmeric-whole-powder', 'cinnamon', 'cloves', 'black-pepper', 'cardamom', 'yellow-mustard-seeds'],
+      'value-added-dehydrated-products': ['dehydrated-fried-onion', 'toasted-onion-kibbled', 'toasted-onion-chopped'],
+    }[cat] || [];
+    return products.map((p) => ({ loc: `/products/${cat}/${p}`, changefreq: 'monthly', priority: '0.6' }));
+  }),
 ];
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>

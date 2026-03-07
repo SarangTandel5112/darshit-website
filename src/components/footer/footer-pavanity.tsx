@@ -5,6 +5,7 @@ import {
     FaLinkedinIn,
     FaInstagram,
     FaTwitter,
+    FaWhatsapp,
     FaEnvelope,
     FaPhone,
     FaMapMarkerAlt,
@@ -35,6 +36,8 @@ interface SocialMediaData {
 export default function FooterPavanity() {
     const getSocialIcon = (iconName: string) => {
         switch (iconName) {
+            case "whatsapp":
+                return <FaWhatsapp />;
             case "facebook":
                 return <FaFacebookF />;
             case "linkedin":

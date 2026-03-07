@@ -15,6 +15,7 @@ import { getCategoryBySlug, getProductBySlug } from "../../data/products-data";
 import NavbarPavanity from "../../components/navbar/navbar-pavanity";
 import FooterPavanity from "../../components/footer/footer-pavanity";
 import ScrollToTop from "../../components/scroll-to-top";
+import SeoHead from "../../components/SeoHead";
 
 import Aos from "aos";
 
@@ -47,8 +48,15 @@ export default function SingleProductDetail() {
         );
     }
 
+    const productDesc = (product.description ?? '').slice(0, 155) + (product.description && product.description.length > 155 ? '...' : '');
+
     return (
         <>
+            <SeoHead
+                title={product.name}
+                description={productDesc || `${product.name} – Export-grade from Pavanity Global. ${category.tagline}.`}
+                path={`/products/${categorySlug}/${productSlug}`}
+            />
             {/* Navbar */}
             <NavbarPavanity />
 
