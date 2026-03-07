@@ -257,9 +257,9 @@ export const footerProductCategories = [
 ];
 
 export const footerLegalLinks = [
-    { name: "Privacy Policy", path: "/privacy-policy" },
-    { name: "Terms & Conditions", path: "/terms-conditions" },
-    { name: "Export Compliance", path: "/export-compliance" }
+    // { name: "Privacy Policy", path: "/privacy-policy" },
+    // { name: "Terms & Conditions", path: "/terms-conditions" },
+    // { name: "Export Compliance", path: "/export-compliance" }
 ];
 
 export const footerContent = {
@@ -284,7 +284,7 @@ export const socialMedia = [
 
 export const contactInfo = {
     email: "info@pavanityglobal.com",
-    phone: "+91 98250 47586",
+    phone: "+91 90167 39990",
     address: "Jetpur - Rajkot 360-370, Gujarat, India",
     responseTime: "24-48 working hours"
 };

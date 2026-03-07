@@ -880,7 +880,7 @@ export const productsData: ProductCategory[] = [
         name: "Value Added Dehydrated Products",
         slug: "value-added-dehydrated-products",
         icon: "onion",
-        image: "/images/value-added-dehydrated.jpeg",
+        image: "/images/main_value.jpeg",
         tagline: "Value Added Dehydrated Products",
         description:
             "Premium value-added dehydrated onion products including toasted onion chopped, toasted onion kibbled, and dehydrated fried onion. Processed in India with controlled fat levels and multiple grade options for food manufacturers, snack producers, and ready-to-eat meal applications.",
@@ -890,7 +890,7 @@ export const productsData: ProductCategory[] = [
                 name: "Dehydrated Fried Onion",
                 slug: "dehydrated-fried-onion",
                 category: "value-added-dehydrated-products",
-                image: "/images/dehydrated-fried-onion.jpg",
+                image: "/images/fried_value.jpeg",
                 description:
                     "Dehydrated Fried Onion is prepared from fried onion slices that are dehydrated to preserve crispiness and flavour. It provides a rich fried-onion taste that supports fast preparation and standardised production in large-scale food operations. It is used in snack flavouring, ready-to-fry mixes, garnish sachets for meal kits, onion-flavoured oil preparation, and industrial gravy bases where fried notes are required without additional cooking steps. Its stable texture and concentrated flavour make it suitable for a wide range of packaged and ready-to-eat foods.",
                 specifications: {
@@ -907,7 +907,7 @@ export const productsData: ProductCategory[] = [
                 name: "Toasted Onion Kibbled",
                 slug: "toasted-onion-kibbled",
                 category: "value-added-dehydrated-products",
-                image: "/images/toasted-onion-kibbled.jpg",
+                image: "/images/kibbled_value.jpeg",
                 description:
                     "Toasted Onion Kibbled is made from dehydrated onions that are lightly toasted to give a warm, balanced flavour and natural aroma. The medium-sized pieces blend easily into food applications and offer long shelf life without moisture issues. It is used in several unique ways such as adding a natural crunch to coated snacks, enhancing savoury bakery items, and topping instant meal bowls. It also fits well in dehydrated meal kits and herb-spice grinder blends where stable texture and clean flavour are required.",
                 specifications: {
@@ -924,7 +924,7 @@ export const productsData: ProductCategory[] = [
                 name: "Toasted Onion Chopped",
                 slug: "toasted-onion-chopped",
                 category: "value-added-dehydrated-products",
-                image: "/images/toasted-onion-chopped.jpg",
+                image: "/images/chopped_value.jpeg",
                 description:
                     "Toasted Onion Chopped consists of evenly cut toasted onion pieces that deliver a controlled roasted taste suitable for food manufacturing. It helps achieve uniform flavour without the need for sautéing fresh onions. Its applications include use as a sauce base in industrial kitchens, flavour enhancement in plant-based food products, dry rub marinades, instant curry mixes, and ethnic seasoning blends across Middle Eastern, Asian, and Latin cuisines. This makes it reliable for consistent processing and long-term storage.",
                 specifications: {

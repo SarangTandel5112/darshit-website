@@ -44,7 +44,7 @@ export default function NavbarPavanity() {
                         <img
                             src={logoLight}
                             alt="Pavanity Global"
-                            className="dark:block hidden w-[120px] sm:w-[200px] h-auto"
+                            className="dark:block hidden w-[310px] h-auto"
                         />
                     </Link>
                     <div className="flex items-center gap-6 lg:gap-8 2xl:gap-12">
