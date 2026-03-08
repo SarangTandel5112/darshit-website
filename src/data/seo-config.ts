@@ -14,7 +14,7 @@ export const seoConfig: Record<string, SeoConfig> = {
   '/': {
     title: 'International Food & Ingredient Supplier',
     description:
-      'Export-ready supply supporting structured B2B and HoReCa requirements across international markets. Dehydrated onions, garlic, spices, oilseeds, psyllium husk, jaggery & value-added ingredients from India.',
+      'Export-ready food ingredients from India for B2B and HoReCa buyers. Dehydrated onions, garlic, spices, oilseeds, psyllium husk & jaggery from India.',
     keywords:
       'Pavanity Global, international food supplier, ingredient exporter, dehydrated onion, dehydrated garlic, spices exporter India, B2B food ingredients, HoReCa supplier, export ready ingredients',
   },

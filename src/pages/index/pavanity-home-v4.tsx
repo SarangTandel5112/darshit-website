@@ -75,8 +75,8 @@ export default function PavanityHomeV4() {
                     data-aos-delay="100"
                 >
                     <div className="max-w-[751px] mx-auto text-center">
-                        {/* Main Headline */}
-                        <h2
+                        {/* Main Headline - SEO: Changed h2 to h1 (primary page heading) */}
+                        <h1
                             className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug font-bold text-center"
                             style={{
                                 textShadow:
@@ -93,10 +93,10 @@ export default function PavanityHomeV4() {
                                       </span>
                                   ))
                                 : heroContent.h1}
-                        </h2>
+                        </h1>
 
-                        {/* Sub Headline */}
-                        <h3
+                        {/* Sub Headline - SEO: h3 demoted to h2 to maintain correct hierarchy after h1 fix */}
+                        <h2
                             className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug mt-3 md:mt-4 text-white font-extrabold text-center"
                             style={{
                                 textShadow:
@@ -104,7 +104,7 @@ export default function PavanityHomeV4() {
                             }}
                         >
                             {heroContent.h2}
-                        </h3>
+                        </h2>
 
                         {/* Description */}
                         <p
