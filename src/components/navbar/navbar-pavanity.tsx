@@ -30,7 +30,9 @@ export default function NavbarPavanity() {
     }, []);
 
     return (
-        <div
+        // SEO: Added - Changed div to nav for semantic HTML (improves accessibility and SEO)
+        <nav
+            aria-label="Main navigation"
             className={`header-area header-v3-area header-v4 absolute z-50 left-0 right-0 top-[10px] sm:top-5 lg:top-7 ${scroll ? "sticky-header bg-white dark:bg-title" : "lg:bg-transparent"}`}
         >
             <div className="container">
@@ -140,6 +142,6 @@ export default function NavbarPavanity() {
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 }

@@ -2,14 +2,14 @@
 <html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
-    <!-- Favicon: PNG first for modern browsers, .ico fallback. Use relative path + cache buster. -->
-    <link rel="icon" type="image/png" href="/favicon.png?v=3" sizes="48x48" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" />
-    <link rel="shortcut icon" href="/favicon.ico?v=3" />
-    <link rel="apple-touch-icon" href="/favicon.png?v=3" />
+    <!-- Favicon: Stable URLs for Google Search (48x48+ square). .ico first for crawlers. -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pavanity Global | International Food & Ingredient Supplier</title>
-    <meta name="description" content="Export-ready supply supporting structured B2B and HoReCa requirements across international markets. Dehydrated onions, garlic, spices, oilseeds, psyllium husk, jaggery & value-added ingredients from India." />
+    <meta name="description" content="Export-ready food ingredients from India for B2B and HoReCa buyers. Dehydrated onions, garlic, spices, oilseeds, psyllium husk & jaggery from India." />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Pavanity Global" />
@@ -18,8 +18,10 @@
     <meta property="og:url" content="__SITE_URL__/" />
     <meta property="og:image" content="__SITE_URL__/images/main_product_bc.png" />
     <meta property="og:image:alt" content="Pavanity Global - International Food & Ingredient Supplier" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Pavanity Global | International Food & Ingredient Supplier" />
     <meta name="twitter:description" content="Export-ready supply supporting structured B2B and HoReCa requirements across international markets." />
     <meta name="twitter:image" content="__SITE_URL__/images/main_product_bc.png" />
@@ -29,6 +31,8 @@
     <meta name="keywords" content="Pavanity Global, Pavanity, international food supplier, ingredient exporter, dehydrated onion, dehydrated garlic, spices exporter India, B2B food ingredients, HoReCa supplier, export ready ingredients" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" id="canonical-url" href="__SITE_URL__/" />
+    <!-- SEO: Added - Sitemap reference in HTML head -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <!-- Structured Data (JSON-LD) for Google -->
     <script type="application/ld+json">
     {
@@ -41,11 +45,17 @@
           "url": "__SITE_URL__",
           "logo": {
             "@type": "ImageObject",
-            "url": "__SITE_URL__/favicon.png"
+            "url": "__SITE_URL__/images/logo.png",
+            "width": 2754,
+            "height": 720
           },
           "description": "International Food & Ingredient Supplier. Export-ready supply for global food businesses – dehydrated onions, garlic, spices, oilseeds, psyllium husk, jaggery and value-added ingredients from India.",
           "email": "info@pavanityglobal.com",
-          "sameAs": []
+          "sameAs": [
+            "https://www.linkedin.com/company/pavanity-global/",
+            "https://www.instagram.com/pavanity_global",
+            "https://wa.me/message/H6DRDTCA6OHHG1"
+          ]
         },
         {
           "@type": "WebSite",
@@ -67,6 +77,13 @@
       ]
     }
     </script>
+    <!-- SEO: Added - Preconnect to external CDNs for faster resource loading -->
+    <link rel="preconnect" href="https://code.jquery.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://code.jquery.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -68,9 +68,10 @@ export default function SingleProductDetail() {
                 style={{ backgroundImage: `url(${bg})` }}
             >
                 <div className="text-center w-full">
-                    <h2 className="text-white text-8 md:text-[40px] font-normal leading-none text-center">
+                    {/* SEO: Changed h2 to h1 — product name is the primary heading for this page */}
+                    <h1 className="text-white text-8 md:text-[40px] font-normal leading-none text-center">
                         {product.name}
-                    </h2>
+                    </h1>
                     <p className="text-white text-lg md:text-xl mt-3">
                         {category.tagline}
                     </p>
@@ -111,6 +112,7 @@ export default function SingleProductDetail() {
                                     className="object-cover w-full h-full"
                                     src={product.image || placeholderImage}
                                     alt={product.name}
+                                    loading="lazy"
                                 />
                             </div>
                         </div>
@@ -296,6 +298,7 @@ export default function SingleProductDetail() {
                                                     <img
                                                         src={relatedProduct.image}
                                                         alt={relatedProduct.name}
+                                                        loading="lazy"
                                                         className="w-full h-full object-cover group-hover:scale-110 duration-500"
                                                     />
                                                 </div>
