@@ -273,7 +273,7 @@ export const footerContent = {
 export const socialMedia = [
     { name: "WhatsApp", url: "https://wa.me/message/H6DRDTCA6OHHG1", icon: "whatsapp" },
     { name: "Instagram", url: "https://www.instagram.com/pavanity_global?igsh=Y2ZvMnJnMmM2aGRi", icon: "instagram" },
-    { name: "Facebook", url: "https://facebook.com/pavanityglobal", icon: "facebook" },
+    // { name: "Facebook", url: "https://facebook.com/pavanityglobal", icon: "facebook" },
     { name: "LinkedIn", url: "https://www.linkedin.com/company/pavanity-global/", icon: "linkedin" },
     { name: "Twitter", url: "https://twitter.com/pavanityglobal", icon: "twitter" }
 ];
