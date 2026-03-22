@@ -1,66 +1,200 @@
-import { Link } from "react-router-dom";
-import { heroContent } from "../../data/pavanity-data";
+import { useEffect, useState } from "react";
+
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
+type HeroSlide = {
+    id: string;
+    image: string;
+    eyebrow: string;
+    titlePrefix: string;
+    titleHighlight: string;
+    titleSuffix: string;
+};
+
+const HERO_SLIDES: HeroSlide[] = [
+    {
+        id: "trade",
+        image: "/images/home-background.jpeg",
+        eyebrow: "Export-ready supply partner",
+        titlePrefix: "International Food",
+        titleHighlight: "&",
+        titleSuffix: "Ingredient Supplier",
+    },
+    {
+        id: "export",
+        image: "/images/v1-home-background.jpeg",
+        eyebrow: "Global food sourcing",
+        titlePrefix: "Export Supply",
+        titleHighlight: "for",
+        titleSuffix: "Global Food Businesses",
+    },
+    {
+        id: "horeca",
+        image: "/images/black-sesame-sack-dark-background (1).jpg",
+        eyebrow: "B2B and HoReCa focus",
+        titlePrefix: "Structured",
+        titleHighlight: "B2B",
+        titleSuffix: "& HoReCa Supply",
+    },
+];
+
+const AUTO_ADVANCE_MS = 3600;
 
 export default function HeroSection() {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [isAutoAdvancePaused, setIsAutoAdvancePaused] = useState(false);
+    const activeSlide = HERO_SLIDES[activeIndex] ?? HERO_SLIDES[0];
+
+    useEffect(() => {
+        if (isAutoAdvancePaused) {
+            return undefined;
+        }
+
+        const timer = window.setInterval(() => {
+            setActiveIndex((current) => (current + 1) % HERO_SLIDES.length);
+        }, AUTO_ADVANCE_MS);
+
+        return () => {
+            window.clearInterval(timer);
+        };
+    }, [isAutoAdvancePaused]);
+
+    function goToSlide(index: number) {
+        setActiveIndex(index);
+    }
+
+    function goToPreviousSlide() {
+        setActiveIndex((current) =>
+            current === 0 ? HERO_SLIDES.length - 1 : current - 1,
+        );
+    }
+
+    function goToNextSlide() {
+        setActiveIndex((current) => (current + 1) % HERO_SLIDES.length);
+    }
+
+    function pauseAutoAdvance() {
+        setIsAutoAdvancePaused(true);
+    }
+
+    function resumeAutoAdvance() {
+        setIsAutoAdvancePaused(false);
+    }
+
+    if (!activeSlide) {
+        return <section className="pavanity-home-hero" />;
+    }
+
     return (
-        <div className="relative bg-[#f5f5f5] dark:bg-dark-secondary overflow-hidden">
-            <div className="container-fluid">
-                <div className="max-w-[1720px] mx-auto">
-                    <div className="flex flex-col items-center justify-center text-center py-20 sm:py-28 md:py-36 lg:py-44 px-4">
-                        {/* H1 - Main Headline */}
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-title dark:text-white leading-none max-w-4xl text-center">
-                            {Array.isArray(heroContent.h1)
-                                ? heroContent.h1.map((line, i) => (
-                                      <span
-                                          key={i}
-                                          className={i === 1 ? "block text-center" : "block"}
-                                      >
-                                          {line}
-                                      </span>
-                                  ))
-                                : heroContent.h1}
-                        </h1>
-                        {/* H2 - Sub Headline */}
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-title dark:text-white mt-6 max-w-3xl leading-none">
-                            {heroContent.h2}
-                        </h2>
-                        {/* Description */}
-                        <p className="text-base sm:text-lg text-title dark:text-white-light mt-4 md:mt-5 max-w-3xl">
-                            {heroContent.description}
-                        </p>
-                        {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 mt-6 md:mt-8 w-full sm:w-auto">
-                            <Link
-                                to="/contact"
-                                className="btn btn-primary"
-                                data-text={heroContent.primaryCTA}
-                            >
-                                <span>{heroContent.primaryCTA}</span>
-                            </Link>
-                            <Link
-                                to="/products"
-                                className="btn btn-outline"
-                                data-text={heroContent.secondaryCTA}
-                            >
-                                <span>{heroContent.secondaryCTA}</span>
-                            </Link>
-                        </div>
-                        {/* Trust Indicators */}
-                        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mt-10 md:mt-12">
-                            {heroContent.trustIndicators.map(
-                                (indicator, index) => (
-                                    <span
-                                        key={index}
-                                        className="inline-flex items-center px-4 py-2 text-sm md:text-base text-title dark:text-white border border-title dark:border-white border-opacity-20 dark:border-opacity-20 rounded"
-                                    >
-                                        {indicator}
-                                    </span>
-                                )
-                            )}
-                        </div>
+        <section
+            className="pavanity-home-hero"
+            aria-label="Featured home banners"
+            aria-roledescription="carousel"
+            onMouseEnter={pauseAutoAdvance}
+            onMouseLeave={resumeAutoAdvance}
+            onFocusCapture={pauseAutoAdvance}
+            onBlurCapture={(event) => {
+                if (
+                    !(event.relatedTarget instanceof Node) ||
+                    !event.currentTarget.contains(event.relatedTarget)
+                ) {
+                    resumeAutoAdvance();
+                }
+            }}
+        >
+            <div className="absolute inset-0">
+                {HERO_SLIDES.map((slide, index) => (
+                    <div
+                        key={slide.id}
+                        aria-hidden={activeIndex !== index}
+                        className={[
+                            "pavanity-home-hero__slide",
+                            activeIndex === index
+                                ? "pavanity-home-hero__slide--active"
+                                : "",
+                        ].join(" ")}
+                    >
+                        <img
+                            src={slide.image}
+                            alt=""
+                            className={[
+                                "pavanity-home-hero__media",
+                                index === 0 ? "object-center" : "",
+                                activeIndex === index
+                                    ? "scale-100"
+                                    : "scale-[1.04]",
+                            ].join(" ")}
+                        />
+                    </div>
+                ))}
+            </div>
+
+            <div className="pavanity-home-hero__overlay-left" />
+            <div className="pavanity-home-hero__overlay-bottom" />
+
+            <div className="container-fluid pavanity-home-hero__content">
+                <div className="pavanity-home-hero__copy" key={activeSlide.id}>
+                    <p className="pavanity-home-hero__eyebrow">
+                        {activeSlide.eyebrow}
+                    </p>
+
+                    <p className="pavanity-home-hero__title">
+                        {activeSlide.titlePrefix}
+                    </p>
+                    <h1 className="pavanity-home-hero__title">
+                        <span className="pavanity-home-hero__highlight">
+                            {activeSlide.titleHighlight}
+                        </span>
+                        <span className="text-white">
+                            {" "}
+                            {activeSlide.titleSuffix}
+                        </span>
+                    </h1>
+                </div>
+
+                <div className="pavanity-home-hero__controls">
+                    <div
+                        className="pavanity-home-hero__indicators"
+                        role="group"
+                        aria-label="Select hero slide"
+                    >
+                        {HERO_SLIDES.map((slide, index) => (
+                            <button
+                                key={slide.id}
+                                type="button"
+                                aria-label={`Go to hero slide ${index + 1}`}
+                                aria-pressed={activeIndex === index}
+                                onClick={() => goToSlide(index)}
+                                className={[
+                                    "pavanity-home-hero__indicator",
+                                    activeIndex === index
+                                        ? "pavanity-home-hero__indicator--active"
+                                        : "",
+                                ].join(" ")}
+                            />
+                        ))}
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                        <button
+                            type="button"
+                            aria-label="Previous hero slide"
+                            onClick={goToPreviousSlide}
+                            className="pavanity-home-hero__nav-button"
+                        >
+                            <FiChevronLeft />
+                        </button>
+                        <button
+                            type="button"
+                            aria-label="Next hero slide"
+                            onClick={goToNextSlide}
+                            className="pavanity-home-hero__nav-button"
+                        >
+                            <FiChevronRight />
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -22,8 +22,19 @@ import SeoHead from "../../components/SeoHead";
 
 import Aos from "aos";
 
+type DivisionDetail = {
+    overview: string;
+    categories: Array<{
+        name: string;
+        examples: string;
+    }>;
+    applications: string[];
+    packaging: string;
+    quality: string;
+};
+
 // Product category detailed content - Export-focused
-const divisionDetails: { [key: string]: any } = {
+const divisionDetails: Record<string, DivisionDetail> = {
     "white-onion": {
         overview:
             "Bulk-supplied dehydrated white onion products for international B2B buyers, food manufacturers, and HoReCa distribution. Processed under controlled dehydration conditions to meet export quality standards and buyer specifications.",
@@ -269,6 +280,8 @@ const divisionDetails: { [key: string]: any } = {
             "Certified processing facility. Purity testing. Microbiological analysis. Export documentation provided.",
     },
     "psyllium-husk": {
+        overview:
+            "Bulk-supplied psyllium seed and husk ingredients for international B2B buyers across nutraceutical, food, pharmaceutical, and animal nutrition segments. Export supply is aligned with purity requirements, packaging needs, and destination market documentation.",
         categories: [
             {
                 name: "Psyllium Seeds",
@@ -433,7 +446,6 @@ const divisionDetails: { [key: string]: any } = {
 export default function DivisionDetail() {
     const { slug } = useParams<{ slug: string }>();
     const category = getCategoryBySlug(slug || "");
-    const details = slug ? divisionDetails[slug] : null;
 
     useEffect(() => {
         Aos.init();
@@ -457,6 +469,40 @@ export default function DivisionDetail() {
         );
     }
 
+    const details: DivisionDetail = slug && divisionDetails[slug]
+        ? divisionDetails[slug]
+        : {
+              overview: `Export-ready supply for ${category.name} with structured commercial coordination, buyer-aligned documentation, and quality support for international B2B markets.`,
+              categories: [],
+              applications: [
+                  "International B2B sourcing",
+                  "Food manufacturing",
+                  "HoReCa distribution",
+              ],
+              packaging:
+                  "Packaging configurations can be aligned to buyer requirements and shipment needs.",
+              quality:
+                  "Quality parameters are reviewed against buyer specifications and export documentation requirements.",
+          };
+
+    const availableProductsHighlights = [
+        {
+            title: "Product Lines",
+            value: `${category.products.length} Ready`,
+            description: "Export-ready SKUs available inside this category.",
+        },
+        {
+            title: "Applications",
+            value: `${details.applications.length} Sectors`,
+            description: "Commercial use cases supported across food manufacturing and trade channels.",
+        },
+        {
+            title: "Buyer Support",
+            value: "RFQ Ready",
+            description: "Specifications, MOQ discussion, and export enquiry support available.",
+        },
+    ] as const;
+
     const overview = details?.overview ?? category.description;
     const metaDesc = (overview ?? '').slice(0, 155) + (overview && overview.length > 155 ? '...' : '');
 
@@ -470,14 +516,16 @@ export default function DivisionDetail() {
             {/* Navbar */}
             <NavbarPavanity />
 
+            <main className="pavanity-products-page pavanity-products-detail-page">
+
             {/* ============================================ */}
             {/* BREADCRUMB SECTION */}
             {/* ============================================ */}
             <div
-                className="flex items-center gap-4 flex-wrap bg-overlay pt-32 pb-14 px-14 sm:pt-36 sm:pb-16 sm:px-16 before:bg-title before:bg-opacity-70"
+                className="pavanity-page-hero pavanity-products-hero bg-overlay"
                 style={{ backgroundImage: `url(${bg})` }}
             >
-                <div className="text-center w-full">
+                <div className="pavanity-page-hero__content pavanity-products-hero__content">
                     {/* SEO: Changed h2 to h1 — category name is the primary heading for this page */}
                     <h1 className="text-white text-8 md:text-[40px] font-normal leading-none text-center">
                         {category.name}
@@ -610,40 +658,63 @@ export default function DivisionDetail() {
             {/* ============================================ */}
             {/* AVAILABLE PRODUCTS LIST */}
             {/* ============================================ */}
-            <div className="s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
+            <div className="pavanity-products-section pavanity-products-section--catalog s-py-100 bg-[#F8F8F9] dark:bg-dark-secondary">
                 <div className="container-fluid">
-                    {/* Section Header */}
                     <div
-                        className="max-w-xl mx-auto mb-8 md:mb-12 text-center"
+                        className="max-w-[1720px] mx-auto pavanity-products-catalog-shell pavanity-logo-watermark-surface"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        <div className="w-20 h-20 bg-primary rounded-[10px] flex items-center justify-center mx-auto">
-                            <FaLeaf className="size-16 text-white" />
+                        <div className="pavanity-products-catalog-top grid gap-6 xl:grid-cols-[minmax(0,1.04fr)_minmax(22rem,0.96fr)] xl:items-stretch">
+                            <div className="pavanity-products-catalog-intro">
+                                <div className="pavanity-icon-panel pavanity-products-catalog-intro__icon">
+                                    <FaLeaf className="text-2xl" />
+                                </div>
+                                <p className="pavanity-products-catalog-intro__eyebrow">Available Products</p>
+                                <h3 className="font-medium leading-none text-2xl md:text-3xl">
+                                    Available Products
+                                </h3>
+                                <p className="pavanity-products-catalog-intro__copy">
+                                    Export-ready products available for international B2B buyers,
+                                    presented in a cleaner catalog view for faster evaluation and enquiry planning.
+                                </p>
+                            </div>
+                            <div className="pavanity-products-catalog-summary">
+                                <div className="pavanity-products-catalog-summary__header">
+                                    <p className="pavanity-products-catalog-summary__eyebrow">Catalog Snapshot</p>
+                                    <span className="pavanity-products-catalog-summary__badge">01 Category</span>
+                                </div>
+                                <div className="pavanity-products-catalog-summary__list">
+                                    {availableProductsHighlights.map((item, index) => (
+                                        <div key={item.title} className="pavanity-products-catalog-summary__item">
+                                            <span className="pavanity-step-index">
+                                                {String(index + 1).padStart(2, "0")}
+                                            </span>
+                                            <div>
+                                                <h4>{item.title}</h4>
+                                                <strong>{item.value}</strong>
+                                                <p>{item.description}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                        <h3 className="font-medium leading-none mt-4 md:mt-6 text-2xl md:text-3xl">
-                            Available Products
-                        </h3>
-                        <p className="mt-3">
-                            Export-ready products available for international B2B buyers
-                        </p>
-                    </div>
 
-                    {/* Products Grid */}
-                    <div
-                        className="max-w-[1720px] mx-auto"
-                        data-aos="fade-up"
-                        data-aos-delay="300"
-                    >
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
-                            {category.products.map((product) => (
+                        <div className="pavanity-card-grid pavanity-products-grid grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+                            {category.products.map((product, index) => {
+                                const productSummary =
+                                    product.description ??
+                                    `Export-ready ${product.name.toLowerCase()} supplied with structured documentation and buyer-aligned specifications.`;
+
+                                return (
                                 <div
                                     key={product.id}
-                                    className="bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px] hover:shadow-lg hover:border-primary/30 duration-300 group overflow-hidden"
+                                    className="pavanity-product-card pavanity-products-card pavanity-products-card--compact group overflow-hidden"
                                 >
                                     {/* Product Image */}
                                     {product.image && (
-                                        <div className="aspect-square overflow-hidden">
+                                        <div className="pavanity-products-card__media aspect-square overflow-hidden">
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
@@ -652,35 +723,46 @@ export default function DivisionDetail() {
                                             />
                                         </div>
                                     )}
-                                    {/* Product Name */}
-                                    <div className="p-4">
-                                        <h5 className="font-semibold text-base md:text-lg group-hover:text-primary duration-300 text-center">
+                                    <div className="pavanity-products-card__content pavanity-products-card__content--compact p-4">
+                                        <div className="pavanity-products-card__meta">
+                                            <span className="pavanity-products-card__eyebrow">Export Ready</span>
+                                            <span className="pavanity-products-card__index" aria-hidden="true">
+                                                {String(index + 1).padStart(2, "0")}
+                                            </span>
+                                        </div>
+                                        <h5 className="pavanity-products-card__title font-semibold text-base md:text-lg group-hover:text-primary duration-300">
                                             {product.name}
                                         </h5>
-                                        {/* View Product Button */}
-                                        <Link
-                                            to={`/products/${slug}/${product.slug}`}
-                                            className="inline-block w-full mt-4 bg-primary text-white px-4 py-2 text-sm font-medium rounded-[5px] hover:bg-opacity-90 duration-300 text-center"
-                                        >
-                                            View Product
-                                        </Link>
+                                        <p className="pavanity-products-card__copy pavanity-products-card__copy--compact text-sm md:text-base">
+                                            {productSummary.length > 145
+                                                ? `${productSummary.slice(0, 145)}...`
+                                                : productSummary}
+                                        </p>
+                                        <div className="pavanity-products-card__footer pavanity-products-card__footer--stacked">
+                                            <span className="pavanity-products-card__footer-line" aria-hidden="true" />
+                                            <Link
+                                                to={`/products/${slug}/${product.slug}`}
+                                                className="pavanity-products-card__button inline-block w-full bg-primary text-white px-4 py-2 text-sm font-medium text-center"
+                                            >
+                                                View Product
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
-                            ))}
+                                );
+                            })}
                         </div>
-                    </div>
-
-                    {/* View Products Button */}
-                    <div className="max-w-3xl mx-auto mt-12 text-center" data-aos="fade-up" data-aos-delay="500">
-                        <p className="text-base md:text-lg">
-                            Need detailed specifications, pricing, or MOQ information for any of these products?
-                        </p>
-                        <Link
-                            to="/contact"
-                            className="inline-block mt-4 bg-primary text-white px-8 py-3 text-base font-medium rounded-[5px] hover:bg-opacity-90 duration-300"
-                        >
-                            Request Product Specifications
-                        </Link>
+                        <div className="max-w-3xl mx-auto mt-12 text-center" data-aos="fade-up" data-aos-delay="500">
+                            <p className="text-base md:text-lg">
+                                Need detailed specifications, pricing, or MOQ information for any of these products?
+                            </p>
+                            <Link
+                                to="/contact"
+                                className="pavanity-products-inline-button inline-block mt-4 bg-primary text-white px-8 py-3 text-base font-medium"
+                            >
+                                Request Product Specifications
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -688,44 +770,54 @@ export default function DivisionDetail() {
             {/* ============================================ */}
             {/* APPLICATIONS SECTION */}
             {/* ============================================ */}
-            <div className="s-py-100">
+            <div className="pavanity-products-section pavanity-products-section--applications s-py-100">
                 <div className="container-fluid">
                     <div
-                        className="max-w-[1720px] mx-auto bg-[#F8F8F9] dark:bg-dark-secondary rounded-[10px] p-8 md:p-12"
+                        className="pavanity-surface-card-soft pavanity-products-info-panel max-w-[1720px] mx-auto p-8 md:p-12"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        {/* Applications */}
-                        <div>
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center">
+                        <div className="pavanity-products-applications">
+                            <div className="pavanity-products-applications__header flex items-center gap-3 mb-4">
+                                <div className="pavanity-icon-panel pavanity-products-section-icon">
                                     <FaLeaf className="size-10 text-white" />
                                 </div>
                                 <h4 className="font-semibold text-xl md:text-2xl">
                                     Target Applications
                                 </h4>
                             </div>
-                            <ul className="space-y-3">
+                            <ul className="pavanity-products-applications-grid">
                                 {details.applications.map(
                                     (app: string, index: number) => (
                                         <li
                                             key={index}
-                                            className="flex items-start gap-3"
+                                            className="pavanity-products-application-card"
                                         >
-                                            <svg
-                                                className="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                                                fill="currentColor"
-                                                viewBox="0 0 20 20"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
-                                            <span className="text-base md:text-lg">
+                                            <div className="pavanity-products-application-card__header">
+                                                <span className="pavanity-products-application-card__check" aria-hidden="true">
+                                                    <svg
+                                                        className="w-4 h-4"
+                                                        fill="currentColor"
+                                                        viewBox="0 0 20 20"
+                                                    >
+                                                        <path
+                                                            fillRule="evenodd"
+                                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                            clipRule="evenodd"
+                                                        />
+                                                    </svg>
+                                                </span>
+                                                <span className="pavanity-products-application-card__index" aria-hidden="true">
+                                                    {String(index + 1).padStart(2, "0")}
+                                                </span>
+                                            </div>
+                                            <p className="pavanity-products-application-card__copy text-base md:text-lg">
                                                 {app}
-                                            </span>
+                                            </p>
+                                            <div className="pavanity-products-application-card__footer" aria-hidden="true">
+                                                <span className="pavanity-products-application-card__footer-line" />
+                                                <span className="pavanity-products-application-card__footer-dot" />
+                                            </div>
                                         </li>
                                     )
                                 )}
@@ -738,7 +830,7 @@ export default function DivisionDetail() {
             {/* ============================================ */}
             {/* QUALITY & PACKAGING SECTION */}
             {/* ============================================ */}
-            <div className="s-pb-100">
+            <div className="pavanity-products-section pavanity-products-section--compliance s-pb-100">
                 <div className="container-fluid">
                     <div
                         className="max-w-[1720px] mx-auto grid lg:grid-cols-2 gap-8"
@@ -746,9 +838,9 @@ export default function DivisionDetail() {
                         data-aos-delay="100"
                     >
                         {/* Quality Standards */}
-                        <div className="p-8 md:p-10 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px]">
+                        <div className="pavanity-products-info-panel p-8 md:p-10 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px]">
                             <div className="flex items-center gap-3 mb-4">
-                                <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center">
+                                <div className="pavanity-icon-panel pavanity-products-section-icon">
                                     <FaShieldAlt className="size-10 text-white" />
                                 </div>
                                 <h4 className="font-semibold text-xl md:text-2xl">
@@ -761,9 +853,9 @@ export default function DivisionDetail() {
                         </div>
 
                         {/* Packaging Options */}
-                        <div className="p-8 md:p-10 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px]">
+                        <div className="pavanity-products-info-panel p-8 md:p-10 bg-white dark:bg-title border border-title/10 dark:border-white/10 rounded-[10px]">
                             <div className="flex items-center gap-3 mb-4">
-                                <div className="w-16 h-16 bg-primary rounded-[10px] flex items-center justify-center">
+                                <div className="pavanity-icon-panel pavanity-products-section-icon">
                                     <FaCertificate className="size-10 text-white" />
                                 </div>
                                 <h4 className="font-semibold text-xl md:text-2xl">
@@ -781,10 +873,10 @@ export default function DivisionDetail() {
             {/* ============================================ */}
             {/* BUSINESS ENQUIRY CTA */}
             {/* ============================================ */}
-            <div className="s-pb-100">
+            <div className="pavanity-products-section s-pb-100">
                 <div className="container-fluid">
                     <div
-                        className="max-w-3xl mx-auto text-center p-8 md:p-12 bg-primary rounded-[10px]"
+                        className="pavanity-cta-panel pavanity-products-cta-panel max-w-3xl mx-auto text-center p-8 md:p-12 bg-primary rounded-[10px]"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
@@ -798,13 +890,15 @@ export default function DivisionDetail() {
                         </p>
                         <Link
                             to="/contact"
-                            className="inline-block mt-6 bg-white text-primary px-8 py-4 text-base md:text-lg font-semibold rounded-[5px] hover:bg-opacity-90 duration-300"
+                            className="pavanity-products-cta-panel__button pavanity-products-cta-panel__button--light inline-block mt-6 bg-white text-primary px-8 py-4 text-base md:text-lg font-semibold rounded-[5px] hover:bg-opacity-90 duration-300"
                         >
                             Request Business Enquiry
                         </Link>
                     </div>
                 </div>
             </div>
+
+            </main>
 
             {/* Footer */}
             <FooterPavanity />

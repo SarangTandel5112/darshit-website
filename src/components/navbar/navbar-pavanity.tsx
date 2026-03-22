@@ -1,146 +1,257 @@
 import { useEffect, useState } from "react";
+
 import logo from "../../assets/img/svg/logo.png";
 import logoLight from "../../assets/img/svg/logo-light.png";
-import { Link } from "react-router-dom";
-import NavMenu from "./nav-menu";
+
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { FiArrowUpRight } from "react-icons/fi";
+
+import ThemeSwitcher from "../theme-switcher";
+
 import { productsData } from "../../data/products-data";
 
+type NavItem = {
+    label: string;
+    href: string;
+};
+
+const NAV_ITEMS: NavItem[] = [
+    { label: "Products", href: "/products" },
+    { label: "Quality & Compliance", href: "/quality-compliance" },
+    {
+        label: "Private Label & Custom Sourcing",
+        href: "/private-label-custom-sourcing",
+    },
+    { label: "About Us", href: "/about-us" },
+    { label: "Contact", href: "/contact" },
+];
+
+function isActiveRoute(pathname: string, href: string): boolean {
+    if (href === "/") {
+        return pathname === href;
+    }
+
+    return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export default function NavbarPavanity() {
-    const [toggle, setToggle] = useState<boolean>(false);
-    const [current, setCurrent] = useState<string>("");
-    const [scroll, setScroll] = useState<boolean>(false);
+    const location = useLocation();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    const isHomePage = location.pathname === "/";
+    const useLightBrand = isHomePage && !isScrolled;
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-        setCurrent(window.location.pathname);
+        function handleScroll() {
+            setIsScrolled(window.scrollY > 40);
+        }
 
-        const handlerScroll = () => {
-            if (window.scrollY > 50) {
-                setScroll(true);
-            } else {
-                setScroll(false);
-            }
-        };
-
-        window.addEventListener("scroll", handlerScroll);
+        handleScroll();
+        window.addEventListener("scroll", handleScroll, { passive: true });
 
         return () => {
-            window.removeEventListener("scroll", handlerScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
+    useEffect(() => {
+        setIsMobileMenuOpen(false);
+    }, [location.pathname]);
+
     return (
-        // SEO: Added - Changed div to nav for semantic HTML (improves accessibility and SEO)
         <nav
             aria-label="Main navigation"
-            className={`header-area header-v3-area header-v4 absolute z-50 left-0 right-0 top-[10px] sm:top-5 lg:top-7 ${scroll ? "sticky-header bg-white dark:bg-title" : "lg:bg-transparent"}`}
+            className={[
+                "pavanity-site-header",
+                isScrolled ? "is-sticky" : "",
+            ].join(" ")}
         >
-            <div className="container">
-                <div className="header-v4-wrapper relative flex items-center justify-between gap-5 bg-white lg:bg-opacity-80 rounded-[10px] dark:bg-title lg:dark:bg-opacity-80 px-5 py-3 md:py-5 lg:py-0">
-                    <Link to="/" aria-label="Pavanity Global">
+            <div className="pavanity-site-header__shell">
+                <div
+                    className={[
+                        "pavanity-site-header__panel",
+                        isHomePage && !isScrolled
+                            ? "pavanity-site-header__panel--home"
+                            : "pavanity-site-header__panel--inner",
+                    ].join(" ")}
+                >
+                    <Link to="/" className="pavanity-site-brand" aria-label="Pavanity Global">
                         <img
-                            src={logo}
+                            src={useLightBrand ? logoLight : logo}
                             alt="Pavanity Global"
-                            className="dark:hidden w-[310px] h-auto"
-                        />
-                        <img
-                            src={logoLight}
-                            alt="Pavanity Global"
-                            className="dark:block hidden w-[310px] h-auto"
+                            className="pavanity-site-brand__logo"
                         />
                     </Link>
-                    <div className="flex items-center gap-6 lg:gap-8 2xl:gap-12">
-                        <div
-                            className={`main-menu absolute z-50 w-full lg:w-auto top-full left-0 lg:static bg-white dark:bg-title lg:bg-transparent lg:dark:bg-transparent px-5 sm:px-[30px] py-[10px] sm:py-5 lg:px-0 lg:py-0 ${toggle ? "active" : ""}`}
-                        >
-                            <ul className="text-base lg:text-lg leading-none text-title dark:text-white lg:flex lg:gap-6 xl:gap-8 [&>li>a]:whitespace-nowrap">
-                                {/* Products Dropdown */}
-                                <li
-                                    className={`relative ${["/products"].includes(current) || current.startsWith("/products/") ? "active" : ""}`}
-                                >
-                                    <Link to="/products">
-                                        Products<span></span>
-                                    </Link>
-                                    <ul className="sub-menu lg:absolute z-50 lg:top-full lg:left-0 lg:min-w-[280px] lg:invisible lg:transition-all lg:bg-white lg:dark:bg-title lg:py-[15px] lg:pr-[30px]">
-                                        {productsData.map((category) => (
-                                            <li
-                                                key={category.id}
-                                                className={`${current === `/products/${category.slug}` ? "active" : ""}`}
-                                            >
-                                                <Link
-                                                    to={`/products/${category.slug}`}
-                                                    className="menu-item"
-                                                >
-                                                    {category.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                        <li className="border-t border-bdr-clr dark:border-bdr-clr-drk mt-2 pt-2">
-                                            <Link
-                                                to="/products"
-                                                className="menu-item text-primary font-medium"
-                                            >
-                                                View All Products
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
 
-                                {/* Quality & Compliance */}
-                                <li
-                                    className={`${current === "/quality-compliance" ? "active" : ""}`}
-                                >
-                                    <Link to="/quality-compliance">
-                                        Quality & Compliance
-                                    </Link>
-                                </li>
+                    <div className="pavanity-site-header__menu">
+                        {NAV_ITEMS.map((item) => {
+                            if (item.href === "/products") {
+                                const isActive = isActiveRoute(
+                                    location.pathname,
+                                    item.href,
+                                );
 
-                                {/* Private Label & Custom Sourcing */}
-                                <li
-                                    className={`${current === "/private-label-custom-sourcing" ? "active" : ""}`}
-                                >
-                                    <Link to="/private-label-custom-sourcing">
-                                        Private Label & Custom Sourcing
-                                    </Link>
-                                </li>
-
-                                {/* About Us */}
-                                <li
-                                    className={`${current === "/about-us" ? "active" : ""}`}
-                                >
-                                    <Link to="/about-us">About Us</Link>
-                                </li>
-
-                                {/* Contact */}
-                                <li
-                                    className={`${current === "/contact" ? "active" : ""}`}
-                                >
-                                    <Link to="/contact">Contact</Link>
-                                </li>
-
-                                {/* Mobile RFQ Button */}
-                                <li className="lg:hidden mt-4">
-                                    <Link
-                                        to="/contact"
-                                        className="inline-block bg-primary text-white px-6 py-3 rounded-[5px] hover:bg-opacity-90 duration-300 w-full text-center"
+                                return (
+                                    <div
+                                        key={item.href}
+                                        className="group relative"
                                     >
-                                        Send Enquiry
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
+                                        <NavLink
+                                            to={item.href}
+                                            className={[
+                                                "pavanity-nav-link inline-flex items-center gap-2",
+                                                isActive ? "active" : "",
+                                            ].join(" ")}
+                                            title={item.label}
+                                            aria-label={item.label}
+                                        >
+                                            <span>{item.label}</span>
+                                            <span className="text-[10px]">+</span>
+                                        </NavLink>
 
-                        {/* Desktop RFQ Button */}
-                        <Link
-                            to="/contact"
-                            className="hidden lg:inline-block bg-primary text-white px-5 xl:px-7 py-3 xl:py-4 rounded-[5px] text-sm xl:text-base font-medium hover:bg-opacity-90 duration-300 whitespace-nowrap"
-                        >
-                            Request RFQ
+                                        <div className="pavanity-nav-dropdown invisible absolute left-1/2 top-full z-50 mt-4 w-[20rem] -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                                            <div className="pavanity-nav-dropdown__list grid gap-1">
+                                                {productsData.map((category) => (
+                                                    <NavLink
+                                                        key={category.id}
+                                                        to={`/products/${category.slug}`}
+                                                        className={({ isActive }) =>
+                                                            [
+                                                                "pavanity-nav-dropdown__item",
+                                                                isActive
+                                                                    ? "active"
+                                                                    : "",
+                                                            ].join(" ")
+                                                        }
+                                                    >
+                                                        <span className="block">
+                                                            {category.name}
+                                                        </span>
+                                                        <span className="pavanity-nav-dropdown__tagline mt-1 block text-xs">
+                                                            {category.tagline}
+                                                        </span>
+                                                    </NavLink>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            }
+
+                            return (
+                                <NavLink
+                                    key={item.href}
+                                    to={item.href}
+                                    className={({ isActive }) =>
+                                        [
+                                            "pavanity-nav-link",
+                                            isActive ? "active" : "",
+                                        ].join(" ")
+                                    }
+                                    title={item.label}
+                                    aria-label={item.label}
+                                >
+                                    {item.label}
+                                </NavLink>
+                            );
+                        })}
+                    </div>
+
+                    <div className="pavanity-site-header__actions">
+                        <ThemeSwitcher />
+
+                        <Link to="/contact" className="pavanity-header-rfq rfq-button">
+                            <span className="pavanity-header-rfq__label">
+                                <span className="pavanity-rfq-label pavanity-rfq-label--full">Request RFQ</span>
+                                <span className="pavanity-rfq-label pavanity-rfq-label--short">RFQ</span>
+                            </span>
+                            <span className="pavanity-header-rfq__icon" aria-hidden="true">
+                                <FiArrowUpRight />
+                            </span>
                         </Link>
 
-                        <NavMenu toggle={toggle} setToggle={setToggle} />
+                        <button
+                            type="button"
+                            className="pavanity-nav-toggle lg:hidden"
+                            aria-label="Toggle menu"
+                            aria-expanded={isMobileMenuOpen}
+                            aria-controls="pavanity-mobile-nav"
+                            onClick={() =>
+                                setIsMobileMenuOpen((open) => !open)
+                            }
+                        >
+                            <span className="pavanity-nav-toggle__bars">
+                                <span />
+                                <span />
+                                <span />
+                            </span>
+                        </button>
                     </div>
                 </div>
+
+                {isMobileMenuOpen ? (
+                    <div
+                        id="pavanity-mobile-nav"
+                        className={[
+                            "pavanity-site-header__mobile",
+                            isHomePage && !isScrolled
+                                ? "pavanity-site-header__mobile--home"
+                                : "pavanity-site-header__mobile--inner",
+                        ].join(" ")}
+                    >
+                        {NAV_ITEMS.map((item) => {
+                            const isActive = isActiveRoute(
+                                location.pathname,
+                                item.href,
+                            );
+
+                            return (
+                                <div key={item.href}>
+                                    <NavLink
+                                        to={item.href}
+                                        className={[
+                                            "pavanity-mobile-link",
+                                            isActive ? "active" : "",
+                                        ].join(" ")}
+                                    >
+                                        <span>{item.label}</span>
+                                        <span>{isActive ? "01" : "->"}</span>
+                                    </NavLink>
+
+                                    {item.href === "/products" ? (
+                                        <div className="pavanity-mobile-submenu mt-2 grid gap-2 pl-3">
+                                            {productsData.map((category) => (
+                                                <NavLink
+                                                    key={category.id}
+                                                    to={`/products/${category.slug}`}
+                                                    className={[
+                                                        "rounded-[0.9rem] px-3 py-2 text-sm",
+                                                        isHomePage && !isScrolled
+                                                            ? "text-white/75 hover:bg-white/8 hover:text-white"
+                                                            : "text-[var(--pavanity-text)] hover:bg-[var(--pavanity-surface-soft)] hover:text-[var(--pavanity-accent)] dark:text-white/75 dark:hover:bg-white/8 dark:hover:text-white",
+                                                    ].join(" ")}
+                                                >
+                                                    {category.name}
+                                                </NavLink>
+                                            ))}
+                                        </div>
+                                    ) : null}
+                                </div>
+                            );
+                        })}
+
+                        <Link to="/contact" className="pavanity-header-rfq pavanity-header-rfq--mobile rfq-button">
+                            <span className="pavanity-header-rfq__label">
+                                <span className="pavanity-rfq-label pavanity-rfq-label--full">Request RFQ</span>
+                                <span className="pavanity-rfq-label pavanity-rfq-label--short">RFQ</span>
+                            </span>
+                            <span className="pavanity-header-rfq__icon" aria-hidden="true">
+                                <FiArrowUpRight />
+                            </span>
+                        </Link>
+                    </div>
+                ) : null}
             </div>
         </nav>
     );

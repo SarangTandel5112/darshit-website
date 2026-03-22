@@ -256,7 +256,7 @@ export const footerProductCategories = [
     { name: "Agro & Allied Products", path: "/products/agro-allied" }
 ];
 
-export const footerLegalLinks = [
+export const footerLegalLinks: Array<{ name: string; path: string }> = [
     // { name: "Privacy Policy", path: "/privacy-policy" },
     // { name: "Terms & Conditions", path: "/terms-conditions" },
     // { name: "Export Compliance", path: "/export-compliance" }
